@@ -25,30 +25,29 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14 
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
       # 依赖缓存
       - name: Cache node modules
         uses: actions/cache@v2
-        id: cache
         env:
           cache-name: cache-node-modules
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
+            ${{ runner.os }}-yarn-
       # 下载依赖
       - name: install
-        if: steps.cache.outputs.cache-hit != 'true'
         run: |
-          npm install
+          yarn install
         env:
           CI: true
       # 构建
       - name: Build
         run: |
-          npm run build
+          yarn build
         env:
           CI: true
       # 生成压缩包
@@ -85,7 +84,7 @@ jobs:
           script: |
             cd /www/wwwroot/web.90c.vip
             tar zxvf release.tgz
-            npm install --production
+            yarn install --production
             pm2 reload pm2.config.json
       # 微信通知
       - name: Wechat Notification
