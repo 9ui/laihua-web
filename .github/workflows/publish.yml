@@ -13,6 +13,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 检查公共的三方js文件是否可用
+      - name: Test for public javascript library vulnerabilities
+        uses: lirantal/is-website-vulnerable@master
+        with:
+          scan-url: "https://web.90c.vip"
       # 切换分支
       - name: Checkout
         uses: actions/checkout@v2
@@ -54,7 +59,8 @@ jobs:
         uses: foo-software/lighthouse-check-status-action@master
         with:
           lighthouseCheckResults: ${{ steps.lighthouseCheck.outputs.lighthouseCheckResults }}
-          minAccessibilityScore: "90"
+          # 最低Accessibility分数
+          minAccessibilityScore: "80"
           minBestPracticesScore: "50"
           minPerformanceScore: "50"
           minProgressiveWebAppScore: "50"
