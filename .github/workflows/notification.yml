@@ -1,5 +1,5 @@
 # 该workflow的名称，可以随意填写
-name: Wechat Notification
+name: notification
 
 # workflow的触发事件，这里代表master分支的push事件触发
 on:
@@ -11,6 +11,7 @@ jobs:
   build:
     # 运行所需要的环境
     runs-on: ubuntu-latest
+
     steps:
       # 切换分支
       - name: Checkout
@@ -24,6 +25,18 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14
+      # npm install
+      - name: install
+        run: |
+          npm install
+        env:
+          CI: true
+      # build
+      - name: Build
+        run: |
+          npm run build
+        env:
+          CI: true
       # 微信通知
       - name: Wechat Notification
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
@@ -32,8 +45,7 @@ jobs:
           WECHAT_WORK_BOT_WEBHOOK: ${{ secrets.WECHAT_WEBHOOK }}
         with:
           msgtype: markdown
-          content: "来画平台<font color=\"warning\">v5.2.3</font>性能提升了，快来试试看吧～。\n
-          > \n
+          content: "来画平台<font color=\"warning\">v5.2.3</font>更新了，快来试试看吧～。\n
           ##### 修改内容：\n
           > ${{ github.event.head_commit.message }} \n
           ##### 修改分支:\n
