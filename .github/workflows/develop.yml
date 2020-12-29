@@ -125,6 +125,6 @@ jobs:
           ##### 修改时间:\n
           > <font color=\"info\">${{ github.event.head_commit.timestamp }}</font> \n
           ##### 修改人:\n
-          > <font color=\"info\">${{ github.event.head_commit.committer.name }}</font>\n
-          详情请点击:[来画平台](https://web.90c.vip)\n"
-          mentioned_list: ['@all']
+          > <font color=\"info\">${{ github.event.head_commit.committer.name }}</font> \n
+          详情请点击:<font color=\"warning\">[https://web.90c.vip](https://web.90c.vip)</font>  \n"
+          mentioned_list: "['@all']"
