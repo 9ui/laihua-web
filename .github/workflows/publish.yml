@@ -4,7 +4,7 @@ name: Publish And Deploy
 # workflow的触发事件，这里代表release分支的push事件触发
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 # 任务
 jobs:
@@ -13,6 +13,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 检查公共的三方js文件是否可用
+      - name: Test for public javascript library vulnerabilities
+        uses: lirantal/is-website-vulnerable@master
+        with:
+          scan-url: "https://web.90c.vip"
       # 切换分支
       - name: Checkout
         uses: actions/checkout@v2
@@ -25,12 +30,42 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14
+      # 依赖缓存
+      - name: Cache node modules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
       # 下载依赖
       - name: install
         run: |
           npm install
         env:
           CI: true
+      # Run Lighthouse
+      - name: Run Lighthouse
+        uses: foo-software/lighthouse-check-action@master
+        id: lighthouseCheck
+        with:
+          urls: 'https://web.90c.vip'
+          # ... all your other inputs
+      - name: Handle Lighthouse Check results
+        uses: foo-software/lighthouse-check-status-action@master
+        with:
+          lighthouseCheckResults: ${{ steps.lighthouseCheck.outputs.lighthouseCheckResults }}
+          # 最低Accessibility分数
+          minAccessibilityScore: "70"
+          # 性能最低分
+          minBestPracticesScore: "30"
+          minPerformanceScore: "30"
+          minProgressiveWebAppScore: "30"
+          minSeoScore: "30"
       # 构建
       - name: Build
         run: |
@@ -75,7 +110,7 @@ jobs:
             pm2 reload pm2.config.json
       # 微信通知
       - name: Wechat Notification
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: chf007/action-wechat-work@master
         env:
           WECHAT_WORK_BOT_WEBHOOK: ${{ secrets.WECHAT_WEBHOOK }}
