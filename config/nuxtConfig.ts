@@ -49,15 +49,14 @@ export const NuxtConfig = {
   // 代理
   axios: {
     proxy: true,
-    prefix: '/webpai', // baseURL
-    credentials: true,
+    prefix: '/webpai', // 表示给请求url加个前缀 /api
   },
   proxy: {
-    '/webpai/': {
+    '/webpai': {
       target: 'https://beta.laihua.com/webapi', // 代理地址
       changeOrigin: true,
       pathRewrite: {
-        '^/webpai': '',
+        '^/webpai': '/',
       },
     },
   },
