@@ -1,0 +1,470 @@
+.vipservice {
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+}
+
+// level-info
+.vipservice-level-info {
+  width: 100%;
+  height: 660px;
+  margin: auto 0;
+  margin-bottom: 330px;
+  background-image: url('../../assets/images/vipservice/1.png');
+  background-size: cover;
+  box-sizing: border-box;
+
+  > .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+
+    > h1 {
+      padding-top: 95px;
+      font-size: 54px;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+    }
+
+    .contact,
+    .email {
+      margin-top: 29px;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .cards {
+      display: flex;
+      margin-top: 80px;
+      justify-content: space-between;
+    }
+
+    .card-item {
+      display: flex;
+      width: 340px;
+      padding: 50px 0 109px;
+      background-color: #fff;
+      border: 1px solid #6311ec;
+      box-sizing: border-box;
+      flex-direction: column;
+      align-items: center;
+
+      > h3 {
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      .icon {
+        margin: 39px auto 38px;
+
+        &.icon-0 {
+          width: 95px;
+          height: 64px;
+        }
+
+        &.icon-1 {
+          width: 81px;
+          height: 63px;
+        }
+
+        &.icon-2 {
+          width: 87px;
+          height: 64px;
+        }
+      }
+
+      .desc {
+        font-size: 14px;
+        line-height: 27px;
+        color: #666;
+      }
+
+      .btn {
+        width: 200px;
+        height: 50px;
+        margin-bottom: 24px;
+        font-size: 14px;
+        color: #fff;
+        cursor: pointer;
+        background: #6311ec;
+        border: 0;
+        border-radius: 5px;
+        outline: none;
+
+        &:hover {
+          background-color: #4601b9;
+        }
+      }
+
+      .mark {
+        font-size: 16px;
+        font-weight: bold;
+        color: #6311ec;
+      }
+
+      .add-icon {
+        display: block;
+        margin: 15px auto 13px;
+      }
+
+      &.active {
+        border: 1px solid #0042ff;
+        box-shadow: 0 0 0 30px rgba(0, 66, 255, 0.19);
+      }
+
+      &.card-item-first {
+        height: 660px;
+
+        .card-item-ft {
+          position: relative;
+          left: -24px;
+        }
+      }
+
+      .card-item-ft {
+        // display: flex;
+        // flex-direction: column;
+        // align-items: flex-start;
+
+        > ul {
+          display: flex;
+          font-size: 14px;
+          line-height: 25px;
+          color: #333;
+          flex-direction: column;
+          align-items: flex-start;
+
+          > li {
+            display: flex;
+            color: #333;
+            align-items: center;
+
+            &::before {
+              display: inline-block;
+              width: 4px;
+              height: 4px;
+              margin-right: 7px;
+              background-color: #65696e;
+              border-radius: 4px;
+              content: '';
+            }
+          }
+        }
+
+        .more {
+          font-size: 12px;
+          line-height: 26px;
+          color: #4461f4;
+          text-align: left;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+// brand
+.vipserver-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 1200px;
+  margin: 78px auto 0;
+
+  .card {
+    display: flex;
+    width: 1200px;
+    height: 419px;
+    padding: 50px 80px 67px;
+    margin-top: 60px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      text-align: initial;
+    }
+
+    .desc {
+      margin-top: 10px;
+      font-size: 16px;
+      line-height: 26px;
+      color: #333;
+      text-align: left;
+    }
+
+    .tag {
+      display: flex;
+      width: 450px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+
+      > li {
+        display: flex;
+        width: 200px;
+        font-size: 18px;
+        // list-style: disc;
+        line-height: 37px;
+        color: #333;
+        text-align: left;
+        align-items: center;
+
+        &::before {
+          display: inline-block;
+          width: 4px;
+          height: 4px;
+          margin-right: 11px;
+          background-color: #65696e;
+          border-radius: 4px;
+          content: '';
+        }
+      }
+    }
+
+    .btns {
+      display: flex;
+      margin-top: 40px;
+      justify-content: space-between;
+    }
+
+    .btn {
+      width: 200px;
+      height: 50px;
+      font-size: 14px;
+      cursor: pointer;
+      border: 0;
+      border-radius: 5px;
+      outline: none;
+
+      &.btn1 {
+        color: #6311ec;
+        background-color: #fff;
+        border: 1px solid #6311ec;
+
+        &:hover {
+          border: 1px solid #4601b9;
+        }
+      }
+
+      &.btn2 {
+        color: #fff;
+        background-color: #6311ec;
+
+        &:hover {
+          background-color: #4601b9;
+        }
+      }
+    }
+  }
+
+  .card-right {
+    > .img {
+      width: 361px;
+      margin: 24px 0 0 201px;
+    }
+  }
+}
+// more service
+.vipserver-appreciation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 1200px;
+  margin: 139px auto 164px;
+
+  > img {
+    width: 100%;
+    margin-top: 79px;
+  }
+
+  .tabs {
+    display: flex;
+    width: 100%;
+    margin-top: 112px;
+    font-size: 22px;
+    justify-content: space-between;
+
+    .tab-item {
+      display: flex;
+      color: #666;
+      cursor: pointer;
+      flex-direction: column;
+
+      &.active {
+        font-weight: bold;
+        color: #8040eb;
+
+        &::after {
+          display: block;
+          width: 100%;
+          height: 3px;
+          margin-top: 10px;
+          background: #8040eb;
+          content: '';
+        }
+      }
+    }
+  }
+
+  .content {
+    width: 100%;
+    height: 467px;
+    margin-top: 70px;
+  }
+
+  .swiper-content {
+    display: flex;
+    flex-direction: column;
+
+    .service-content {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+
+      .major-img {
+        width: 474px;
+        height: 265px;
+        border-radius: 20px;
+        box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.13);
+      }
+
+      .label-list {
+        margin-left: 58px;
+      }
+
+      .label-item {
+        display: flex;
+        font-size: 14px;
+        line-height: 28px;
+        color: #666;
+        text-align: left;
+      }
+
+      .label-name {
+        width: 70px;
+        font-weight: bold;
+      }
+
+      .label-content {
+        width: 600px;
+      }
+    }
+
+    .service-imgs {
+      display: flex;
+      width: 100%;
+      height: 140px;
+      padding: 20px;
+      margin-top: 62px;
+      box-sizing: border-box;
+      justify-content: space-between;
+
+      .service-img {
+        width: 250px;
+        height: 140px;
+        border-radius: 10px;
+        // background-color: lawngreen;
+        box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.13);
+      }
+    }
+  }
+}
+
+// footer
+.vipserver-footer {
+  width: 100%;
+  height: 499px;
+  background: #4f00d3;
+  box-sizing: border-box;
+
+  .footer-wrapper {
+    display: flex;
+    // align-items: center;
+    width: 1200px;
+    padding-top: 101px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+    .ft-left {
+      display: flex;
+      width: 440px;
+      flex-direction: column;
+      align-items: flex-start;
+
+      > p {
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 54px;
+        color: #fff;
+      }
+    }
+
+    .btn {
+      width: 200px;
+      height: 50px;
+      margin-top: 60px;
+      font-size: 14px;
+      color: #6311ec;
+      cursor: pointer;
+      background: #fff;
+      border: 0;
+      border-radius: 5px;
+      outline: none;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+
+    .tel {
+      margin: 27px 0 0 25px;
+      font-size: 16px;
+      color: #fff;
+    }
+
+    .tel-icon {
+      margin-right: 5px;
+    }
+
+    .ft-img {
+      width: 530px;
+    }
+  }
+}
+
+.custom-enter {
+  opacity: 0;
+  transform: scale(0.4) translate(100%);
+}
+
+.custom-enter-to {
+  opacity: 1;
+}
+
+.custom-enter-active {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.custom-leave {
+  opacity: 1;
+}
+
+.custom-leave-to {
+  opacity: 0;
+  transform: scale(0.4) translate(-100%);
+}
+
+.custom-leave-active {
+  transition: all 0.5s;
+}
