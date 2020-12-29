@@ -13,11 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 检查公共的三方js文件是否可用
-      - name: Test for public javascript library vulnerabilities
-        uses: lirantal/is-website-vulnerable@master
-        with:
-          scan-url: "https://web.90c.vip"
       # 切换分支
       - name: Checkout
         uses: actions/checkout@v2
@@ -44,28 +39,11 @@ jobs:
             ${{ runner.os }}-
       # 下载依赖
       - name: install
+        if: steps.cache.outputs.cache-hit != 'true'
         run: |
           npm install
         env:
           CI: true
-      # Run Lighthouse
-      - name: Run Lighthouse
-        uses: foo-software/lighthouse-check-action@master
-        id: lighthouseCheck
-        with:
-          urls: 'https://web.90c.vip'
-          # ... all your other inputs
-      - name: Handle Lighthouse Check results
-        uses: foo-software/lighthouse-check-status-action@master
-        with:
-          lighthouseCheckResults: ${{ steps.lighthouseCheck.outputs.lighthouseCheckResults }}
-          # 最低Accessibility分数
-          minAccessibilityScore: "70"
-          # 性能最低分
-          minBestPracticesScore: "30"
-          minPerformanceScore: "30"
-          minProgressiveWebAppScore: "30"
-          minSeoScore: "30"
       # 构建
       - name: Build
         run: |
