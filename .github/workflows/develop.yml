@@ -40,6 +40,7 @@ jobs:
             ${{ runner.os }}-yarn-
       # 下载依赖
       - name: install
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: |
           yarn install
         env:
