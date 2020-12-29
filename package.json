@@ -73,7 +73,7 @@
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.1.0",
     "tasksfile": "^5.1.1",
-    "ts-loader": "^8.0.11",
+    "ts-loader": "^8.0.12",
     "vuex-module-decorators": "^1.0.1"
   },
   "changelog": {
