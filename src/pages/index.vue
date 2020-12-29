@@ -1,5 +1,5 @@
 <template>
-  <div class="a-container">首页 </div>
+  <div class="a-container">首页2020</div>
 </template>
 
 <script lang="ts">
