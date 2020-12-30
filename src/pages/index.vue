@@ -2,8 +2,11 @@
   <div class="index-pages">
     <div class="index-pages-container">
       <Banner></Banner>
-      <Scenarios></Scenarios>
-      <Introduction></Introduction>
+      <Scene></Scene>
+      <LazyContainer>
+        <Scenarios></Scenarios>
+        <Introduction></Introduction>
+      </LazyContainer>
     </div>
   </div>
 </template>
@@ -12,11 +15,14 @@
   import { mapActions, mapState } from 'vuex';
   import * as Core from '@/core';
   const { VueAPI } = Core;
+  import { LazyContainer } from '@/components/Container/index';
   export default VueAPI.defineComponent({
     components: {
       Banner: () => import('./home/Banner.vue'),
       Scenarios: () => import('./home/Scenarios.vue'),
       Introduction: () => import('./home/Introduction.vue'),
+      Scene: () => import('./home/Scene.vue'),
+      LazyContainer,
     },
     fetch({ store }) {
       store.dispatch('solution/fetchCategory');
