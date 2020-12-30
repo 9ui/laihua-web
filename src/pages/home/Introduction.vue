@@ -26,7 +26,7 @@
 </template>
 
 <script lang="ts">
-  import { descList } from './data';
+  import { descList } from '@/mock/home/data';
   export default {
     data() {
       return {

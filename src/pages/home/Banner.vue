@@ -43,7 +43,7 @@
 </template>
 <script lang="ts">
   import * as Core from '@/core';
-  import { usedByList } from './data';
+  import { usedByList } from '@/mock/home/data';
   const { VueAPI } = Core;
   export default VueAPI.defineComponent({
     data() {

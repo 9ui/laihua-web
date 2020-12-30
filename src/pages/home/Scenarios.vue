@@ -22,7 +22,7 @@
 </template>
 
 <script lang="ts">
-  import { sceneList } from './data';
+  import { sceneList } from '@/mock/home/data';
   export default {
     data() {
       return {
