@@ -12,6 +12,7 @@ export const BuildConfig = {
     // 缩小生成的输出。
     // （仅当将--plain参数作为命令输入时才禁用它。）
     terser: !(process.argv.length > 5 && process.argv[4] === '--plain'),
+
     // 可视化捆绑包，以便对其进行优化
     extractCSS: true, // 单独提取 css
     maxChunkSize: 36000, // 单个包最大尺寸
@@ -20,7 +21,6 @@ export const BuildConfig = {
       minify: {
         collapseBooleanAttributes: true,
         decodeEntities: true,
-
         // * 内联CSS Minifire
         // * 有一个优化器，因此无需将其打开
         // * https://github.com/nuxt/nuxt.js/blob/5fa768373da1adfd8c76145b2ec95b7824af93b4/packages/webpack/src/config/client.js#L62-L74
@@ -37,7 +37,6 @@ export const BuildConfig = {
         useShortDoctype: true,
       },
     },
-    transpile: [/ant-design-vue/], // 解决
     // Customize Babel configuration for JavaScript and Vue files. .babelrc is ignored by default.
     babel: {
       presets() {
@@ -51,22 +50,7 @@ export const BuildConfig = {
           ],
         ];
       },
-      plugins: [
-        [
-          'import',
-          {
-            libraryName: 'ant-design-vue',
-            libraryDirectory: 'es',
-            // 选择子目录 例如 es 表示 ant-design-vue/es/component
-            // lib 表示 ant-design-vue/lib/component
-
-            style: true,
-            // 默认不使用该选项，即不导入样式 , 注意 ant-design-vue 使用 js 文件引入样式
-            // true 表示 import  'ant-design-vue/es/component/style'
-            // 'css' 表示 import 'ant-design-vue/es/component/style/css'
-          },
-        ],
-      ],
+      plugins: [],
     },
     // 配置loader
     loaders: {

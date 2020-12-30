@@ -1,5 +1,11 @@
 <template>
-  <div class="a-container">首页2020 ---{{ categorys }}</div>
+  <div class="index-pages">
+    <div class="index-pages-container">
+      <Banner></Banner>
+      <Scenarios></Scenarios>
+      <Introduction></Introduction>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -7,6 +13,11 @@
   import * as Core from '@/core';
   const { VueAPI } = Core;
   export default VueAPI.defineComponent({
+    components: {
+      Banner: () => import('./home/Banner.vue'),
+      Scenarios: () => import('./home/Scenarios.vue'),
+      Introduction: () => import('./home/Introduction.vue'),
+    },
     fetch({ store }) {
       store.dispatch('solution/fetchCategory');
     },
@@ -23,10 +34,21 @@
   });
 </script>
 <style lang="less">
-  .a-container {
+  .index-pages {
+    background-color: #fff;
+
+    &-container {
+      max-width: 1920px;
+      min-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  // 作品案例
+  .index-container {
+    position: relative;
     display: flex;
+    width: 1200px;
+    margin: 0 auto;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 </style>

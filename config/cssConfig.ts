@@ -17,7 +17,7 @@ export const CssConfig = {
     rtl: false, // 加载条方向
   },
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ['@/design/index.less'], // 'ant-design-vue/dist/antd.css'
+  css: ['@/design/index.less'],
   styleResources: {
     less: ['@/design/index.less'],
   },
