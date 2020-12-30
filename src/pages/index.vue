@@ -13,9 +13,10 @@
 
 <script lang="ts">
   import { mapActions, mapState } from 'vuex';
+  import { LazyContainer } from '@/components/Container/index';
   import * as Core from '@/core';
   const { VueAPI } = Core;
-  import { LazyContainer } from '@/components/Container/index';
+
   export default VueAPI.defineComponent({
     components: {
       Banner: () => import('./home/Banner.vue'),
