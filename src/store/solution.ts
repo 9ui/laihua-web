@@ -11,11 +11,10 @@ export const mutations: MutationTree<RootState> = {
 };
 
 export const actions: ActionTree<RootState, RootState> = {
-  async fetchCategory() {
-    const { data } = await this.$axios.$get('/webapi/home/category?type=50');
-    console.log(data);
-    // if (data.code === 200) {
-    //   commit('SET_CATEGORY', data.data);
-    // }
+  async fetchCategory({ commit }) {
+    const data = await this.$axios.$get('/webapi/home/category?type=50');
+    if (data.code === 200) {
+      commit('SET_CATEGORY', data.data);
+    }
   },
 };

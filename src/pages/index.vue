@@ -1,5 +1,5 @@
 <template>
-  <div class="a-container">首页2020</div>
+  <div class="a-container">首页2020 ---{{ categorys }}</div>
 </template>
 
 <script lang="ts">

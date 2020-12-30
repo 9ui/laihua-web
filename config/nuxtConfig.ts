@@ -42,18 +42,19 @@ export const NuxtConfig = {
       loaders: 'style-loader!css-loader!less-loader',
     },
   ],
-  // Nuxt的运行环境
-  //   env: {
-  //     ...(Config.Interface.isProductionMode ? prod : dev),
-  //   },
-  // 代理
+  /**
+   * @description: 设置请求前缀以及跨域设置
+   */
   axios: {
     proxy: true,
     prefix: '/webpai', // 表示给请求url加个前缀 /api
   },
+  /**
+   * @description: 请求代理
+   */
   proxy: {
     '/webpai': {
-      target: 'https://beta.laihua.com/webapi', // 代理地址
+      target: 'https://beta.laihua.com', // 代理地址
       changeOrigin: true,
       pathRewrite: {
         '^/webpai': '/',
