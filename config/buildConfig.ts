@@ -105,7 +105,7 @@ export const BuildConfig = {
               },
               common: {
                 chunks: 'all',
-                test: /[\\/]src[\\/]js[\\/]/,
+                test: /[\\/]src[\\/]ts[\\/]/,
                 name: 'common',
                 minChunks: 3,
                 maxInitialRequests: 5,
@@ -113,7 +113,7 @@ export const BuildConfig = {
               },
               styles: {
                 name: 'styles',
-                test: /\.(sa|sc|c)ss$/,
+                test: /\.(sa|sc|c|le)ss$/,
                 chunks: 'all',
                 enforce: true,
               },
