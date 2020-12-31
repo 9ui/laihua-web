@@ -75,7 +75,7 @@ export const BuildConfig = {
         __dirname,
         '../src/assets/icons/antd-icon.ts'
       );
-      if (!isDev && !isClient) {
+      if (!isDev && isClient) {
         /**
          *  performance就是关闭每次打包之后的文件过大警告
          * 关闭文件过大提示，利于打包加快速度
