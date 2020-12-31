@@ -19,17 +19,6 @@ export const NuxtConfig = {
     // '@nuxtjs/gtm',
     // '@nuxtjs/svg-sprite',
     'nuxt-helmet',
-    [
-      'nuxt-compress',
-      {
-        gzip: {
-          cache: true,
-        },
-        brotli: {
-          threshold: 10240,
-        },
-      },
-    ],
   ],
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
