@@ -1,7 +1,7 @@
 <template>
   <div class="vipserver-appreciation">
     <h2> 更多<b>会员增值服务</b>套餐 </h2>
-    <img src="../../assets/images/vipservice/2.png" alt="" class="bg2" />
+    <img src="/images/vipservice/2.png" alt="" class="bg2" />
     <div class="tabs">
       <div
         v-for="(s, i) in otherServices"

@@ -2,8 +2,6 @@ import { resolve } from 'path';
 
 import * as Config from './';
 
-// const webpack = require('webpack');
-
 export const BuildConfig = {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
@@ -67,7 +65,7 @@ export const BuildConfig = {
       },
     },
     // @ts-ignore: Unreachable code error
-    extend(config, { isClient }) {
+    extend(config, { isClient, isDev }) {
       // 为 客户端打包 进行扩展配置
       if (isClient) {
         config.devtool = 'eval-source-map';
@@ -77,6 +75,55 @@ export const BuildConfig = {
         __dirname,
         '../src/assets/icons/antd-icon.ts'
       );
+      if (!isDev && !isClient) {
+        /**
+         *  performance就是关闭每次打包之后的文件过大警告
+         * 关闭文件过大提示，利于打包加快速度
+         */
+        config.performance = {
+          hints: false,
+          //入口起点的最大体积 整数类型(int)（以字节(bytes)为单位 200k）
+          maxEntrypointSize: 204800,
+          //生成文件的最大体积 整数类型(int)（以字节(bytes)为单位 200k）
+          maxAssetSize: 204800,
+        };
+        /**
+         * 公共代码抽离和代码分割，避免单个js文件过大
+         */
+        config.optimization = {
+          splitChunks: {
+            minSize: 10000,
+            maxSize: 250000,
+            cacheGroups: {
+              vendor: {
+                chunks: 'all',
+                test: /node_modules/,
+                name: 'vendor',
+                minChunks: 1,
+                maxInitialRequests: 5,
+                priority: 100,
+              },
+              common: {
+                chunks: 'all',
+                test: /[\\/]src[\\/]js[\\/]/,
+                name: 'common',
+                minChunks: 3,
+                maxInitialRequests: 5,
+                priority: 60,
+              },
+              styles: {
+                name: 'styles',
+                test: /\.(sa|sc|c)ss$/,
+                chunks: 'all',
+                enforce: true,
+              },
+              runtimeChunk: {
+                name: 'manifest',
+              },
+            },
+          },
+        };
+      }
       // config.externals = {
       //   vuex: 'vuex',
       // };

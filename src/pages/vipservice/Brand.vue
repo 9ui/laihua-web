@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="card-right">
-        <img class="img" src="../../assets/images/vipservice/bg1.png" />
+        <img class="img" src="/images/vipservice/bg1.png" />
       </div>
     </div>
   </div>

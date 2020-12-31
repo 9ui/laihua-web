@@ -19,7 +19,7 @@
               0755-86962091
             </div>
           </div>
-          <img class="ft-img" src="../../assets/images/vipservice/bg2.png" />
+          <img class="ft-img" src="/images/vipservice/bg2.png" />
         </div>
       </div>
     </LazyContainer>

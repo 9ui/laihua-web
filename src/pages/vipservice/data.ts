@@ -6,7 +6,7 @@ export const levelInfo: LevelTypes[] = [
     id: '100',
     title: '多账号采购',
     desc: '多人创作，协同办公',
-    icon: require('../../assets/images/vipservice/3.png'),
+    icon: '/images/vipservice/3.png',
     mark: '',
     tag: [
       {
@@ -39,7 +39,7 @@ export const levelInfo: LevelTypes[] = [
     id: '200',
     title: 'API定制',
     desc: '系统接入，高效赋能',
-    icon: require('../../assets/images/vipservice/4.png'),
+    icon: '/images/vipservice/4.png',
     mark: '多账号采购所有服务',
     tag: [
       {
@@ -72,7 +72,7 @@ export const levelInfo: LevelTypes[] = [
     id: '300',
     title: '私有化部署',
     desc: '深层开发，安全部署',
-    icon: require('../../assets/images/vipservice/5.png'),
+    icon: '/images/vipservice/5.png',
     mark: 'API定制所有服务',
     tag: [
       {
@@ -115,12 +115,12 @@ export const otherServices: OtherServicesType[] = [
   {
     id: '110001',
     title: '短视频培训课程',
-    majorImg: require('../../assets/images/vipservice/sp1.png'),
+    majorImg: '/images/vipservice/sp1.png',
     imgs: [
-      require('../../assets/images/vipservice/sp2.png'),
-      require('../../assets/images/vipservice/sp3.png'),
-      require('../../assets/images/vipservice/sp4.png'),
-      require('../../assets/images/vipservice/sp5.png'),
+      '/images/vipservice/sp2.png',
+      '/images/vipservice/sp3.png',
+      '/images/vipservice/sp4.png',
+      '/images/vipservice/sp5.png',
     ],
     descs: [
       {
@@ -149,12 +149,12 @@ export const otherServices: OtherServicesType[] = [
   {
     id: '110002',
     title: '角色素材定制',
-    majorImg: require('../../assets/images/vipservice/js1.png'),
+    majorImg: '/images/vipservice/js1.png',
     imgs: [
-      require('../../assets/images/vipservice/js2.png'),
-      require('../../assets/images/vipservice/js3.png'),
-      require('../../assets/images/vipservice/js4.png'),
-      require('../../assets/images/vipservice/js5.png'),
+      '/images/vipservice/js2.png',
+      '/images/vipservice/js3.png',
+      '/images/vipservice/js4.png',
+      '/images/vipservice/js5.png',
     ],
     descs: [
       {
@@ -173,12 +173,12 @@ export const otherServices: OtherServicesType[] = [
   {
     id: '110003',
     title: '道具场景素材定制',
-    majorImg: require('../../assets/images/vipservice/dj1.png'),
+    majorImg: '/images/vipservice/dj1.png',
     imgs: [
-      require('../../assets/images/vipservice/dj2.png'),
-      require('../../assets/images/vipservice/dj3.png'),
-      require('../../assets/images/vipservice/dj4.png'),
-      require('../../assets/images/vipservice/dj5.png'),
+      '/images/vipservice/dj2.png',
+      '/images/vipservice/dj3.png',
+      '/images/vipservice/dj4.png',
+      '/images/vipservice/dj5.png',
     ],
     descs: [
       {
@@ -197,12 +197,12 @@ export const otherServices: OtherServicesType[] = [
   {
     id: '110004',
     title: '专属视频模板定制',
-    majorImg: require('../../assets/images/vipservice/mb1.png'),
+    majorImg: '/images/vipservice/mb1.png',
     imgs: [
-      require('../../assets/images/vipservice/mb2.png'),
-      require('../../assets/images/vipservice/mb3.png'),
-      require('../../assets/images/vipservice/mb4.png'),
-      require('../../assets/images/vipservice/mb5.png'),
+      '/images/vipservice/mb2.png',
+      '/images/vipservice/mb3.png',
+      '/images/vipservice/mb4.png',
+      '/images/vipservice/mb5.png',
     ],
     descs: [
       {
@@ -221,12 +221,12 @@ export const otherServices: OtherServicesType[] = [
   {
     id: '110005',
     title: '静态头像及形象定制',
-    majorImg: require('../../assets/images/vipservice/xx1.png'),
+    majorImg: '/images/vipservice/xx1.png',
     imgs: [
-      require('../../assets/images/vipservice/xx2.png'),
-      require('../../assets/images/vipservice/xx3.png'),
-      require('../../assets/images/vipservice/xx4.png'),
-      require('../../assets/images/vipservice/xx5.png'),
+      '/images/vipservice/xx2.png',
+      '/images/vipservice/xx3.png',
+      '/images/vipservice/xx4.png',
+      '/images/vipservice/xx5.png',
     ],
     descs: [
       {
