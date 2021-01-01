@@ -18,43 +18,60 @@ jobs:
         uses: lirantal/is-website-vulnerable@master
         with:
           scan-url: "https://web.90c.vip"
+
       # 切换分支
       - name: Checkout
         uses: actions/checkout@v2
+
       # 下载 git submodule
       - uses: srt32/git-actions@v0.0.3
         with:
           args: git submodule update --init --recursive
+
       # 使用 node:14
       - name: use Node.js 14
         uses: actions/setup-node@v1
         with:
           node-version: 14
-      # 依赖缓存
-      - name: Cache node modules
+
+      # 设置缓存路径
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      # yarn缓存
+      - name: Cache yarn cache
         uses: actions/cache@v2
-        env:
-          cache-name: cache-node-modules
+        id: cache-yarn-cache
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
-      # 下载依赖
-      - name: install
-        run: |
-          npm install
-        env:
-          CI: true
-      # Run Lighthouse
+            ${{ runner.os }}-yarn-
+
+      # 缓存依赖文件
+      - name: Cache node_modules
+        id: cache-node-modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-${{ matrix.node-version }}-nodemodules-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ matrix.node-version }}-nodemodules-
+
+       # 下载依赖
+      - run: yarn
+        if: |
+          steps.cache-yarn-cache.outputs.cache-hit != 'true' ||
+          steps.cache-node-modules.outputs.cache-hit != 'true'
+      # 网站性能监控
       - name: Run Lighthouse
         uses: foo-software/lighthouse-check-action@master
         id: lighthouseCheck
         with:
           urls: 'https://web.90c.vip'
-          # ... all your other inputs
+
+      # 处理性能结果
       - name: Handle Lighthouse Check results
         uses: foo-software/lighthouse-check-status-action@master
         with:
@@ -66,12 +83,14 @@ jobs:
           minPerformanceScore: "30"
           minProgressiveWebAppScore: "30"
           minSeoScore: "30"
+
       # 构建
       - name: Build
         run: |
           npm run build
         env:
           CI: true
+
       # 生成压缩包
       - run: tar -zcvf release.tgz .nuxt  nuxt.config.ts package.json  pm2.config.json postbuild.ts config tsconfig.json yarn.lock
 
@@ -106,24 +125,27 @@ jobs:
           script: |
             cd /www/wwwroot/web.90c.vip
             tar zxvf release.tgz
-            npm install --production
+            yarn install --production
             pm2 reload pm2.config.json
+
       # 微信通知
       - name: Wechat Notification
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: chf007/action-wechat-work@master
         env:
-          WECHAT_WORK_BOT_WEBHOOK: ${{ secrets.WECHAT_WEBHOOK }}
+          WECHAT_WORK_BOT_WEBHOOK: ${{ secrets.DEV_WECHAT_WEBHOOK }}
         with:
           msgtype: markdown
           content: "来画平台<font color=\"warning\">v5.2.3</font>更新了，快来试试看吧～。\n
           > \n
           ##### 修改内容：\n
-          > ${{ github.event.head_commit.message }} \n
+          > <font color=\"info\">${{ github.event.head_commit.message }}</font> \n
           ##### 修改分支:\n
-          > ${{ github.event.ref }} \n
+          > <font color=\"info\">${{ github.event.ref }}</font> \n
           ##### 修改时间:\n
-          > ${{ github.event.head_commit.timestamp }} \n
+          > <font color=\"info\">${{ github.event.head_commit.timestamp }}</font> \n
           ##### 修改人:\n
-          > ${{ github.event.head_commit.committer.name }}\n"
+          > <font color=\"info\">${{ github.event.head_commit.committer.name }}</font> \n
+
+          <font color=\"warning\">查看详情</font>\n"
           mentioned_list: "['@all']"
