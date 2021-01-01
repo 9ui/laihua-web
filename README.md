@@ -1,5 +1,7 @@
 # laihua-web7.0
 
+![Publish And Test](https://github.com/9ui/laihua-web/workflows/Publish%20And%20Test/badge.svg?branch=develop)
+
 ## 新建项目
 
 ```js
