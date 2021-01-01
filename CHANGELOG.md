@@ -1,126 +1,47 @@
-# [1.1.0](https://github.com/9ui/laihua-web7.0/compare/v0.0.3...v1.1.0) (2020-12-28)
+## 1.1.1 (2021-01-01)
 
 ### ⏪ Reverts
 
-- 测试打包 ([d0987a8](https://github.com/9ui/laihua-web7.0/commit/d0987a8))
-- 删除无用代码 ([656f650](https://github.com/9ui/laihua-web7.0/commit/656f650))
+- 修改规范错误 ([5886806](https://github.com/9ui/laihua-web/commit/5886806))
 
 ### ⚡ Performance Improvements
 
-- 修复之前提交错误 ([49a5c07](https://github.com/9ui/laihua-web7.0/commit/49a5c07))
+- 优化打包速度 ([a989e0a](https://github.com/9ui/laihua-web/commit/a989e0a))
+- 优化项目打包 ([27fe27d](https://github.com/9ui/laihua-web/commit/27fe27d))
+- 优化项目构建 ([f94c4dc](https://github.com/9ui/laihua-web/commit/f94c4dc))
+- 修改性能测试分值 ([186a54f](https://github.com/9ui/laihua-web/commit/186a54f))
+- 修改机器人提示内容 ([76f764f](https://github.com/9ui/laihua-web/commit/76f764f))
+- 测试机器人发消息 ([f41275f](https://github.com/9ui/laihua-web/commit/f41275f))
 
 ### ✅ Tests
 
-- 测试路由 ([7a032c0](https://github.com/9ui/laihua-web7.0/commit/7a032c0))
+- 性能测试 ([0cf9fae](https://github.com/9ui/laihua-web/commit/0cf9fae))
+- 性能测试 ([ee4c7e9](https://github.com/9ui/laihua-web/commit/ee4c7e9))
+- 测试性能 002 ([2f8cb24](https://github.com/9ui/laihua-web/commit/2f8cb24))
 
 ### ✨ Features
 
-- 新增模板广场 ([d6e98c5](https://github.com/9ui/laihua-web7.0/commit/d6e98c5))
+- 优化打包速度 ([cf04f3b](https://github.com/9ui/laihua-web/commit/cf04f3b))
+- 优化结构 ([987a6a9](https://github.com/9ui/laihua-web/commit/987a6a9))
+- 完善首页页面 ([49a1516](https://github.com/9ui/laihua-web/commit/49a1516))
+- 引入请求 axios ([d11083f](https://github.com/9ui/laihua-web/commit/d11083f))
+- 新增依赖缓存 ([71cacf5](https://github.com/9ui/laihua-web/commit/71cacf5))
+- 测试线新增机器人 ([944b4b9](https://github.com/9ui/laihua-web/commit/944b4b9))
+- 调整模拟数据存放的位置 ([222aace](https://github.com/9ui/laihua-web/commit/222aace))
+- 集成 coverage report 测试 ([cc58421](https://github.com/9ui/laihua-web/commit/cc58421))
+- 集成 coverage report 测试 ([9e06d4c](https://github.com/9ui/laihua-web/commit/9e06d4c))
+- 集成 Lighthouse ([8b3a83b](https://github.com/9ui/laihua-web/commit/8b3a83b))
+- 集成图片处理 ([8f17f0a](https://github.com/9ui/laihua-web/commit/8f17f0a))
+- 集成第三方链接检测功能 ([2ba8213](https://github.com/9ui/laihua-web/commit/2ba8213))
+- 项目集成 codecov 测试 ([7efef07](https://github.com/9ui/laihua-web/commit/7efef07))
+- 项目集成 codecov 测试 ([ef410c8](https://github.com/9ui/laihua-web/commit/ef410c8))
+- 首页增加懒加载处理 ([8f9b4cb](https://github.com/9ui/laihua-web/commit/8f9b4cb))
 
-### 🎫 Chores
+### 🐛 Bug Fixes
 
-- 修改配置文件 ([0d91c15](https://github.com/9ui/laihua-web7.0/commit/0d91c15))
-
-## [0.0.3](https://github.com/9ui/laihua-web7.0/compare/v0.0.2...v0.0.3) (2020-12-27)
-
-### 🔧 Continuous Integration
-
-- 测试打包 ([5ff6ab7](https://github.com/9ui/laihua-web7.0/commit/5ff6ab7))
-
-## [0.0.2](https://github.com/9ui/laihua-web7.0/compare/v0.0.1...v0.0.2) (2020-12-27)
-
-### ⏪ Reverts
-
-- 删除冗余代码 ([84201d8](https://github.com/9ui/laihua-web7.0/commit/84201d8))
-
-## [0.0.1](https://github.com/9ui/laihua-web7.0/compare/v1.0.9...v0.0.1) (2020-12-27)
-
-### 🎫 Chores
-
-- **release:** 1.0.11 ([9ed629a](https://github.com/9ui/laihua-web7.0/commit/9ed629a))
-- **release:** 1.0.12 ([c190fee](https://github.com/9ui/laihua-web7.0/commit/c190fee))
-- 测试提交 ([55f7d96](https://github.com/9ui/laihua-web7.0/commit/55f7d96))
-
-### 💄 Styles
-
-- 添加样式文件 ([c084b41](https://github.com/9ui/laihua-web7.0/commit/c084b41))
-
-### 🔧 Continuous Integration
-
-- 测试发布 ([20ad755](https://github.com/9ui/laihua-web7.0/commit/20ad755))
-- 测试 ci ([e122f2d](https://github.com/9ui/laihua-web7.0/commit/e122f2d))
-- 完善 ci 自动发布脚本命令 ([b80ed8d](https://github.com/9ui/laihua-web7.0/commit/b80ed8d))
-- 修改打包脚本 ([fbce6db](https://github.com/9ui/laihua-web7.0/commit/fbce6db))
-- 优化打包脚本 ([5ce72b2](https://github.com/9ui/laihua-web7.0/commit/5ce72b2))
-
-## [1.0.9](https://github.com/9ui/laihua-web7.0/compare/v1.0.8...v1.0.9) (2020-12-17)
-
-### 🎫 Chores
-
-- **release:** 1.0.9 ([1694158](https://github.com/9ui/laihua-web7.0/commit/1694158))
-
-## [1.0.8](https://github.com/9ui/laihua-web7.0/compare/v1.0.7...v1.0.8) (2020-12-17)
-
-### 🎫 Chores
-
-- **release:** 1.0.8 ([693b525](https://github.com/9ui/laihua-web7.0/commit/693b525))
-
-## [1.0.7](https://github.com/9ui/laihua-web7.0/compare/v1.0.6...v1.0.7) (2020-12-17)
-
-### 🎫 Chores
-
-- **release:** 1.0.7 ([fcf9a96](https://github.com/9ui/laihua-web7.0/commit/fcf9a96))
-
-## [1.0.6](https://github.com/9ui/laihua-web7.0/compare/v1.0.5...v1.0.6) (2020-12-17)
-
-### ✅ Tests
-
-- 测试提交 1 ([fdb08bd](https://github.com/9ui/laihua-web7.0/commit/fdb08bd))
-
-### 🎫 Chores
-
-- 测试提交 2 ([bf9251c](https://github.com/9ui/laihua-web7.0/commit/bf9251c))
-
-## [1.0.5](https://github.com/9ui/laihua-web7.0/compare/v1.0.4...v1.0.5) (2020-12-17)
-
-### 🎫 Chores
-
-- **release:** 1.0.5 ([cda798c](https://github.com/9ui/laihua-web7.0/commit/cda798c))
-- 测试提交 ([2176e7f](https://github.com/9ui/laihua-web7.0/commit/2176e7f))
-
-## [1.0.4](https://github.com/9ui/laihua-web7.0/compare/v1.0.3...v1.0.4) (2020-12-17)
-
-### 🎫 Chores
-
-- **release:** 1.0.4 ([61e2dfd](https://github.com/9ui/laihua-web7.0/commit/61e2dfd))
-
-## [1.0.3](https://github.com/9ui/laihua-web7.0/compare/v1.0.2...v1.0.3) (2020-12-17)
-
-### 🎫 Chores
-
-- **release:** 1.0.3 ([c84fd5c](https://github.com/9ui/laihua-web7.0/commit/c84fd5c))
-- 测试提交 ([73b095a](https://github.com/9ui/laihua-web7.0/commit/73b095a))
-
-## [1.0.2](https://github.com/9ui/laihua-web7.0/compare/v1.0.1...v1.0.2) (2020-12-17)
-
-### 🎫 Chores
-
-- **release:** 1.0.2 ([9b7ea65](https://github.com/9ui/laihua-web7.0/commit/9b7ea65))
-- 测试提交 ([7ab04c1](https://github.com/9ui/laihua-web7.0/commit/7ab04c1))
-
-## [1.0.1](https://github.com/9ui/laihua-web7.0/compare/v1.0.0...v1.0.1) (2020-12-17)
-
-### 🎫 Chores
-
-- **release:** 1.0.1 ([3962f98](https://github.com/9ui/laihua-web7.0/commit/3962f98))
-
-# [1.0.0](https://github.com/9ui/laihua-web7.0/compare/874cafb...v1.0.0) (2020-12-17)
-
-### ✨ Features
-
-- 修改配置文件 ([cf37d08](https://github.com/9ui/laihua-web7.0/commit/cf37d08))
-- 修改配置文件 ([874cafb](https://github.com/9ui/laihua-web7.0/commit/874cafb))
-
-### 🎫 Chores
-
-- **release:** 1.0.0 ([0e234b2](https://github.com/9ui/laihua-web7.0/commit/0e234b2))
+- 修复图片不显示问题 ([0cc796b](https://github.com/9ui/laihua-web/commit/0cc796b))
+- 修复机器人无法发送消息 ([babf36a](https://github.com/9ui/laihua-web/commit/babf36a))
+- 修复机器人无法发送消息问题 ([0348409](https://github.com/9ui/laihua-web/commit/0348409))
+- 修改 icon ([ab09039](https://github.com/9ui/laihua-web/commit/ab09039))
+- 修改工作流名称 ([25594dd](https://github.com/9ui/laihua-web/commit/25594dd))
+- 解决数据请求问题 ([3fd3b7c](https://github.com/9ui/laihua-web/commit/3fd3b7c))

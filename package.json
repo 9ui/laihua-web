@@ -1,6 +1,6 @@
 {
   "name": "laihua-web7.0",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "scripts": {
     "dev": "esno ./build/script/preserve.ts && nuxt-ts",
     "build": "nuxt-ts build",
