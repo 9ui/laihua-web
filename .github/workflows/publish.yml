@@ -30,31 +30,35 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14
-      # 依赖缓存
-      - name: Cache node modules
+      # yarn缓存
+      - name: Cache yarn cache
         uses: actions/cache@v2
-        env:
-          cache-name: cache-node-modules
+        id: cache-yarn-cache
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
-      # 下载依赖
-      - name: install
-        run: |
-          npm install
-        env:
-          CI: true
-      # Run Lighthouse
+            ${{ runner.os }}-yarn-
+      # 缓存依赖文件
+      - name: Cache node_modules
+        id: cache-node-modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-${{ matrix.node-version }}-nodemodules-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ matrix.node-version }}-nodemodules-
+       # 下载依赖
+      - run: yarn
+        if: |
+          steps.cache-yarn-cache.outputs.cache-hit != 'true' ||
+          steps.cache-node-modules.outputs.cache-hit != 'true'
+      # 网站性能监控
       - name: Run Lighthouse
         uses: foo-software/lighthouse-check-action@master
         id: lighthouseCheck
         with:
           urls: 'https://web.90c.vip'
-          # ... all your other inputs
       - name: Handle Lighthouse Check results
         uses: foo-software/lighthouse-check-status-action@master
         with:
@@ -74,7 +78,6 @@ jobs:
           CI: true
       # 生成压缩包
       - run: tar -zcvf release.tgz .nuxt  nuxt.config.ts package.json  pm2.config.json postbuild.ts config tsconfig.json yarn.lock
-
       # 上传文件
       - name: Upload
         uses: easingthemes/ssh-deploy@v2.0.7
@@ -106,8 +109,9 @@ jobs:
           script: |
             cd /www/wwwroot/web.90c.vip
             tar zxvf release.tgz
-            npm install --production
+            yarn install --production
             pm2 reload pm2.config.json
+
       # 微信通知
       - name: Wechat Notification
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
