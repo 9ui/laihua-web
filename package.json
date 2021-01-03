@@ -1,5 +1,5 @@
 {
-  "name": "laihua-web7.0",
+  "name": "laihua-web",
   "version": "1.1.1",
   "scripts": {
     "dev": "esno ./build/script/preserve.ts && nuxt-ts",

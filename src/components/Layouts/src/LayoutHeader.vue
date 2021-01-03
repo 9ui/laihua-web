@@ -16,8 +16,10 @@
   import * as Core from '@/core';
   import { BasicMenu } from '@/components/Menu';
   import logo from '@/assets/images/logo.png';
+  import { basicProps } from './props';
   const { VueAPI } = Core;
   export default VueAPI.defineComponent({
+    props: basicProps,
     components: {
       BasicMenu,
     },

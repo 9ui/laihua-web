@@ -1,5 +1,5 @@
 <template>
-  <div class="home-banner"> Banner </div>
+  <div class="vip-banner"> Banner </div>
 </template>
 
 <script>
@@ -7,10 +7,10 @@
 </script>
 
 <style lang="less">
-  .home-banner {
+  .vip-banner {
     width: 100%;
     height: 972px;
-    background-color: black;
+    background-color: #153ce5;
     opacity: 0.6;
   }
 </style>

@@ -121,5 +121,5 @@ jobs:
           ##### 修改人:\n
           > <font color=\"info\">${{ github.event.head_commit.committer.name }}</font> \n
 
-          <font color=\"warning\">查看详情</font>\n"
+          <font color=\"warning\">[查看详情](https://web.90c.vip)</font>\n"
           mentioned_list: "['@all']"

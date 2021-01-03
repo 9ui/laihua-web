@@ -1,6 +1,6 @@
 <template>
-  <div class="index-pages">
-    <div class="index-pages-container">
+  <div class="vip">
+    <div class="vip-container">
       <Banner></Banner>
       <LazyContainer> </LazyContainer>
     </div>
@@ -15,14 +15,14 @@
 
   export default VueAPI.defineComponent({
     components: {
-      Banner: () => import('./home/Banner.vue'),
+      Banner: () => import('./Banner.vue'),
       LazyContainer,
     },
     setup() {},
   });
 </script>
 <style lang="less">
-  .index-pages {
+  .vip {
     background-color: #fff;
 
     &-container {
@@ -30,13 +30,5 @@
       min-width: 1200px;
       margin: 0 auto;
     }
-  }
-  // 作品案例
-  .index-container {
-    position: relative;
-    display: flex;
-    width: 1200px;
-    margin: 0 auto;
-    flex-direction: column;
   }
 </style>

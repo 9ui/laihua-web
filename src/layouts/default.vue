@@ -4,6 +4,7 @@
     <content class="layout-content">
       <Nuxt />
     </content>
+    <div id="subapp"></div>
     <footer class="layout-footer">Footer</footer>
   </div>
 </template>
@@ -11,9 +12,10 @@
   import * as Core from '@/core';
   import { LayoutHeader } from '@/components/Layouts';
   const { VueAPI } = Core;
+
   export default VueAPI.defineComponent({
     components: { LayoutHeader },
-    setup() {},
+    methods: {},
   });
 </script>
 <style lang="less" scoped>

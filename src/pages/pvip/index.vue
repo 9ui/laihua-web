@@ -1,5 +1,5 @@
 <template>
-  <div class="pvip"></div>
+  <div class="pvip">个人Vip</div>
 </template>
 
 <script>

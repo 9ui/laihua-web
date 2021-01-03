@@ -23,7 +23,7 @@
 
     .sub-menu {
       padding: 0 17px;
-      color: #666;
+      color: #fff;
       cursor: pointer;
 
       &:hover {

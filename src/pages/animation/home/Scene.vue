@@ -5,7 +5,7 @@
         <section class="title">
           <h2>丰富的模板场景</h2>
           <p>上万+个精选模板 涵盖多种内容场景</p>
-          <div class="btn" @click="navTo">查看更多</div>
+          <div class="btn">查看更多</div>
         </section>
       </div>
       <section data-v-75667c7f="" class="content"

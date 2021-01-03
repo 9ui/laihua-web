@@ -2,7 +2,11 @@
   <div class="index-pages">
     <div class="index-pages-container">
       <Banner></Banner>
-      <LazyContainer> </LazyContainer>
+      <Scene></Scene>
+      <LazyContainer>
+        <Scenarios></Scenarios>
+        <Introduction></Introduction>
+      </LazyContainer>
     </div>
   </div>
 </template>
@@ -16,7 +20,22 @@
   export default VueAPI.defineComponent({
     components: {
       Banner: () => import('./home/Banner.vue'),
+      Scenarios: () => import('./home/Scenarios.vue'),
+      Introduction: () => import('./home/Introduction.vue'),
+      Scene: () => import('./home/Scene.vue'),
       LazyContainer,
+    },
+    fetch({ store }) {
+      store.dispatch('solution/fetchCategory');
+    },
+    computed: {
+      ...mapState('solution', ['categorys']),
+    },
+    mounted() {
+      this.fetchCategory();
+    },
+    methods: {
+      ...mapActions('solution', ['fetchCategory']),
     },
     setup() {},
   });

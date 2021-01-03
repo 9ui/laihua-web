@@ -20,17 +20,12 @@ export const menus: MenuType[] = [
     name: '解决方案',
   },
   {
-    key: '/worksquare',
-    name: '作品案例',
+    key: '/vip',
+    name: '会员定价',
   },
   {
-    key: '4',
-    link: 'https://www.laihuastory.com/',
-    name: '视频定制',
-  },
-  {
-    key: '5',
-    name: '亮点服务',
+    key: '/vipservice',
+    name: '企业服务',
   },
   {
     key: '6',
@@ -59,17 +54,5 @@ export const menus: MenuType[] = [
         name: '创作者招募',
       },
     ],
-  },
-  {
-    key: '/pvip',
-    name: '个人VIP',
-  },
-  {
-    key: '/vip',
-    name: '企业VIP',
-  },
-  {
-    key: '/vipservice',
-    name: '企业服务',
   },
 ];
