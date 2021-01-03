@@ -8,7 +8,6 @@
 </template>
 
 <script lang="ts">
-  import { mapActions, mapState } from 'vuex';
   import { LazyContainer } from '@/components/Container/index';
   import * as Core from '@/core';
   const { VueAPI } = Core;
