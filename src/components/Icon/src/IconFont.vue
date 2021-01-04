@@ -6,7 +6,7 @@
 
 <script>
   import { defineComponent } from '@vue/composition-api';
-  import { iconProps } from './props';
+  import { iconProps } from './iconProps';
   export default defineComponent({
     props: iconProps,
   });

@@ -2,7 +2,7 @@
   <div>
     <header class="layout-header">
       <div class="layout-header__content">
-        <nuxt-link to="/"> <img class="layout-header__logo" :src="logo" /></nuxt-link>
+        <nuxt-link to="/"> <img class="layout-header__logo" src="/logo.png" /></nuxt-link>
         <BasicMenu></BasicMenu>
       </div>
       <div class="layout-header__action">
@@ -15,7 +15,6 @@
 <script lang="ts">
   import * as Core from '@/core';
   import { BasicMenu } from '@/components/Menu';
-  import logo from '@/assets/images/logo.png';
   import { basicProps } from './props';
   const { VueAPI } = Core;
   export default VueAPI.defineComponent({
@@ -28,10 +27,6 @@
         this.$router.push(path);
       },
     },
-    setup() {
-      return {
-        logo,
-      };
-    },
+    setup() {},
   });
 </script>
