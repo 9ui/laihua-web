@@ -45,7 +45,8 @@
     background-color: #fff;
 
     &-container {
-      max-width: 1920px;
+      //   max-width: 1920px;
+      width: 100%;
       min-width: 1200px;
       margin: 0 auto;
     }
