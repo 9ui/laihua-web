@@ -1,6 +1,6 @@
 import { defineComponent, computed, unref } from '@vue/composition-api';
 import { isString } from '@/utils/is';
-import './index.less';
+import './src/index.less';
 
 export default defineComponent({
   name: 'Icon',

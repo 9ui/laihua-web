@@ -52,28 +52,6 @@
         return param;
       },
     },
-    watch: {
-      offsetTop() {
-        this.refresh();
-      },
-      offsetBottom() {
-        this.refresh();
-      },
-      fixedOffsetTop() {
-        this.refresh();
-      },
-      fixedOffsetBottom() {
-        this.refresh();
-      },
-      disabled() {
-        if (!this.disabled) {
-          this.refresh();
-          return;
-        }
-        this.isFixed = false;
-        this.isAbsolute = false;
-      },
-    },
 
     mounted() {
       this.$nextTick(() => {

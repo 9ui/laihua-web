@@ -106,7 +106,6 @@
       function initIntersectionObserver() {
         const { timeout, direction, threshold } = props;
         if (timeout) return;
-        // According to the scrolling direction to construct the viewport margin, used to load in advance
         let rootMargin: string = '0px';
         switch (direction) {
           case 'vertical':

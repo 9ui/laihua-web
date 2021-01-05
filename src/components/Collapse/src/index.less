@@ -1,0 +1,49 @@
+.lh-collapse-item {
+  display: block;
+
+  &:last-of-type {
+    border-bottom: 1px solid #333;
+  }
+
+  &-header {
+    height: 40px;
+    padding: 0 10px;
+    font-size: 13px;
+    line-height: 40px;
+    border-top: 1px solid #333;
+    transition: all 0.2s;
+
+    &:hover {
+      color: #333;
+      cursor: pointer;
+    }
+  }
+
+  &-expand {
+    margin-top: 13px;
+    margin-right: 5px;
+    font-size: 12px;
+    transform: rotateZ(0deg);
+    transition: all 0.2s;
+  }
+
+  &-content {
+    word-break: break-all;
+
+    &-box {
+      padding: 10px 20px;
+    }
+  }
+
+  &.lh-collapse-item-active {
+    .lh-collapse-item-header {
+      .lh-collapse-item-expand {
+        transform: rotateZ(90deg);
+      }
+    }
+  }
+}
+
+.lh-collapse-transition {
+  transition: 0.3s height ease-in-out, 0.3s padding-top ease-in-out, 0.3s padding-bottom ease-in-out;
+}
