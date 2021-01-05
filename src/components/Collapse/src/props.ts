@@ -1,7 +1,7 @@
 export const CollapseProps = {
   value: {
-    type: [Array, String],
-    default: () => [],
+    type: [Array, String, Number],
+    default: () => ['1'],
   }, // 当前激活的面板的 name，可以使用 v-model 双向绑定
   accordion: {
     type: Boolean,
@@ -18,4 +18,8 @@ export const CollapseItemProps = {
     type: String,
     default: '',
   }, // 面板标题
+  disabled: {
+    type: Boolean,
+    default: false,
+  }, // 是否禁用
 };

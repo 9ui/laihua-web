@@ -1,80 +1,58 @@
-const rclass = /[\t\r\n\f]/g;
-const rnotwhite = /\S+/g;
-
-function getClass(elem: any) {
-  return (elem.getAttribute && elem.getAttribute('class')) || '';
-}
-
-const utils = {
-  /**
-   * @description: 添加样式
-   * @param elem 元素
-   * @param value
-   */
-  addClass(elem: any, value: any) {
-    let classes;
-    let cur;
-    let curValue;
-    let clazz;
-    let j;
-    let finalValue;
-    if (typeof value === 'string' && value) {
-      classes = value.match(rnotwhite) || [];
-
-      curValue = getClass(elem);
-      cur = elem.nodeType === 1 && ` ${curValue} `.replace(rclass, ' ');
-
-      if (cur) {
-        j = 0;
-        while ((clazz = classes[j++])) {
-          if (cur.includes(` ${clazz} `)) {
-            cur += `${clazz} `;
-          }
-        }
-        finalValue = cur.trim();
-        if (curValue !== finalValue) {
-          elem.setAttribute('class', finalValue);
-        }
-      }
-    }
-  },
-  /**
-   * 删除样式
-   * @param elem 元素
-   * @param value
-   */
-  removeClass(elem: any, value: any) {
-    let classes;
-    let cur;
-    let curValue;
-    let clazz;
-    let j;
-    let finalValue;
-
-    if (typeof value === 'string' && value) {
-      classes = value.match(rnotwhite) || [];
-
-      curValue = getClass(elem);
-
-      cur = elem.nodeType === 1 && ` ${curValue} `.replace(rclass, ' ');
-
-      if (cur) {
-        j = 0;
-        while ((clazz = classes[j++])) {
-          while (cur.includes(` ${clazz} `)) {
-            cur = cur.replace(` ${clazz} `, ' ');
-          }
-        }
-
-        finalValue = cur.trim();
-        if (curValue !== finalValue) {
-          elem.setAttribute('class', finalValue);
-        }
-      }
-    }
-
-    return this;
-  },
+/* istanbul ignore next */
+const trim = function (s: string) {
+  return (s || '').replace(/^[\s\uFEFF]+|[\s\uFEFF]+$/g, '');
 };
 
-export default utils;
+export function hasClass(el: HTMLElement, cls: string): boolean {
+  if (!el || !cls) return false;
+  if (cls.includes(' ')) throw new Error('className should not contain space.');
+  if (el.classList) {
+    return el.classList.contains(cls);
+  } else {
+    return (' ' + el.className + ' ').includes(' ' + cls + ' ');
+  }
+}
+
+/* istanbul ignore next */
+export function addClass(el: HTMLElement, cls: string): void {
+  if (!el) return;
+  let curClass = el.className;
+  const classes = (cls || '').split(' ');
+
+  for (let i = 0, j = classes.length; i < j; i++) {
+    const clsName = classes[i];
+    if (!clsName) continue;
+
+    if (el.classList) {
+      el.classList.add(clsName);
+    } else if (!hasClass(el, clsName)) {
+      curClass += ' ' + clsName;
+    }
+  }
+  if (!el.classList) {
+    el.className = curClass;
+  }
+}
+
+/* istanbul ignore next */
+export function removeClass(el: HTMLElement, cls: string): void {
+  if (!el || !cls) return;
+  const classes = cls.split(' ');
+  let curClass = ' ' + el.className + ' ';
+
+  for (let i = 0, j = classes.length; i < j; i++) {
+    const clsName = classes[i];
+    if (!clsName) continue;
+
+    if (el.classList) {
+      el.classList.remove(clsName);
+    } else if (hasClass(el, clsName)) {
+      curClass = curClass.replace(' ' + clsName + ' ', ' ');
+    }
+  }
+  if (!el.classList) {
+    el.className = trim(curClass);
+  }
+}
+
+export const generateId = (): number => Math.floor(Math.random() * 10000);
