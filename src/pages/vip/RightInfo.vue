@@ -1,6 +1,12 @@
 <template>
   <div class="right-info">
-    <div class="affix-demo-3-vue bg-gray2-color relative text-right">
+    <!-- <Affix :offset-top="100" @change="onchange"
+      ><button class="h-btn">固定在距离底部偏移量10px的位置</button></Affix
+    > -->
+    <!-- <Affix :offset-bottom="10" @change="onchange1"
+      ><button class="h-btn">固定在距离底部偏移量10px的位置</button></Affix
+    > -->
+    <div class="affix-demo-3-vue bg-gray2-color relative">
       <Affix
         :fixed-offset-top="0"
         :offset-top="0"
@@ -9,7 +15,7 @@
         :container="getContainer"
         @change="onchange"
       >
-        <button class="h-btn h-btn-blue">固定容器内</button>
+        <div class="h-cell h-cell-blue">固定容器内</div>
       </Affix>
     </div>
   </div>
@@ -25,15 +31,15 @@
     },
     data() {
       return {
-        fixed: false,
+        fixed: true,
       };
     },
     methods: {
-      onchange(fixed: any) {
-        this.fixed = fixed;
-      },
       getContainer() {
         return this.$el;
+      },
+      onchange(fixed: any) {
+        console.log('fixed', fixed);
       },
     },
   });
@@ -43,59 +49,44 @@
   .right-info {
     position: relative;
     z-index: 1;
+    display: flex;
     width: 828px;
+    height: 1500px;
     border-bottom: 2px dashed #eee;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  /* .rect {
-    width: 1200px;
-    height: 80px;
-    background-color: darkgoldenrod;
-  } */
   .bg-gray2-color {
     background-color: #eee;
   }
 
-  .text-right {
-    text-align: right !important;
+  .lh-affix {
+    width: 828px;
+  }
+
+  .lh-affix-absolute {
+    width: 828px;
+  }
+
+  .affix-demo-3-vue {
+    width: 828px;
+    height: 1000px;
+    overflow: hidden;
   }
 
   .relative {
     position: relative;
   }
 
-  .affix-demo-3-vue {
-    height: 1000px;
-    overflow: hidden;
-  }
-
   .affix-demo-3 {
-    float: right;
-    width: 100px;
-    background-color: aqua;
+    width: 100%;
+    height: 80px;
   }
 
-  .h-btn {
-    display: inline-block;
-    height: 300px;
-    padding: 8px 15px;
-    font-family: inherit;
-    font-size: 13px;
-    line-height: 1;
-    color: inherit;
-    cursor: pointer;
-    background-color: transparent;
-    background-color: #fff;
-    border: none;
-    border: 1px solid #d3d3d3;
-    border-radius: 4px;
-    outline: none;
-    box-shadow: 0 1px 1px 0 #eee;
-    box-sizing: border-box;
-    transition: all 0.2s;
-  }
-
-  .h-btn.h-btn-blue {
+  .h-cell.h-cell-blue {
+    width: 100%;
+    height: 80px;
     color: #fff;
     background-color: #39afd1;
     border-color: #31accf;

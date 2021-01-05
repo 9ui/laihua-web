@@ -25,15 +25,19 @@
 </script>
 <style lang="less">
   .vip {
+    display: flex;
+    justify-content: center;
     padding-top: 48px;
     background-color: #fff;
 
     &-container {
-      //   max-width: 1920px;
+      display: flex;
+      flex-direction: column;
       width: 100%;
-      height: 2000px;
+      height: 4000px;
       min-width: 1200px;
       margin: 0 auto;
+      align-items: center;
     }
   }
 </style>
