@@ -61,7 +61,7 @@
     "esno": "^0.3.0",
     "fs-extra": "^9.0.1",
     "hard-source-webpack-plugin": "^0.13.1",
-    "husky": "^4.3.0",
+    "husky": "^4.3.7",
     "koa": "^2.13.0",
     "koa-static": "^5.0.0",
     "less": "^3.12.2",
