@@ -20,7 +20,7 @@ export const menus: MenuType[] = [
     name: '解决方案',
   },
   {
-    key: '/vip',
+    key: '/pricing',
     name: '会员定价',
   },
   {
