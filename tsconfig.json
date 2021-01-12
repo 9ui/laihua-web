@@ -9,14 +9,13 @@
             "dom"
         ],
         "esModuleInterop": true,
-        "allowJs": true,
-        "sourceMap": true,
-        "strict": true,
-        "noEmit": true,
         "experimentalDecorators": true,
-        "resolveJsonModule": true,
+        "sourceMap": true,
         "allowSyntheticDefaultImports": true,
+        "noEmit": true,
         "baseUrl": ".",
+        "resolveJsonModule": true,
+        "importsNotUsedAsValues": "preserve",
         "paths": {
             "~/*": [
                 "./src/*"
