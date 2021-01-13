@@ -18,7 +18,7 @@
         <div class="h-cell h-cell-blue">固定容器内</div>
       </Affix>
     </div>
-    <Collapse v-model="activeName">
+    <CollapseWrapper v-model="activeName">
       <CollapseItem title="迈尔斯·莫拉莱斯" name="1">
         终极宇宙里的蜘蛛侠，被一只放射性蜘蛛咬伤，并因此获得了超能力。偶然和其他宇宙的蜘蛛侠相遇，将和他们共同对抗最强反派。
       </CollapseItem>
@@ -28,19 +28,19 @@
       <CollapseItem title="格温·史黛西" name="3">
         我是她是一个非常聪明、反应极快的女孩儿，能够以宛如舞者般优雅的身姿穿梭往来，是她所属那个世界的蜘蛛侠。
       </CollapseItem>
-    </Collapse>
+    </CollapseWrapper>
   </div>
 </template>
 
 <script lang="ts">
   import * as Core from '@/core';
   import { Affix } from '@/components/Affix/index';
-  import { Collapse, CollapseItem } from '@/components/Collapse/index';
+  import { CollapseWrapper, CollapseItem } from '@/components/Collapse/index';
   const { VueAPI } = Core;
   export default VueAPI.defineComponent({
     components: {
       Affix,
-      Collapse,
+      CollapseWrapper,
       CollapseItem,
     },
     data() {
