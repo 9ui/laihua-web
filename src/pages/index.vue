@@ -579,7 +579,6 @@
           title="map"
           scrolling="no"
           src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%C4%B0zmir+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
-          style="filter: grayscale(1) contrast(1.2) opacity(0.4);"
         ></iframe>
       </div>
       <div class="container px-5 py-24 mx-auto flex">
