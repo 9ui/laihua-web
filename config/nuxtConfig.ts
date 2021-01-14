@@ -30,6 +30,7 @@ export const NuxtConfig = {
     '@nuxtjs/pwa',
     // 优化antd默认引入moment全量加载问题
     '@nuxtjs/moment',
+    '@nuxtjs/tailwindcss',
     // 引入composition-api
     // '@nuxtjs/composition-api',
   ],
