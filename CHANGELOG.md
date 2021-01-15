@@ -1,4 +1,51 @@
-## 1.1.1 (2021-01-01)
+## [1.1.2](https://github.com/9ui/laihua-web/compare/1.1.1...v1.1.2) (2021-01-15)
+
+### ⏪ Reverts
+
+- 修改提醒微信 ([6bfcaf6](https://github.com/9ui/laihua-web/commit/6bfcaf6))
+- 修改页面宽度 ([a4bb229](https://github.com/9ui/laihua-web/commit/a4bb229))
+- 删除冗余代码 ([33f00fe](https://github.com/9ui/laihua-web/commit/33f00fe))
+
+### ⚡ Performance Improvements
+
+- 删除图片 ([35a8b49](https://github.com/9ui/laihua-web/commit/35a8b49))
+- 删除第三方地图 ([8e251bb](https://github.com/9ui/laihua-web/commit/8e251bb))
+
+### ✅ Tests
+
+- 测试图钉组件 ([8fb7506](https://github.com/9ui/laihua-web/commit/8fb7506))
+
+### ✨ Features
+
+- 优化工作流 ([517f68d](https://github.com/9ui/laihua-web/commit/517f68d))
+- 完善代码结构 ([185ce49](https://github.com/9ui/laihua-web/commit/185ce49))
+- 完善头部布局 ([b08c6d3](https://github.com/9ui/laihua-web/commit/b08c6d3))
+- 完善首页 ([6ec27ef](https://github.com/9ui/laihua-web/commit/6ec27ef))
+- 完善首页页面 ([d591bb4](https://github.com/9ui/laihua-web/commit/d591bb4))
+- 新增会员定价路由 ([c18e657](https://github.com/9ui/laihua-web/commit/c18e657))
+- 新增折叠面板 ([6ac2959](https://github.com/9ui/laihua-web/commit/6ac2959))
+- 添加测试状态 ([75e6e29](https://github.com/9ui/laihua-web/commit/75e6e29))
+- 项目继承版本信息 ([11cc9ef](https://github.com/9ui/laihua-web/commit/11cc9ef))
+- 首页布局演示 ([dd78364](https://github.com/9ui/laihua-web/commit/dd78364))
+
+### 🐛 Bug Fixes
+
+- 修复图钉组件无法固定在底部问题 ([6f7dadc](https://github.com/9ui/laihua-web/commit/6f7dadc))
+- 修复折叠面板组件不能展开问题 ([466ca68](https://github.com/9ui/laihua-web/commit/466ca68))
+- 设置缓存路径 ([77b373b](https://github.com/9ui/laihua-web/commit/77b373b))
+
+### 💄 Styles
+
+- 修改顶部导航样式 ([ab5ca98](https://github.com/9ui/laihua-web/commit/ab5ca98))
+- 样式错误调整 ([fa33da2](https://github.com/9ui/laihua-web/commit/fa33da2))
+
+## [1.1.1](https://github.com/9ui/laihua-web/compare/v1.1.1...1.1.1) (2021-01-01)
+
+### 📝 Documentation
+
+- 更新文档 ([c8286ab](https://github.com/9ui/laihua-web/commit/c8286ab))
+
+## [1.1.1](https://github.com/9ui/laihua-web/compare/ee4c7e9...v1.1.1) (2020-12-31)
 
 ### ⏪ Reverts
 
