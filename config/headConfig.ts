@@ -10,10 +10,8 @@ export const HeadConfig = {
   link: [
     { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     { rel: 'dns-prefetch', href: '//at.alicdn.com' },
+    { rel: 'dns-prefetch', href: '//web.90c.vip' },
   ],
   // 全局引入外部或本地static目录下的资源,路径不用加static
-  script: [
-    { src: '//at.alicdn.com/t/font_1909239_8a9yim4bw3q.js', async: true, rel: 'preload' }, // 平台 icon
-    { src: '//at.alicdn.com/t/font_2037105_xc5mzbqnc3.js', async: true, rel: 'preload' }, // 视频办公宝 icon
-  ],
+  script: [],
 } as Config.Interface.IConfig;
