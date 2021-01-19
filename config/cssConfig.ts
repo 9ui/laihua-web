@@ -21,4 +21,10 @@ export const CssConfig = {
   styleResources: {
     less: ['@/design/index.less'],
   },
+  tailwindcss: {
+    cssPath: '@/design/tailwind.less',
+    configPath: './tailwind.config.js',
+    exposeConfig: false,
+    config: {},
+  },
 } as Config.Interface.IConfig;

@@ -1,5 +1,5 @@
 <template>
-  <div>基础</div>
+  <div>基础 </div>
 </template>
 
 <script>
