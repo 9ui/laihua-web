@@ -31,6 +31,7 @@ export const NuxtConfig = {
     // 优化antd默认引入moment全量加载问题
     '@nuxtjs/moment',
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode',
     // 引入composition-api
     // '@nuxtjs/composition-api',
   ],

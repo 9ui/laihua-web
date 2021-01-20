@@ -22,9 +22,12 @@ export const CssConfig = {
     less: ['@/design/index.less'],
   },
   tailwindcss: {
-    cssPath: '@/design/tailwind.less',
-    configPath: './tailwind.config.js',
-    exposeConfig: false,
+    cssPath: '~/design/tailwind.css',
+    configPath: 'tailwind.config.js',
+    exposeConfig: true,
     config: {},
+  },
+  purgeCSS: {
+    whitelist: ['dark-mode'],
   },
 } as Config.Interface.IConfig;
