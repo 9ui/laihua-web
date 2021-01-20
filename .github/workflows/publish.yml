@@ -87,7 +87,7 @@ jobs:
       # 构建
       - name: Build
         run: |
-          npm run build
+          npm run build-pro
         env:
           CI: true
 
