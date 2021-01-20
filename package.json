@@ -3,7 +3,7 @@
   "version": "1.1.2",
   "scripts": {
     "dev": "esno ./build/script/preserve.ts && nuxt-ts",
-    "build": "nuxt-ts build",
+    "build": "nuxt-ts build && node upload.js",
     "build:modern": "nuxt-ts build --modern=server",
     "build:report": "nuxt-ts build --modern=server --analyze",
     "build:plain": "nuxt-ts build --modern=server --plain",
@@ -71,6 +71,7 @@
     "nuxt-compress": "^4.1.0",
     "portfinder": "^1.0.28",
     "prettier": "^2.1.2",
+    "qiniu": "^7.3.2",
     "stylelint": "^13.7.2",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",

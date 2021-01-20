@@ -20,3 +20,4 @@ nuxt.config.js
 lint-staged.config.js
 stylelint.config.js
 commitlint.config.js
+upload.js
