@@ -66,7 +66,7 @@ jobs:
           CI: true
 
       # 生成压缩包
-      - run: tar -zcvf release.tgz .nuxt  nuxt.config.ts package.json  pm2.config.json postbuild.ts config tsconfig.json yarn.lock src/static
+      - run: tar -zcvf release.tgz .nuxt  nuxt.config.ts package.json  pm2.config.json postbuild.ts config tsconfig.json yarn.lock src/static tailwind.config.js
 
       # 上传文件
       - name: Upload
