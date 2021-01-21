@@ -20,11 +20,19 @@ module.exports = {
       '9xl': ['8rem', { lineHeight: '1' }],
     },
   },
+  //   corePlugins: {
+  //     outline: {
+  //       outline: ['none'],
+  //     },
+  //   },
   variants: {
     backgroundColor: ['dark', 'dark-hover', 'dark-group-hover', 'dark-even', 'dark-odd'],
     borderColor: ['dark', 'dark-focus', 'dark-focus-within'],
     textColor: ['dark', 'dark-hover', 'dark-active'],
     animation: ['responsive', 'motion-safe', 'motion-reduce'],
+    extend: {
+      outline: ['none'],
+    },
   },
   plugins: [require('tailwindcss-dark-mode')(), require('@tailwindcss/ui')],
 };
