@@ -89,15 +89,10 @@
 </template>
 
 <script lang="ts">
-  import { defineComponent } from '@vue/composition-api';
+  import { defineComponent, ref } from '@vue/composition-api';
   import { modalProps } from './modalProps';
   export default defineComponent({
     props: modalProps,
-    data() {
-      return {
-        visible: false,
-      };
-    },
     watch: {
       value(val) {
         this.visible = val;
@@ -106,10 +101,11 @@
         this.$emit('input', val);
       },
     },
-    mounted() {
-      console.log('vaule', this.value);
-      console.log('visible', this.visible);
+    setup() {
+      const visible = ref(false);
+      return {
+        visible,
+      };
     },
-    setup() {},
   });
 </script>

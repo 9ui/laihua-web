@@ -1,1 +1,1 @@
-export { default as ModalBasic } from './src/ModalBasic.vue';
+export { default as LhModal } from './src/LhModal.vue';

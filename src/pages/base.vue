@@ -9,16 +9,16 @@
       Open Dialog
     </button>
     <!-- Modals -->
-    <ModalBasic v-model="visible"></ModalBasic>
+    <LhModal v-model="visible" :hover="false"></LhModal>
     <!-- Headers -->
   </div>
 </template>
 <script lang="ts">
   import { defineComponent, ref } from '@vue/composition-api';
-  import { ModalBasic } from '@/components/Modal/index';
+  import { LhModal } from '@/components/Modal/index';
   export default defineComponent({
     components: {
-      ModalBasic,
+      LhModal,
     },
     setup() {
       const visible = ref(false);
