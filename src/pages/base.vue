@@ -1,20 +1,30 @@
 <template>
-  <div>
-    <div>
-      <header class="bg-white shadow">
-        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <h1 class="text-3xl font-bold leading-tight text-gray-900">Dashboard</h1>
-        </div>
-      </header>
-      <main>
-        <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-          <!-- Replace with your content -->
-          <div class="px-4 py-6 sm:px-0">
-            <div class="border-4 border-dashed border-gray-200 rounded-lg h-96"></div>
-          </div>
-          <!-- /End replace -->
-        </div>
-      </main>
-    </div>
+  <div class="container mx-auto">
+    <!-- button -->
+    <button
+      @click="visible = true"
+      type="button"
+      class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
+    >
+      Open Dialog
+    </button>
+    <!-- Modals -->
+    <ModalBasic v-model="visible"></ModalBasic>
+    <!-- Headers -->
   </div>
 </template>
+<script lang="ts">
+  import { defineComponent, ref } from '@vue/composition-api';
+  import { ModalBasic } from '@/components/Modal/index';
+  export default defineComponent({
+    components: {
+      ModalBasic,
+    },
+    setup() {
+      const visible = ref(false);
+      return {
+        visible,
+      };
+    },
+  });
+</script>
