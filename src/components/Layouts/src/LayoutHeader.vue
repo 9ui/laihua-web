@@ -17,11 +17,7 @@
                 class="px-3 py-2 rounded-md text-sm font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700"
                 >Home</a
               >
-              <a
-                href="/base"
-                class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
-                >Demo1</a
-              >
+              <LhDropdown></LhDropdown>
               <a
                 href="/pricing"
                 class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700"
@@ -207,7 +203,11 @@
   </nav>
 </template>
 <script>
+  import { LhDropdown } from '@/components/Dropdown/index';
   export default {
+    components: {
+      LhDropdown,
+    },
     data() {
       return {
         isOpen: false,
