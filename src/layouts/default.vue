@@ -1,5 +1,5 @@
 <template>
-  <div class="layout">
+  <div class="layout" :class="[hasSidebar ? 'has-sidebar' : undefined]">
     <LayoutSidebar></LayoutSidebar>
     <div class="layout-container">
       <LayoutHeader></LayoutHeader>
@@ -13,7 +13,7 @@
         <option value="dark">Dark</option>
       </select>
     </p> -->
-      <content class="layout-content" :class="[hasSidebar ? 'has-sidebar' : undefined]">
+      <content class="main">
         <Nuxt />
       </content>
       <LayoutFooter></LayoutFooter>
@@ -34,24 +34,3 @@
     methods: {},
   });
 </script>
-<style lang="less" scoped>
-  .layout {
-    display: flex;
-
-    &-container {
-      flex: 1;
-    }
-
-    &-content {
-      display: flex;
-      padding: 0 16px;
-      transition: padding 0.3s;
-      flex-direction: column;
-
-      &.has-sidebar {
-        padding: 0 16px 0 170px;
-        flex: 1;
-      }
-    }
-  }
-</style>

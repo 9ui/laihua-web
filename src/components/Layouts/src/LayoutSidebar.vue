@@ -1,38 +1,54 @@
 <template>
-  <aside class="aside" :class="[hasSidebar ? 'has-sidebar' : undefined]"> </aside>
+  <aside class="sidebar">
+    <div class="blocks">
+      <div class="block-category">组件</div>
+      <div class="block-list">
+        <button
+          tabindex="0"
+          class="block-item"
+          block-type="Blog"
+          block-name="BlogA"
+          :class="{ 'is-active': isActive === 0 }"
+          @click="clickTo(0)"
+        >
+          <BlogA></BlogA>
+        </button>
+        <button
+          tabindex="1"
+          class="block-item"
+          block-type="Blog"
+          block-name="BlogB"
+          :class="{ 'is-active': isActive === 1 }"
+          @click="clickTo(1)"
+        >
+          <BlogB></BlogB>
+        </button>
+      </div>
+    </div>
+  </aside>
 </template>
 
 <script lang="ts">
   import { mapState } from 'vuex';
   import { defineComponent } from '@vue/composition-api';
+  import { BlogA, BlogB } from '@/components/AsideIcon/index';
   export default defineComponent({
+    components: {
+      BlogA,
+      BlogB,
+    },
+    data() {
+      return {
+        isActive: 0,
+      };
+    },
     computed: {
       ...mapState('common', ['hasSidebar']),
     },
+    methods: {
+      clickTo(index) {
+        this.isActive = index;
+      },
+    },
   });
 </script>
-
-<style lang="less">
-  .aside {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    display: flex;
-    flex-basis: 160px;
-    height: 100vh;
-    padding: 20px;
-    overflow: auto;
-    background-color: #edf2f7;
-    transform: translateX(-100%);
-    transition: transform 0.3s;
-    flex-direction: column;
-    align-items: center;
-
-    &.has-sidebar {
-      width: 160px;
-      transform: translateX(0);
-      box-shadow: 2px 68px 10px rgba(194, 206, 219, 0.68);
-    }
-  }
-</style>

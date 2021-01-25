@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-gray-800 toolbar" :class="[hasSidebar ? 'has-sidebar' : undefined]">
+  <nav class="bg-gray-800 toolbar">
     <div class="max-w-7xl mx-auto">
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center">
@@ -232,46 +232,3 @@
     },
   });
 </script>
-<style lang="less">
-  :root {
-    --opener: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='white' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24'%3E%3Cpath d='M3 12h18M3 6h18M3 18h18'/%3E%3C/svg%3E");
-    --opener-active: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='white' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round' class='css-i6dzq1' viewBox='0 0 24 24'%3E%3Cpath d='M19 12H5M12 19l-7-7 7-7'/%3E%3C/svg%3E");
-  }
-
-  .toolbar {
-    height: 64px;
-    padding: 0 16px;
-    background-color: #6366f1;
-    transition: padding 0.3s;
-    align-items: center;
-
-    &.has-sidebar {
-      padding: 0 16px 0 176px;
-    }
-  }
-
-  .opener {
-    position: relative;
-    display: flex;
-    font-weight: 600;
-    color: #fff;
-    align-items: center;
-    flex-shrink: 0;
-  }
-
-  .opener::before {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    margin-right: 4px;
-    background-image: var(--opener);
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: '';
-    flex-shrink: 0;
-  }
-
-  .has-sidebar .opener::before {
-    background-image: var(--opener-active);
-  }
-</style>
