@@ -27,7 +27,7 @@
   import { generateId } from '../../utils/utils';
   import { CollapseProvider } from './collapse';
   import CollapseTransition from './CollapseTransition.vue';
-  import { CollapseItemProps } from './props';
+  import { CollapseItemProps } from './collapseProps';
   export default defineComponent({
     name: 'CollapseItem',
     components: {

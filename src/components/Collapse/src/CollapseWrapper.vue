@@ -8,7 +8,7 @@
   import { defineComponent, ref, watch, provide, onUnmounted } from '@vue/composition-api';
   import mitt from 'mitt';
   import { UPDATE_MODEL_EVENT, CHANGE_EVENT } from '../../utils/constants';
-  import { CollapseProps } from './props';
+  import { CollapseProps } from './collapseProps';
 
   //   export interface CollapseProvider {
   //     activeNames: Ref;

@@ -6,7 +6,7 @@
   </div>
 </template>
 <script>
-  import { AffixProps } from './props';
+  import { AffixProps } from './affixProps';
   const prefix = 'lh-affix';
   export default {
     name: 'Affix',
