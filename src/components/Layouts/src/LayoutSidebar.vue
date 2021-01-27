@@ -9,7 +9,7 @@
           block-type="Blog"
           block-name="BlogA"
           :class="{ 'is-active': isActive === 0 }"
-          @click="clickTo(0)"
+          @click="clickTo(0, '/')"
         >
           <BlogA></BlogA>
         </button>
@@ -20,9 +20,42 @@
           block-type="Blog"
           block-name="BlogB"
           :class="{ 'is-active': isActive === 1 }"
-          @click="clickTo(1)"
+          @click="clickTo(1, '/demo3')"
         >
           <BlogB></BlogB>
+        </button>
+
+        <button
+          tabindex="2"
+          class="block-item"
+          block-type="Blog"
+          block-name="BlogC"
+          :class="{ 'is-active': isActive === 2 }"
+          @click="clickTo(2, '/demo4')"
+        >
+          <BlogC></BlogC>
+        </button>
+
+        <button
+          tabindex="3"
+          class="block-item"
+          block-type="Blog"
+          block-name="BlogD"
+          :class="{ 'is-active': isActive === 3 }"
+          @click="clickTo(3, '/base')"
+        >
+          <BlogD></BlogD>
+        </button>
+
+        <button
+          tabindex="4"
+          class="block-item"
+          block-type="Blog"
+          block-name="BlogE"
+          :class="{ 'is-active': isActive === 4 }"
+          @click="clickTo(4, '/pricing')"
+        >
+          <BlogE></BlogE>
         </button>
       </div>
     </div>
@@ -32,11 +65,14 @@
 <script lang="ts">
   import { mapState } from 'vuex';
   import { defineComponent } from '@vue/composition-api';
-  import { BlogA, BlogB } from '@/components/AsideIcon/index';
+  import { BlogA, BlogB, BlogC, BlogD, BlogE } from '@/components/AsideIcon/index';
   export default defineComponent({
     components: {
       BlogA,
       BlogB,
+      BlogC,
+      BlogD,
+      BlogE,
     },
     data() {
       return {
@@ -47,8 +83,9 @@
       ...mapState('common', ['hasSidebar']),
     },
     methods: {
-      clickTo(index) {
+      clickTo(index, path) {
         this.isActive = index;
+        this.$router.push(path);
       },
     },
   });
