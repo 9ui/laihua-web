@@ -1,5 +1,5 @@
 <template>
-  <aside class="sidebar">
+  <aside class="sidebar" :class="[darkMode ? 'dark-mode' : '']">
     <div class="blocks">
       <div class="block-category">组件</div>
       <div class="block-list">
@@ -80,7 +80,7 @@
       };
     },
     computed: {
-      ...mapState('common', ['hasSidebar']),
+      ...mapState('common', ['hasSidebar', 'darkMode']),
     },
     methods: {
       clickTo(index, path) {

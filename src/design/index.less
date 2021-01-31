@@ -43,6 +43,10 @@
     transition: transform 0.3s;
     flex-direction: column;
     align-items: center;
+
+    &.dark-mode {
+      background-color: #2d3748;
+    }
   }
 
   &.has-sidebar .sidebar {
@@ -301,4 +305,50 @@ textarea {
 
 .dark-mode .mode::after {
   transform: translateX(-24px);
+}
+
+.github {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: inline-flex;
+  padding: 8px 12px;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--solid-900);
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.github svg {
+  width: 24px;
+  flex-shrink: 0;
+  margin-right: 6px;
+}
+
+@media (max-width: 760px) {
+  .copy-the-block {
+    display: none;
+  }
+
+  .switcher {
+    position: fixed;
+    right: 140px;
+    bottom: 24px;
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    border: 1px solid var(--base-200);
+  }
+
+  .mode {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 1060px) {
+  .device {
+    display: none;
+  }
 }

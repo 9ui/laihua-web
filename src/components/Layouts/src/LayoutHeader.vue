@@ -78,13 +78,14 @@
       return {
         isOpen: false,
         darkMode: false,
+        theme: 'indigo',
       };
     },
     computed: {
       ...mapState('common', ['hasSidebar']),
     },
     methods: {
-      ...mapMutations('common', ['SET_SIDEBAR', 'SET_THEME']),
+      ...mapMutations('common', ['SET_SIDEBAR', 'SET_THEME', 'SET_MODE']),
       toggle() {
         this.isOpen = !this.isOpen;
       },
@@ -95,6 +96,7 @@
       changeTheme() {
         this.darkMode = !this.darkMode;
         this.$colorMode.preference = this.darkMode ? 'dark' : 'light';
+        this.SET_MODE(this.darkMode);
         //  this.SET_THEME()
       },
     },
