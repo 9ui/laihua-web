@@ -1,5 +1,4 @@
 <template>
-  <!-- -->
   <aside class="sidebar body-font">
     <div class="blocks">
       <div class="block-category">组件</div>
@@ -21,7 +20,7 @@
           block-type="Blog"
           block-name="BlogB"
           :class="{ 'is-active': isActive === 1 }"
-          @click="clickTo(1, '/demo3')"
+          @click="clickTo(1, '/button')"
         >
           <BlogB></BlogB>
         </button>
@@ -32,7 +31,7 @@
           block-type="Blog"
           block-name="BlogC"
           :class="{ 'is-active': isActive === 2 }"
-          @click="clickTo(2, '/demo4')"
+          @click="clickTo(2, '/modal')"
         >
           <BlogC></BlogC>
         </button>
@@ -43,7 +42,7 @@
           block-type="Blog"
           block-name="BlogD"
           :class="{ 'is-active': isActive === 3 }"
-          @click="clickTo(3, '/base')"
+          @click="clickTo(3, '/demo1')"
         >
           <BlogD></BlogD>
         </button>
@@ -54,7 +53,7 @@
           block-type="Blog"
           block-name="BlogE"
           :class="{ 'is-active': isActive === 4 }"
-          @click="clickTo(4, '/pricing')"
+          @click="clickTo(4, '/demo2')"
         >
           <BlogE></BlogE>
         </button>
