@@ -1,6 +1,7 @@
 <template>
   <nav class="bg-gray-800 toolbar flex align-middle">
-    <div class="opener cursor-pointer" @click="setSidebar">TAILBLOCKS</div>
+    <div class="opener cursor-pointer" @click="setSidebar">示例列表</div>
+    <!-- code view -->
     <div class="copy-the-block cursor-pointer">
       <svg
         fill="none"
@@ -15,15 +16,17 @@
       </svg>
       <span>VIEW CODE</span>
     </div>
+    <!-- switcher -->
     <div class="switcher">
-      <button data-theme="indigo" class="theme-button bg-indigo-500 is-active"></button>
-      <button data-theme="yellow" class="theme-button bg-yellow-500"></button>
-      <button data-theme="red" class="theme-button bg-red-500"></button>
-      <button data-theme="purple" class="theme-button bg-purple-500"></button>
-      <button data-theme="pink" class="theme-button bg-pink-500"></button>
-      <button data-theme="blue" class="theme-button bg-blue-500"></button>
-      <button data-theme="green" class="theme-button bg-green-500"></button>
+      <button
+        :data-theme="t"
+        v-for="(t, index) in themeList"
+        :key="index"
+        :class="['theme-button', `bg-${t}-500`, t === currentTheme ? 'is-active' : '']"
+        @click="SET_THEME(t)"
+      ></button>
     </div>
+    <!-- device  -->
     <button class="device is-active" data-view="desktop">
       <svg
         stroke="currentColor"
@@ -63,7 +66,8 @@
         <path d="M12 18h.01"></path>
       </svg>
     </button>
-    <button class="mode" @click="changeTheme"></button>
+    <!-- mode -->
+    <button class="mode" @click="changeMode"></button>
   </nav>
 </template>
 <script lang="ts">
@@ -76,28 +80,28 @@
     },
     data() {
       return {
-        isOpen: false,
         darkMode: false,
-        theme: 'indigo',
       };
     },
     computed: {
-      ...mapState('common', ['hasSidebar']),
+      ...mapState('common', ['hasSidebar', 'themeList', 'currentTheme']),
     },
     methods: {
       ...mapMutations('common', ['SET_SIDEBAR', 'SET_THEME', 'SET_MODE']),
-      toggle() {
-        this.isOpen = !this.isOpen;
-      },
+      /**
+       * @description：展开/收起 sidebar
+       */
       setSidebar() {
         const hasSidebar = !this.hasSidebar;
         this.SET_SIDEBAR(hasSidebar);
       },
-      changeTheme() {
+      /**
+       * @description：设置light/dark
+       */
+      changeMode() {
         this.darkMode = !this.darkMode;
         this.$colorMode.preference = this.darkMode ? 'dark' : 'light';
         this.SET_MODE(this.darkMode);
-        //  this.SET_THEME()
       },
     },
   });

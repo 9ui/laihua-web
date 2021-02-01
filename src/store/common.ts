@@ -3,7 +3,7 @@ import { MutationTree } from 'vuex';
 export const state = () => ({
   hasSidebar: true, // 是否展开侧边栏
   darkMode: false, // 是否黑色主题
-  theme: 'indigo',
+  currentTheme: 'indigo',
   themeList: ['indigo', 'yellow', 'red', 'purple', 'pink', 'blue', 'green'],
 });
 
@@ -14,7 +14,8 @@ export const mutations: MutationTree<RootState> = {
     state.hasSidebar = hasSidebar;
   },
   SET_THEME: (state, theme: string) => {
-    state.theme = theme;
+    console.log('设置当前theme:', theme);
+    state.currentTheme = theme;
   },
   SET_MODE: (state, mode: boolean) => {
     state.darkMode = mode;

@@ -1,5 +1,5 @@
 <template>
-  <div class="layout" :class="[hasSidebar ? 'has-sidebar' : undefined]">
+  <div class="layout" :class="[hasSidebar ? 'has-sidebar' : undefined, `${currentTheme}`]">
     <LayoutSidebar></LayoutSidebar>
     <div class="layout-container">
       <LayoutHeader></LayoutHeader>
@@ -43,7 +43,7 @@
   export default VueAPI.defineComponent({
     components: { LayoutHeader, LayoutSidebar },
     computed: {
-      ...mapState('common', ['hasSidebar', 'theme']),
+      ...mapState('common', ['hasSidebar', 'currentTheme']),
     },
     methods: {},
   });
