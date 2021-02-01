@@ -19,9 +19,9 @@
     <!-- switcher -->
     <div class="switcher">
       <button
-        :data-theme="t"
         v-for="(t, index) in themeList"
         :key="index"
+        :data-theme="t"
         :class="['theme-button', `bg-${t}-500`, t === currentTheme ? 'is-active' : '']"
         @click="SET_THEME(t)"
       ></button>

@@ -1,5 +1,12 @@
 <template>
-  <div class="layout" :class="[hasSidebar ? 'has-sidebar' : undefined, `${currentTheme}`]">
+  <div
+    class="layout"
+    :class="[
+      darkMode ? 'dark-mode' : '',
+      hasSidebar ? 'has-sidebar' : undefined,
+      `${currentTheme}`,
+    ]"
+  >
     <LayoutSidebar></LayoutSidebar>
     <div class="layout-container">
       <LayoutHeader></LayoutHeader>
@@ -43,7 +50,7 @@
   export default VueAPI.defineComponent({
     components: { LayoutHeader, LayoutSidebar },
     computed: {
-      ...mapState('common', ['hasSidebar', 'currentTheme']),
+      ...mapState('common', ['hasSidebar', 'currentTheme', 'darkMode']),
     },
     methods: {},
   });

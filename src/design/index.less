@@ -11,6 +11,7 @@
   --base-200: #e2e8f0;
   --base-300: #e2e8f0;
   --base-400: #cbd5e0;
+  --main-500: #6366f1;
   --main-400: #7f9cf5;
   --main-200: #c3dafe;
   --main-100: #ebf4ff;
@@ -40,11 +41,6 @@
   --shadow: 0 10px 15px -3px rgb(26, 32, 45), 0 4px 6px -2px rgb(48, 58, 84);
   --shadow-active: 0 0 0 2px currentColor, 0 10px 15px -3px rgba(0, 0, 0, 0.35),
     0 4px 6px -2px rgb(76, 82, 90);
-}
-
-.dark-mode,
-:root {
-  --main-500: #6366f1;
 }
 
 .red:not(.dark-mode) {
@@ -138,6 +134,7 @@
 
   &.has-sidebar .sidebar {
     // width: 160px;
+    background-color: var(--sidebar-bg);
     transform: translateX(0);
     box-shadow: 2px 68px 10px rgba(194, 206, 219, 0.68);
   }
@@ -183,6 +180,10 @@
   }
 }
 
+.dark-mode.has-sidebar .sidebar {
+  box-shadow: 2px 68px 10px rgba(26, 32, 44, 0.8);
+}
+
 .opener {
   position: relative;
   display: flex;
@@ -212,7 +213,7 @@
   margin-bottom: 10px;
   font-size: 13px;
   font-weight: 600;
-  color: #4a5568;
+  color: var(--sidebar-color);
   text-transform: uppercase;
 }
 
