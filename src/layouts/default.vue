@@ -46,7 +46,6 @@
   import * as Core from '@/core';
   import { LayoutHeader, LayoutSidebar } from '@/components/Layouts/index';
   const { VueAPI } = Core;
-
   export default VueAPI.defineComponent({
     components: { LayoutHeader, LayoutSidebar },
     computed: {

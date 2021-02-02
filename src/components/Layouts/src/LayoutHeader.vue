@@ -18,13 +18,17 @@
     </div>
     <!-- switcher -->
     <div class="switcher">
-      <button
+      <div
         v-for="(t, index) in themeList"
         :key="index"
         :data-theme="t"
-        :class="['theme-button', `bg-${t}-500`, t === currentTheme ? 'is-active' : '']"
+        :class="[
+          'theme-button cursor-pointer',
+          `bg-${t}-500`,
+          t === currentTheme ? 'is-active' : undefined,
+        ]"
         @click="SET_THEME(t)"
-      ></button>
+      ></div>
     </div>
     <!-- device  -->
     <button class="device is-active" data-view="desktop">
@@ -81,10 +85,11 @@
     data() {
       return {
         darkMode: false,
+        themeList: ['indigo', 'yellow', 'red', 'purple', 'pink', 'blue', 'green'],
       };
     },
     computed: {
-      ...mapState('common', ['hasSidebar', 'themeList', 'currentTheme']),
+      ...mapState('common', ['hasSidebar', 'currentTheme']),
     },
     methods: {
       ...mapMutations('common', ['SET_SIDEBAR', 'SET_THEME', 'SET_MODE']),

@@ -1,7 +1,6 @@
 // const { colors } = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  layers: ['utilities'],
   theme: {
     darkSelector: '.dark-mode',
     fontSize: {
@@ -26,5 +25,5 @@ module.exports = {
     textColor: ['dark', 'dark-hover', 'dark-active'],
     animation: ['responsive', 'motion-safe', 'motion-reduce'],
   },
-  plugins: [require('tailwindcss-dark-mode')(), require('@tailwindcss/ui')],
+  plugins: [require('tailwindcss-dark-mode')()],
 };

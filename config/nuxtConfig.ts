@@ -29,7 +29,7 @@ export const NuxtConfig = {
     // 引入离线缓存
     '@nuxtjs/pwa',
     // 优化antd默认引入moment全量加载问题
-    '@nuxtjs/moment',
+    // '@nuxtjs/moment',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     // 引入composition-api
