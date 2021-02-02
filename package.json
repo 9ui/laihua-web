@@ -48,7 +48,7 @@
     "@nuxtjs/stylelint-module": "^4.0.0",
     "@nuxtjs/tailwindcss": "^3.4.2",
     "@types/fs-extra": "^9.0.6",
-    "@types/lodash": "^4.14.165",
+    "@types/lodash": "^4.14.168",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
     "babel-preset-vca-jsx": "^0.3.6",
