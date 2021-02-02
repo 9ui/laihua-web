@@ -69,7 +69,7 @@
     "koa-static": "^5.0.0",
     "less": "^3.13.1",
     "less-loader": "^7.1.0",
-    "lint-staged": "^10.4.0",
+    "lint-staged": "^10.5.3",
     "nuxt-compress": "^4.1.0",
     "portfinder": "^1.0.28",
     "prettier": "^2.1.2",
