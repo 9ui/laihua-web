@@ -2103,12 +2103,12 @@
   optionalDependencies:
     prettier "^1.18.2"
 
-"@vue/composition-api@^1.0.0-beta.20":
-  version "1.0.0-beta.20"
-  resolved "https://registry.npmjs.org/@vue/composition-api/-/composition-api-1.0.0-beta.20.tgz#9909ed5844b7bf565a220b26d85b9f0158856dd7"
-  integrity sha512-Lpaxt9+3cy97QJoCJ81qNe6TeGg092iHtqilKdbE5NapHqoSwiuYUSHX2ANIaO+C1Q1J7bITv1/saLUMNuwQOg==
+"@vue/composition-api@^1.0.0-rc.1":
+  version "1.0.0-rc.1"
+  resolved "https://registry.yarnpkg.com/@vue/composition-api/-/composition-api-1.0.0-rc.1.tgz#d5286bbaffcd1987e56d5e3a9f26bfb6023e7c41"
+  integrity sha512-6I5LkfA+VvVOLZufRugzQ5sWKQH81/Cr9gRLidDSeUmjRPolEEWgG4MAnWtBR5zgP5qbRMwZJ4IEYtKhnadMQQ==
   dependencies:
-    tslib "^2.0.1"
+    tslib "^2.0.3"
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
@@ -5710,15 +5710,15 @@ fs-extra@8.1.0, fs-extra@^8.0.0, fs-extra@^8.1.0:
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
-fs-extra@^9.0.0, fs-extra@^9.0.1:
-  version "9.0.1"
-  resolved "https://registry.npmjs.org/fs-extra/-/fs-extra-9.0.1.tgz#910da0062437ba4c39fedd863f1675ccfefcb9fc"
-  integrity sha512-h2iAoN838FqAFJY2/qVpzFXy+EBxfVE220PalAqQLDVsFOHLJrZvut5puAbCdNv6WJk+B8ihI+k0c7JK5erwqQ==
+fs-extra@^9.0.0, fs-extra@^9.0.1, fs-extra@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-9.1.0.tgz#5954460c764a8da2094ba3554bf839e6b9a7c86d"
+  integrity sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ==
   dependencies:
     at-least-node "^1.0.0"
     graceful-fs "^4.2.0"
     jsonfile "^6.0.1"
-    universalify "^1.0.0"
+    universalify "^2.0.0"
 
 fs-memo@^1.2.0:
   version "1.2.0"
@@ -12198,11 +12198,6 @@ universalify@^0.1.0:
   version "0.1.2"
   resolved "https://registry.npmjs.org/universalify/-/universalify-0.1.2.tgz#b646f69be3942dabcecc9d6639c80dc105efaa66"
   integrity sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
-
-universalify@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/universalify/-/universalify-1.0.0.tgz#b61a1da173e8435b2fe3c67d29b9adf8594bd16d"
-  integrity sha512-rb6X1W158d7pRQBg5gkR8uPaSfiids68LTJQYOtEUhoJUWBdaQHsuT/EUduxXYxcrt4r5PJ4fuHW1MHT6p0qug==
 
 universalify@^2.0.0:
   version "2.0.0"
