@@ -6380,6 +6380,11 @@ hex-rgb@^4.1.0:
   resolved "https://registry.npmjs.org/hex-rgb/-/hex-rgb-4.2.0.tgz#fb377f2e5658fc924f1efa189685922e56ecaf0f"
   integrity sha512-I7DkKeQ2kR2uyqgbxPgNgClH/rfs1ioKZhZW8VTIAirsxCR5EyhYeywgZbhMScgUbKCkgo6bb6JwA0CLTn9beA==
 
+highlight.js@^10.1.2:
+  version "10.5.0"
+  resolved "https://registry.npmjs.org/highlight.js/-/highlight.js-10.5.0.tgz#3f09fede6a865757378f2d9ebdcbc15ba268f98f"
+  integrity sha512-xTmvd9HiIHR6L53TMC7TKolEj65zG1XU+Onr8oi86mYa+nLcIbxTTWkpW7CsEwv/vK7u1zb8alZIMLDqqN6KTw==
+
 hmac-drbg@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npmjs.org/hmac-drbg/-/hmac-drbg-1.0.1.tgz#d2745701025a6c775a6c545793ed502fc0c649a1"
@@ -8625,6 +8630,13 @@ nuxt-helmet@^2.0.0:
     consola "^2.11.3"
     helmet "^4.0.0"
 
+nuxt-highlightjs@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/nuxt-highlightjs/-/nuxt-highlightjs-1.0.1.tgz#6809a9ccebfff8993d69a85a9095650069268d66"
+  integrity sha512-T3GHysg8c3EBkTL4mj6NftsiYo/FBID1/XWgprT3+RHX7pBhl4Spbc2yygp4z/OBEvgs868Qg5FIkIsCBS+iPg==
+  dependencies:
+    highlight.js "^10.1.2"
+
 nuxt-lifecycle@^1.0.3:
   version "1.0.3"
   resolved "https://registry.npmjs.org/nuxt-lifecycle/-/nuxt-lifecycle-1.0.3.tgz#7e7df18aa00ba0fe3eb9caf6997549b62080ca52"
@@ -9683,6 +9695,13 @@ postcss-nested@^4.1.1:
   dependencies:
     postcss "^7.0.32"
     postcss-selector-parser "^6.0.2"
+
+postcss-nested@^5.0.3:
+  version "5.0.3"
+  resolved "https://registry.npmjs.org/postcss-nested/-/postcss-nested-5.0.3.tgz#2f46d77a06fc98d9c22344fd097396f5431386db"
+  integrity sha512-R2LHPw+u5hFfDgJG748KpGbJyTv7Yr33/2tIMWxquYuHTd9EXu27PYnKi7BxMXLtzKC0a0WVsqHtd7qIluQu/g==
+  dependencies:
+    postcss-selector-parser "^6.0.4"
 
 postcss-nesting@^7.0.0:
   version "7.0.1"

@@ -2,8 +2,26 @@
   <nav class="bg-gray-800 toolbar flex align-middle">
     <div class="opener cursor-pointer" @click="setSidebar">示例列表</div>
     <!-- code view -->
-    <div class="copy-the-block cursor-pointer">
+    <div v-if="codeView" class="clipboard-wrapper">
+      <button class="copy-the-block copy-to-clipboard">
+        <svg
+          viewBox="0 0 25 24"
+          stroke="currentColor"
+          strokeWidth="2"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M19.914 1h-18v19" />
+          <path d="M6 5v18h18V5z" />
+        </svg>
+        <span>COPY TO CLIPBOARD</span>
+      </button>
+      <span :class="[`clipboard-tooltip${copied ? ' is-copied ' : ''}`]">Copied!</span>
+    </div>
+    <div class="copy-the-block cursor-pointer" @click="toggleView">
       <svg
+        v-if="!codeView"
         fill="none"
         stroke="currentColor"
         stroke-linecap="round"
@@ -14,7 +32,20 @@
         <path d="M16 18L22 12 16 6"></path>
         <path d="M8 6L2 12 8 18"></path>
       </svg>
-      <span>VIEW CODE</span>
+      <svg
+        v-else
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        class="css-i6dzq1"
+        viewBox="0 0 24 24"
+      >
+        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+        <circle cx="12" cy="12" r="3"></circle>
+      </svg>
+      <span>{{ !codeView ? 'VIEW CODE' : 'PREVIEW' }}</span>
     </div>
     <!-- switcher -->
     <div class="switcher">
@@ -84,15 +115,16 @@
     },
     data() {
       return {
-        darkMode: false,
-        themeList: ['indigo', 'yellow', 'red', 'purple', 'pink', 'blue', 'green'],
+        darkMode: false, // 是否显示dark模式
+        codeView: false, // 是否显示代码
+        themeList: ['indigo', 'yellow', 'red', 'purple', 'pink', 'blue', 'green'], // 主题色列表
       };
     },
     computed: {
       ...mapState('common', ['hasSidebar', 'currentTheme']),
     },
     methods: {
-      ...mapMutations('common', ['SET_SIDEBAR', 'SET_THEME', 'SET_MODE']),
+      ...mapMutations('common', ['SET_SIDEBAR', 'SET_THEME', 'SET_MODE', 'SET_CODEVIEW']),
       /**
        * @description：展开/收起 sidebar
        */
@@ -107,6 +139,13 @@
         this.darkMode = !this.darkMode;
         this.$colorMode.preference = this.darkMode ? 'dark' : 'light';
         this.SET_MODE(this.darkMode);
+      },
+      /**
+       * @description:是否显示源码
+       */
+      toggleView() {
+        this.codeView = !this.codeView;
+        this.SET_CODEVIEW(this.codeView);
       },
     },
   });

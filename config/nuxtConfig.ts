@@ -19,6 +19,12 @@ export const NuxtConfig = {
     // '@nuxtjs/gtm',
     // '@nuxtjs/svg-sprite',
     'nuxt-helmet',
+    [
+      'nuxt-highlightjs',
+      {
+        style: 'atom-one-light',
+      },
+    ],
   ],
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [

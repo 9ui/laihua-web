@@ -17,9 +17,9 @@ export const CssConfig = {
     rtl: false, // 加载条方向
   },
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ['@/design/index.less'],
+  css: ['@/design/index.pcss'],
   styleResources: {
-    less: ['@/design/index.less'],
+    less: ['@/design/index.pcss'],
   },
   tailwindcss: {
     cssPath: '~/design/tailwind.css',
