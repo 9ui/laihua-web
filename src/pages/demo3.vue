@@ -2,7 +2,7 @@
   <!-- block---1 -->
   <div class="w-full">
     <!-- components -->
-    <SectionA v-if="!codeView" id="sourceCode"></SectionA>
+    <SectionB v-if="!codeView" id="sourceCode"></SectionB>
     <!-- code preview -->
     <SourceCode v-else :code="code"></SourceCode>
   </div>
@@ -12,13 +12,13 @@
   import { beautifyHtml } from '@/utils/beautifyHtml';
   import * as Core from '@/core';
   import { mapMutations, mapState } from 'vuex';
-  import { SectionA } from '@/components/Blocks/index';
+  import { SectionB } from '@/components/Blocks/index';
   import { SourceCode } from '@/components/CodePreview/index';
   const { VueAPI } = Core;
 
   export default VueAPI.defineComponent({
     components: {
-      SectionA,
+      SectionB,
       SourceCode,
     },
     data() {

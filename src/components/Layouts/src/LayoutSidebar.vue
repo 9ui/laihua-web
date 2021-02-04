@@ -20,7 +20,7 @@
           block-type="Blog"
           block-name="BlogB"
           :class="{ 'is-active': isActive === 1 }"
-          @click="clickTo(1, '/button')"
+          @click="clickTo(1, '/demo1')"
         >
           <BlogB></BlogB>
         </button>
@@ -42,7 +42,7 @@
           block-type="Blog"
           block-name="BlogD"
           :class="{ 'is-active': isActive === 3 }"
-          @click="clickTo(3, '/demo1')"
+          @click="clickTo(3, '/demo2')"
         >
           <BlogD></BlogD>
         </button>
@@ -53,7 +53,7 @@
           block-type="Blog"
           block-name="BlogE"
           :class="{ 'is-active': isActive === 4 }"
-          @click="clickTo(4, '/demo2')"
+          @click="clickTo(4, '/demo3')"
         >
           <BlogE></BlogE>
         </button>

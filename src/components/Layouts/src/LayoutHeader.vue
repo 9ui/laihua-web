@@ -3,7 +3,7 @@
     <div class="opener cursor-pointer" @click="setSidebar">示例列表</div>
     <!-- code view -->
     <div v-if="codeView" class="clipboard-wrapper">
-      <button class="copy-the-block copy-to-clipboard" @click="copyToClipboard">
+      <div class="copy-the-block copy-to-clipboard" @click="copyToClipboard">
         <svg
           viewBox="0 0 25 24"
           stroke="currentColor"
@@ -16,7 +16,7 @@
           <path d="M6 5v18h18V5z" />
         </svg>
         <span>COPY TO CLIPBOARD</span>
-      </button>
+      </div>
       <span :class="[`clipboard-tooltip${copied ? ' is-copied ' : ''}`]">Copied!</span>
     </div>
     <div class="copy-the-block cursor-pointer" @click="toggleView">
@@ -102,7 +102,7 @@
       </svg>
     </button>
     <!-- mode -->
-    <button class="mode" @click="changeMode"></button>
+    <div class="mode cursor-pointer" @click="changeMode"></div>
   </nav>
 </template>
 <script lang="ts">

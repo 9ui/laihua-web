@@ -1,7 +1,10 @@
 .layout {
   display: flex;
+  height: 100vh;
+  overflow: hidden;
 }
 
+/* aside */
 .layout .sidebar {
   position: fixed;
   top: 0;
@@ -29,12 +32,20 @@
   box-shadow: 2px 68px 10px rgba(194, 206, 219, 0.68);
 }
 
+/* toolbar */
 .layout .toolbar {
+  display: flex;
+
+  /* justify-content: space-between; */
   height: 64px;
   padding: 0 16px;
   background-color: var(--main-500);
   transition: padding 0.3s;
   align-items: center;
+}
+
+.layout .toolbar > :nth-child(2) {
+  margin-left: auto;
 }
 
 .layout.has-sidebar .toolbar {
@@ -44,14 +55,22 @@
 .layout .layout-container {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  width: 100%;
 }
 
+/* main */
 .layout .main {
   display: flex;
+  width: 100%;
+  height: calc(100vh - 64px);
   padding: 0;
+  overflow: auto;
   transition: padding 0.3s;
   flex-direction: column;
+}
+
+.layout .main::-webkit-scrollbar {
+  display: none;
 }
 
 .layout.has-sidebar .main {
@@ -59,6 +78,7 @@
   flex: 1;
 }
 
+/* footer */
 .layout .footer {
   padding: 0 16px;
   transition: padding 0.3s;

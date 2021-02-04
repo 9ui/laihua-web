@@ -1,7 +1,9 @@
-## [1.1.3](https://github.com/9ui/laihua-web/compare/1.1.1...1.1.3) (2021-02-01)
+## [1.1.4](https://github.com/9ui/laihua-web/compare/1.1.1...1.1.4) (2021-02-04)
 
 ### ⏪ Reverts
 
+- 解开 cdn 注释 ([a903332](https://github.com/9ui/laihua-web/commit/a903332))
+- 删除冗余代码 ([4220f38](https://github.com/9ui/laihua-web/commit/4220f38))
 - 删除冗余代码 ([33f00fe](https://github.com/9ui/laihua-web/commit/33f00fe))
 - 修改提醒微信 ([6bfcaf6](https://github.com/9ui/laihua-web/commit/6bfcaf6))
 - 修改页面宽度 ([a4bb229](https://github.com/9ui/laihua-web/commit/a4bb229))
@@ -33,21 +35,38 @@
 - 完善头部布局 ([b08c6d3](https://github.com/9ui/laihua-web/commit/b08c6d3))
 - 完善头部导航栏 ([dd56f66](https://github.com/9ui/laihua-web/commit/dd56f66))
 - 完善页面布局 ([b208323](https://github.com/9ui/laihua-web/commit/b208323))
+- 完善主题色切换 ([45b8fc5](https://github.com/9ui/laihua-web/commit/45b8fc5))
+- 完善主题色切换 ([32be40c](https://github.com/9ui/laihua-web/commit/32be40c))
 - 完善 dropdown 组件 ([8f881eb](https://github.com/9ui/laihua-web/commit/8f881eb))
 - 项目继承版本信息 ([11cc9ef](https://github.com/9ui/laihua-web/commit/11cc9ef))
+- 新增复制粘贴功能以及完善源码预览模块 ([f254642](https://github.com/9ui/laihua-web/commit/f254642))
 - 新增会员定价路由 ([c18e657](https://github.com/9ui/laihua-web/commit/c18e657))
 - 新增折叠面板 ([6ac2959](https://github.com/9ui/laihua-web/commit/6ac2959))
+- 新增组件源码预览功能 ([1e440f9](https://github.com/9ui/laihua-web/commit/1e440f9))
 - 引入七牛云 ([fb5a4c7](https://github.com/9ui/laihua-web/commit/fb5a4c7))
 - 优化工作流 ([517f68d](https://github.com/9ui/laihua-web/commit/517f68d))
 - 优化主题色 ([aa7e429](https://github.com/9ui/laihua-web/commit/aa7e429))
 - 优化 tailwind 配置 ([8ba965d](https://github.com/9ui/laihua-web/commit/8ba965d))
 
+### 🎫 Chores
+
+- **deps-dev:** bump @nuxt/types from 2.14.9 to 2.14.12 ([8f3c779](https://github.com/9ui/laihua-web/commit/8f3c779))
+- **deps-dev:** bump @nuxtjs/eslint-config-typescript ([86178e7](https://github.com/9ui/laihua-web/commit/86178e7))
+- **deps-dev:** bump @types/fs-extra from 9.0.4 to 9.0.6 ([8b0061a](https://github.com/9ui/laihua-web/commit/8b0061a))
+- **deps-dev:** bump husky from 4.3.0 to 4.3.8 ([36eb5ba](https://github.com/9ui/laihua-web/commit/36eb5ba))
+- **deps-dev:** bump less from 3.12.2 to 3.13.1 ([1f43f02](https://github.com/9ui/laihua-web/commit/1f43f02))
+- **deps-dev:** bump less-loader from 7.1.0 to 8.0.0 ([85aa4a6](https://github.com/9ui/laihua-web/commit/85aa4a6))
+- **deps-dev:** bump ts-loader from 8.0.11 to 8.0.14 ([9e6a825](https://github.com/9ui/laihua-web/commit/9e6a825))
+
 ### 🐛 Bug Fixes
 
+- 删除冗余代码 ([0791323](https://github.com/9ui/laihua-web/commit/0791323))
+- **deps:** bump @nuxtjs/pwa from 3.3.2 to 3.3.5 ([655fc5a](https://github.com/9ui/laihua-web/commit/655fc5a))
 - 设置缓存路径 ([77b373b](https://github.com/9ui/laihua-web/commit/77b373b))
 - 修复路径错误 ([5c5fa7a](https://github.com/9ui/laihua-web/commit/5c5fa7a))
 - 修复图钉组件无法固定在底部问题 ([6f7dadc](https://github.com/9ui/laihua-web/commit/6f7dadc))
 - 修复文件打包到服务器缺少文件 ([88754ae](https://github.com/9ui/laihua-web/commit/88754ae))
+- **deps:** bump @vue/composition-api from 1.0.0-beta.20 to 1.0.0-rc.1 ([550e6f5](https://github.com/9ui/laihua-web/commit/550e6f5))
 - 修复折叠面板组件不能展开问题 ([466ca68](https://github.com/9ui/laihua-web/commit/466ca68))
 
 ### 💄 Styles

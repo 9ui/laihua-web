@@ -1,8 +1,8 @@
+@import './init.pcss';
+
 @import './colors.pcss';
 
 @import './global.pcss';
-
-@import './init.pcss';
 
 @import './layout.pcss';
 
@@ -69,21 +69,6 @@
   opacity: 0.8;
 }
 
-button,
-button:focus {
-  outline: 0;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  padding: 0;
-  line-height: inherit;
-  color: inherit;
-}
-
 /* copy-the-block */
 
 .copy-the-block {
@@ -144,10 +129,6 @@ textarea {
 .clipboard-tooltip.is-copied {
   margin-right: 6px;
   opacity: 1;
-}
-
-.toolbar > :nth-child(2) {
-  margin-left: auto;
 }
 
 /* switcher */
@@ -278,9 +259,21 @@ textarea {
   margin-right: 6px;
 }
 
+/* code */
+
+pre,
+code {
+  font-family: 'Space Mono', monospace;
+  font-variant-ligatures: no-contextual;
+}
+
+.hljs {
+  overflow-x: unset;
+}
+
 .pre-wrapper {
   display: flex;
-  padding-top: 20px;
+  background: rgb(248, 248, 255);
 }
 
 .aside-line-number {
@@ -334,8 +327,18 @@ textarea {
   }
 }
 
+@media (max-width: 960px) {
+  .copy-to-clipboard {
+    display: none;
+  }
+}
+
 @media (max-width: 1060px) {
   .device {
     display: none;
+  }
+
+  .switcher {
+    margin-right: 0;
   }
 }

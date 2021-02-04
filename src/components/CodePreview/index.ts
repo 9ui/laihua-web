@@ -1,1 +1,1 @@
-export { default as LhCode } from './src/Code.vue';
+export { default as SourceCode } from './src/SourceCode.vue';

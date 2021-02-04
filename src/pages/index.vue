@@ -1,10 +1,10 @@
 <template>
   <!-- block---1 -->
-  <div class="bg-gray-100">
+  <div class="w-full">
     <!-- components -->
-    <BlogA v-if="!codeView" id="sourceCode"></BlogA>
+    <LhButton v-if="!codeView" id="sourceCode"></LhButton>
     <!-- code preview -->
-    <LhCode v-else :code="code"></LhCode>
+    <SourceCode v-else :code="code"></SourceCode>
   </div>
 </template>
 
@@ -12,14 +12,14 @@
   import { beautifyHtml } from '@/utils/beautifyHtml';
   import * as Core from '@/core';
   import { mapMutations, mapState } from 'vuex';
-  import { BlogA } from '@/components/Blocks/index';
-  import { LhCode } from '@/components/CodePreview/index';
+  import { LhButton } from '@/components/Blocks/index';
+  import { SourceCode } from '@/components/CodePreview/index';
   const { VueAPI } = Core;
 
   export default VueAPI.defineComponent({
     components: {
-      BlogA,
-      LhCode,
+      LhButton,
+      SourceCode,
     },
     data() {
       return {
