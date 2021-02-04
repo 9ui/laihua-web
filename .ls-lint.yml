@@ -9,7 +9,7 @@ ls:
     .less: kebab-case | PascalCase
     .spec.ts: camelCase | PascalCase
   src/{components,pages}/*:
-    .vue: PascalCase | regex:^index
+    .vue: PascalCase | regex:^index | camelCase
   src/layput:
     .vue: pointcase
 

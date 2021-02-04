@@ -116,13 +116,12 @@
     data() {
       return {
         darkMode: false, // 是否显示dark模式
-        codeView: false, // 是否显示代码
         copied: false, // 是否已经复制
         themeList: ['indigo', 'yellow', 'red', 'purple', 'pink', 'blue', 'green'], // 主题色列表
       };
     },
     computed: {
-      ...mapState('common', ['hasSidebar', 'currentTheme', 'code']),
+      ...mapState('common', ['hasSidebar', 'currentTheme', 'code', 'codeView']),
     },
     methods: {
       ...mapMutations('common', [
@@ -151,8 +150,7 @@
        * @description:是否显示源码
        */
       toggleView() {
-        this.codeView = !this.codeView;
-        this.SET_CODEVIEW(this.codeView);
+        this.SET_CODEVIEW(this.codeView ? false : true);
       },
       /**
        * @description: 复制到剪贴板
