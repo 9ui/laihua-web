@@ -61,7 +61,7 @@ jobs:
       # 构建
       - name: Build
         run: |
-          yarn build-pro
+          yarn build
         env:
           CI: true
 

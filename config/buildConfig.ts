@@ -5,7 +5,7 @@ import * as Config from './';
 export const BuildConfig = {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-    publicPath: 'https://cdn.90c.vip/',
+    // publicPath: 'https://cdn.90c.vip/',
     // 仅在将--analyze参数作为命令输入时激活。）
     analyze: !!(process.argv.length > 5 && process.argv[4] === '--analyze'),
     // 缩小生成的输出。

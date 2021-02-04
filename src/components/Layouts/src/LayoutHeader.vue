@@ -150,7 +150,8 @@
        * @description:是否显示源码
        */
       toggleView() {
-        this.SET_CODEVIEW(this.codeView ? false : true);
+        const _codeView = this.codeView ? !this.codeView : !this.codeView;
+        this.SET_CODEVIEW(_codeView);
       },
       /**
        * @description: 复制到剪贴板
