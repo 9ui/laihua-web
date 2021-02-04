@@ -20,7 +20,7 @@
           <option value="dark">Dark</option>
         </select>
       </p> -->
-      <content class="main px-5">
+      <content class="main">
         <Nuxt />
       </content>
       <a

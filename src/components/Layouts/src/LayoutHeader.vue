@@ -3,7 +3,7 @@
     <div class="opener cursor-pointer" @click="setSidebar">示例列表</div>
     <!-- code view -->
     <div v-if="codeView" class="clipboard-wrapper">
-      <button class="copy-the-block copy-to-clipboard">
+      <button class="copy-the-block copy-to-clipboard" @click="copyToClipboard">
         <svg
           viewBox="0 0 25 24"
           stroke="currentColor"
@@ -117,14 +117,21 @@
       return {
         darkMode: false, // 是否显示dark模式
         codeView: false, // 是否显示代码
+        copied: false, // 是否已经复制
         themeList: ['indigo', 'yellow', 'red', 'purple', 'pink', 'blue', 'green'], // 主题色列表
       };
     },
     computed: {
-      ...mapState('common', ['hasSidebar', 'currentTheme']),
+      ...mapState('common', ['hasSidebar', 'currentTheme', 'code']),
     },
     methods: {
-      ...mapMutations('common', ['SET_SIDEBAR', 'SET_THEME', 'SET_MODE', 'SET_CODEVIEW']),
+      ...mapMutations('common', [
+        'SET_SIDEBAR',
+        'SET_THEME',
+        'SET_MODE',
+        'SET_CODEVIEW',
+        'SET_CODE',
+      ]),
       /**
        * @description：展开/收起 sidebar
        */
@@ -146,6 +153,21 @@
       toggleView() {
         this.codeView = !this.codeView;
         this.SET_CODEVIEW(this.codeView);
+      },
+      /**
+       * @description: 复制到剪贴板
+       */
+      copyToClipboard() {
+        const input = document.createElement('textarea');
+        input.innerHTML = this.code;
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand('copy');
+        document.body.removeChild(input);
+        this.copied = true;
+        setTimeout(() => {
+          this.copied = false;
+        }, 2000);
       },
     },
   });

@@ -278,6 +278,29 @@ textarea {
   margin-right: 6px;
 }
 
+.pre-wrapper {
+  display: flex;
+  padding-top: 20px;
+}
+
+.aside-line-number {
+  float: left;
+  padding-right: 10px;
+}
+
+.aside-line-number.hljs {
+  display: flex;
+  flex-direction: column;
+}
+
+.line-number {
+  font-size: 12px;
+  line-height: 24px;
+  pointer-events: none;
+  opacity: 0.2;
+  user-select: none;
+}
+
 @media (max-width: 760px) {
   .copy-the-block {
     display: none;
