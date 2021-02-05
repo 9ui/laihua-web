@@ -3,6 +3,7 @@
   <div class="w-full">
     <!-- components -->
     <LhButton v-if="!codeView" id="sourceCode"></LhButton>
+
     <!-- code preview -->
     <SourceCode v-else :code="code"></SourceCode>
   </div>

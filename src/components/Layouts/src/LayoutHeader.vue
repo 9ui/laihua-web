@@ -15,7 +15,7 @@
           <path d="M19.914 1h-18v19" />
           <path d="M6 5v18h18V5z" />
         </svg>
-        <span>COPY TO CLIPBOARD</span>
+        <span class="cursor-pointer">COPY TO CLIPBOARD</span>
       </div>
       <span :class="[`clipboard-tooltip${copied ? ' is-copied ' : ''}`]">Copied!</span>
     </div>
@@ -48,19 +48,7 @@
       <span>{{ !codeView ? 'VIEW CODE' : 'PREVIEW' }}</span>
     </div>
     <!-- switcher -->
-    <div class="switcher">
-      <div
-        v-for="(t, index) in themeList"
-        :key="index"
-        :data-theme="t"
-        :class="[
-          'theme-button cursor-pointer',
-          `bg-${t}-500`,
-          t === currentTheme ? 'is-active' : undefined,
-        ]"
-        @click="SET_THEME(t)"
-      ></div>
-    </div>
+    <Switcher></Switcher>
     <!-- device  -->
     <div
       class="device cursor-pointer"
@@ -123,21 +111,23 @@
 <script lang="ts">
   import { mapMutations, mapState } from 'vuex';
   import { defineComponent } from '@vue/composition-api';
+  import Switcher from './Switcher.vue';
   export default defineComponent({
+    components: {
+      Switcher,
+    },
     data() {
       return {
         darkMode: false, // 是否显示dark模式
         copied: false, // 是否已经复制
-        themeList: ['indigo', 'yellow', 'red', 'purple', 'pink', 'blue', 'green'], // 主题色列表
       };
     },
     computed: {
-      ...mapState('common', ['hasSidebar', 'currentTheme', 'code', 'codeView', 'view']),
+      ...mapState('common', ['hasSidebar', 'code', 'codeView', 'view']),
     },
     methods: {
       ...mapMutations('common', [
         'SET_SIDEBAR',
-        'SET_THEME',
         'SET_MODE',
         'SET_CODEVIEW',
         'SET_CODE',

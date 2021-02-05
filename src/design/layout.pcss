@@ -165,6 +165,21 @@
   transform: translateX(-50%);
 }
 
+.layout.tablet .view .content > div {
+  height: 1024px;
+  overflow-y: scroll;
+}
+
+.layout.phone .view .content > div {
+  height: 736px;
+  overflow-y: scroll;
+}
+
+.layout.tablet .view .content > div::-webkit-scrollbar,
+.layout.phone .view .content > div::-webkit-scrollbar {
+  display: none;
+}
+
 /* footer */
 .layout .footer {
   padding: 0 16px;

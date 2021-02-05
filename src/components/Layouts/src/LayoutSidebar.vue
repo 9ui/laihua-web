@@ -3,7 +3,7 @@
     <div class="blocks">
       <div class="block-category">组件</div>
       <div class="block-list">
-        <button
+        <div
           tabindex="0"
           class="block-item"
           block-type="Blog"
@@ -12,9 +12,9 @@
           @click="clickTo(0, '/')"
         >
           <BlogA></BlogA>
-        </button>
+        </div>
 
-        <button
+        <div
           tabindex="1"
           class="block-item"
           block-type="Blog"
@@ -23,9 +23,9 @@
           @click="clickTo(1, '/templates/demo1')"
         >
           <BlogB></BlogB>
-        </button>
+        </div>
 
-        <button
+        <div
           tabindex="2"
           class="block-item"
           block-type="Blog"
@@ -34,9 +34,9 @@
           @click="clickTo(2, '/components/modal')"
         >
           <BlogC></BlogC>
-        </button>
+        </div>
 
-        <button
+        <div
           tabindex="3"
           class="block-item"
           block-type="Blog"
@@ -45,9 +45,9 @@
           @click="clickTo(3, '/templates/demo2')"
         >
           <BlogD></BlogD>
-        </button>
+        </div>
 
-        <button
+        <div
           tabindex="4"
           class="block-item"
           block-type="Blog"
@@ -56,13 +56,13 @@
           @click="clickTo(4, '/templates/demo3')"
         >
           <BlogE></BlogE>
-        </button>
+        </div>
       </div>
     </div>
     <div class="blocks">
       <div class="block-category">模板</div>
       <div class="block-list">
-        <button
+        <div
           tabindex="0"
           class="block-item"
           block-type="Blog"
@@ -71,9 +71,9 @@
           @click="clickTo(0, '/')"
         >
           <BlogA></BlogA>
-        </button>
+        </div>
 
-        <button
+        <div
           tabindex="1"
           class="block-item"
           block-type="Blog"
@@ -82,9 +82,9 @@
           @click="clickTo(1, '/templates/demo1')"
         >
           <BlogB></BlogB>
-        </button>
+        </div>
 
-        <button
+        <div
           tabindex="2"
           class="block-item"
           block-type="Blog"
@@ -93,9 +93,9 @@
           @click="clickTo(2, '/components/modal')"
         >
           <BlogC></BlogC>
-        </button>
+        </div>
 
-        <button
+        <div
           tabindex="3"
           class="block-item"
           block-type="Blog"
@@ -104,9 +104,9 @@
           @click="clickTo(3, '/templates/demo2')"
         >
           <BlogD></BlogD>
-        </button>
+        </div>
 
-        <button
+        <div
           tabindex="4"
           class="block-item"
           block-type="Blog"
@@ -115,13 +115,13 @@
           @click="clickTo(4, '/templates/demo3')"
         >
           <BlogE></BlogE>
-        </button>
+        </div>
       </div>
     </div>
     <div class="blocks">
       <div class="block-category">模板</div>
       <div class="block-list">
-        <button
+        <div
           tabindex="0"
           class="block-item"
           block-type="Blog"
@@ -130,9 +130,9 @@
           @click="clickTo(0, '/')"
         >
           <BlogA></BlogA>
-        </button>
+        </div>
 
-        <button
+        <div
           tabindex="1"
           class="block-item"
           block-type="Blog"
@@ -141,9 +141,9 @@
           @click="clickTo(1, '/templates/demo1')"
         >
           <BlogB></BlogB>
-        </button>
+        </div>
 
-        <button
+        <div
           tabindex="2"
           class="block-item"
           block-type="Blog"
@@ -152,9 +152,9 @@
           @click="clickTo(2, '/components/modal')"
         >
           <BlogC></BlogC>
-        </button>
+        </div>
 
-        <button
+        <div
           tabindex="3"
           class="block-item"
           block-type="Blog"
@@ -163,9 +163,9 @@
           @click="clickTo(3, '/templates/demo2')"
         >
           <BlogD></BlogD>
-        </button>
+        </div>
 
-        <button
+        <div
           tabindex="4"
           class="block-item"
           block-type="Blog"
@@ -174,13 +174,13 @@
           @click="clickTo(4, '/templates/demo3')"
         >
           <BlogE></BlogE>
-        </button>
+        </div>
       </div>
     </div>
     <div class="blocks">
       <div class="block-category">模板</div>
       <div class="block-list">
-        <button
+        <div
           tabindex="0"
           class="block-item"
           block-type="Blog"
@@ -189,9 +189,9 @@
           @click="clickTo(0, '/')"
         >
           <BlogA></BlogA>
-        </button>
+        </div>
 
-        <button
+        <div
           tabindex="1"
           class="block-item"
           block-type="Blog"
@@ -200,9 +200,9 @@
           @click="clickTo(1, '/templates/demo1')"
         >
           <BlogB></BlogB>
-        </button>
+        </div>
 
-        <button
+        <div
           tabindex="2"
           class="block-item"
           block-type="Blog"
@@ -211,9 +211,9 @@
           @click="clickTo(2, '/components/modal')"
         >
           <BlogC></BlogC>
-        </button>
+        </div>
 
-        <button
+        <div
           tabindex="3"
           class="block-item"
           block-type="Blog"
@@ -222,9 +222,9 @@
           @click="clickTo(3, '/templates/demo2')"
         >
           <BlogD></BlogD>
-        </button>
+        </div>
 
-        <button
+        <div
           tabindex="4"
           class="block-item"
           block-type="Blog"
@@ -233,13 +233,13 @@
           @click="clickTo(4, '/templates/demo3')"
         >
           <BlogE></BlogE>
-        </button>
+        </div>
       </div>
     </div>
     <div class="blocks">
       <div class="block-category">模板</div>
       <div class="block-list">
-        <button
+        <div
           tabindex="0"
           class="block-item"
           block-type="Blog"
@@ -248,9 +248,9 @@
           @click="clickTo(0, '/')"
         >
           <BlogA></BlogA>
-        </button>
+        </div>
 
-        <button
+        <div
           tabindex="1"
           class="block-item"
           block-type="Blog"
@@ -259,9 +259,9 @@
           @click="clickTo(1, '/templates/demo1')"
         >
           <BlogB></BlogB>
-        </button>
+        </div>
 
-        <button
+        <div
           tabindex="2"
           class="block-item"
           block-type="Blog"
@@ -270,9 +270,9 @@
           @click="clickTo(2, '/components/modal')"
         >
           <BlogC></BlogC>
-        </button>
+        </div>
 
-        <button
+        <div
           tabindex="3"
           class="block-item"
           block-type="Blog"
@@ -281,9 +281,9 @@
           @click="clickTo(3, '/templates/demo2')"
         >
           <BlogD></BlogD>
-        </button>
+        </div>
 
-        <button
+        <div
           tabindex="4"
           class="block-item"
           block-type="Blog"
@@ -292,7 +292,7 @@
           @click="clickTo(4, '/templates/demo3')"
         >
           <BlogE></BlogE>
-        </button>
+        </div>
       </div>
     </div>
   </aside>

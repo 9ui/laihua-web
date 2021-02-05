@@ -27,7 +27,8 @@
         "types": [
             "@types/node",
             "@nuxt/types",
-            "@nuxtjs/moment"
+            "@nuxtjs/moment",
+            "@nuxtjs/color-mode"
         ],
         "jsx": "preserve",
         "jsxFactory": "h"
