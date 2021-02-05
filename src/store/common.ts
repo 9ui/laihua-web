@@ -5,7 +5,8 @@ export const state = () => ({
   darkMode: false, // 是否黑色主题
   codeView: false, // 是否显示源码
   currentTheme: 'indigo', // 当前主题色
-  code: '',
+  code: '', // 源码
+  view: 'desktop', // 当前视图 默认pc端
   codeLines: 0, // 源码行数
 });
 
@@ -29,5 +30,8 @@ export const mutations: MutationTree<RootState> = {
   },
   SET_CODELINES: (state, codeLines: number) => {
     state.codeLines = codeLines;
+  },
+  SET_VIEW: (state, view: string) => {
+    state.view = view;
   },
 };

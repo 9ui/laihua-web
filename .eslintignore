@@ -6,6 +6,7 @@ lib
 *.scss
 *.woff
 *.ttf
+sw.js
 .vscode
 .idea
 /.nuxt/

@@ -1,8 +1,4 @@
-declare module '*.vue' {
-  import { defineComponent } from '@vue/composition-api';
-  const Component: ReturnType<typeof defineComponent>;
-  export default Component;
-}
+declare module '*.vue' {}
 
 declare module '*.bmp' {
   const src: string;

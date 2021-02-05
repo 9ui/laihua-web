@@ -62,7 +62,12 @@
       ></div>
     </div>
     <!-- device  -->
-    <button class="device is-active" data-view="desktop">
+    <div
+      class="device cursor-pointer"
+      :class="{ 'is-active': view === 'desktop' }"
+      data-view="desktop"
+      @click="changeView('desktop')"
+    >
       <svg
         stroke="currentColor"
         stroke-width="2"
@@ -74,8 +79,13 @@
         <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
         <path d="M8 21h8m-4-4v4"></path>
       </svg>
-    </button>
-    <button class="device" data-view="tablet">
+    </div>
+    <div
+      class="device cursor-pointer"
+      :class="{ 'is-active': view === 'tablet' }"
+      data-view="tablet"
+      @click="changeView('tablet')"
+    >
       <svg
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -87,8 +97,13 @@
         <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
         <path d="M12 18h.01"></path>
       </svg>
-    </button>
-    <button class="device" data-view="phone">
+    </div>
+    <div
+      class="device cursor-pointer"
+      :class="{ 'is-active': view === 'phone' }"
+      data-view="phone"
+      @click="changeView('phone')"
+    >
       <svg
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -100,7 +115,7 @@
         <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
         <path d="M12 18h.01"></path>
       </svg>
-    </button>
+    </div>
     <!-- mode -->
     <div class="mode cursor-pointer" @click="changeMode"></div>
   </nav>
@@ -108,11 +123,7 @@
 <script lang="ts">
   import { mapMutations, mapState } from 'vuex';
   import { defineComponent } from '@vue/composition-api';
-  import { LhDropdown } from '@/components/Dropdown/index';
   export default defineComponent({
-    components: {
-      LhDropdown,
-    },
     data() {
       return {
         darkMode: false, // 是否显示dark模式
@@ -121,7 +132,7 @@
       };
     },
     computed: {
-      ...mapState('common', ['hasSidebar', 'currentTheme', 'code', 'codeView']),
+      ...mapState('common', ['hasSidebar', 'currentTheme', 'code', 'codeView', 'view']),
     },
     methods: {
       ...mapMutations('common', [
@@ -130,6 +141,7 @@
         'SET_MODE',
         'SET_CODEVIEW',
         'SET_CODE',
+        'SET_VIEW',
       ]),
       /**
        * @description：展开/收起 sidebar
@@ -150,6 +162,8 @@
        * @description:是否显示源码
        */
       toggleView() {
+        // 查看源码之前 回复视图到pc端
+        this.SET_VIEW('desktop');
         const _codeView = this.codeView ? !this.codeView : !this.codeView;
         this.SET_CODEVIEW(_codeView);
       },
@@ -167,6 +181,14 @@
         setTimeout(() => {
           this.copied = false;
         }, 2000);
+      },
+      /**
+       * @description: 切换视图
+       * @param {viewType} 视图类型
+       *  desktop：pc端 tablet： ipad端 phone：手机端
+       */
+      changeView(viewType: string) {
+        this.SET_VIEW(viewType);
       },
     },
   });

@@ -5,23 +5,18 @@
       darkMode ? 'dark-mode' : '',
       hasSidebar ? 'has-sidebar' : undefined,
       `${currentTheme}`,
+      `${view}`,
     ]"
   >
     <LayoutSidebar></LayoutSidebar>
     <div class="layout-container">
       <LayoutHeader></LayoutHeader>
-      <!-- <p class="px-56 pb-2">
-        <select
-          v-model="$colorMode.preference"
-          class="border w-24 h-8 dark:border-gray-700 dark:text-gray-600 to-gray-500 dark:bg-red-700"
-        >
-          <option value="system">System</option>
-          <option value="light">Light</option>
-          <option value="dark">Dark</option>
-        </select>
-      </p> -->
       <content class="main">
-        <Nuxt />
+        <div class="view">
+          <div class="content">
+            <Nuxt />
+          </div>
+        </div>
       </content>
       <a
         href="https://github.com/mertJF/tailblocks"
@@ -49,7 +44,7 @@
   export default VueAPI.defineComponent({
     components: { LayoutHeader, LayoutSidebar },
     computed: {
-      ...mapState('common', ['hasSidebar', 'currentTheme', 'darkMode']),
+      ...mapState('common', ['hasSidebar', 'currentTheme', 'darkMode', 'view']),
     },
     methods: {},
   });

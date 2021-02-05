@@ -1,11 +1,7 @@
 import { VNode } from 'vue'; // eslint-disable-line
 import { ComponentRenderProxy } from '@vue/composition-api'; // eslint-disable-line
 
-declare module '*.tsx' {
-  import { defineComponent } from '@vue/composition-api';
-  const component: ReturnType<typeof defineComponent>;
-  export default component;
-}
+declare module '*.tsx' {}
 
 declare global {
   namespace JSX {
