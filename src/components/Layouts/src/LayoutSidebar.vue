@@ -5,7 +5,7 @@
       <div class="block-list">
         <div
           tabindex="0"
-          class="block-item"
+          class="block-item focus:outline-none cursor-pointer"
           block-type="Blog"
           block-name="BlogA"
           :class="{ 'is-active': isActive === 0 }"
@@ -16,7 +16,7 @@
 
         <div
           tabindex="1"
-          class="block-item"
+          class="block-item focus:outline-none cursor-pointer"
           block-type="Blog"
           block-name="BlogB"
           :class="{ 'is-active': isActive === 1 }"
@@ -27,7 +27,7 @@
 
         <div
           tabindex="2"
-          class="block-item"
+          class="block-item focus:outline-none cursor-pointer"
           block-type="Blog"
           block-name="BlogC"
           :class="{ 'is-active': isActive === 2 }"
@@ -38,7 +38,7 @@
 
         <div
           tabindex="3"
-          class="block-item"
+          class="block-item focus:outline-none cursor-pointer"
           block-type="Blog"
           block-name="BlogD"
           :class="{ 'is-active': isActive === 3 }"
@@ -49,7 +49,7 @@
 
         <div
           tabindex="4"
-          class="block-item"
+          class="block-item focus:outline-none cursor-pointer"
           block-type="Blog"
           block-name="BlogE"
           :class="{ 'is-active': isActive === 4 }"
@@ -57,7 +57,7 @@
         >
           <BlogE></BlogE>
         </div>
-        <BlockList></BlockList>
+        <!-- <BlockList></BlockList> -->
       </div>
     </div>
   </aside>
@@ -67,7 +67,7 @@
   import { mapMutations, mapState } from 'vuex';
   import { defineComponent } from '@vue/composition-api';
   import { BlogA, BlogB, BlogC, BlogD, BlogE } from '@/components/AsideIcon/index';
-  import BlockList from './BlockList';
+  //   import BlockList from './BlockList';
   export default defineComponent({
     components: {
       BlogA,
@@ -75,7 +75,7 @@
       BlogC,
       BlogD,
       BlogE,
-      BlockList,
+      //   BlockList,
     },
     data() {
       return {
