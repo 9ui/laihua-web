@@ -8,6 +8,8 @@ export const state = () => ({
   code: '', // 源码
   view: 'desktop', // 当前视图 默认pc端
   codeLines: 0, // 源码行数
+  blockType: 'Blog',
+  blockName: 'BlogA',
 });
 
 export type RootState = ReturnType<typeof state>;
@@ -33,5 +35,11 @@ export const mutations: MutationTree<RootState> = {
   },
   SET_VIEW: (state, view: string) => {
     state.view = view;
+  },
+  SET_BLOCKTYPE: (state, blockType: string) => {
+    state.blockType = blockType;
+  },
+  SET_BLOCKNAME: (state, blockName: string) => {
+    state.blockName = blockName;
   },
 };
