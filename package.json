@@ -16,7 +16,8 @@
     "lint:style": "stylelint --fix \"**/*.{vue,less,postcss,css,scss}\" --cache --cache-location node_modules/.cache/stylelint/",
     "lint": "yarn lint:js && yarn lint:style",
     "clean": "rm -rf .nuxt && rm -rf node_modules && yarn",
-    "log": "esno ./build/script/changelog.ts"
+    "log": "esno ./build/script/changelog.ts",
+    "cz": "git-cz"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.0",
@@ -88,6 +89,11 @@
     "tasksfile": "^5.1.1",
     "ts-loader": "^8.0.14",
     "vuex-module-decorators": "^1.0.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   },
   "changelog": {
     "bugsUrl": "https://github.com/9ui/laihua-web7.0/issues",
