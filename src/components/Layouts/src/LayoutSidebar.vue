@@ -1,63 +1,30 @@
 <template>
   <aside class="sidebar body-font">
-    <div class="blocks">
-      <div class="block-category">组件</div>
+    <div v-for="(item, index) in blockList" :key="index" class="blocks">
+      <div class="block-category">{{ item.name }}</div>
       <div class="block-list">
+        <!-- home block -->
         <div
-          tabindex="0"
-          class="block-item focus:outline-none cursor-pointer"
-          block-type="Blog"
-          block-name="BlogA"
-          :class="{ 'is-active': isActive === 0 }"
-          @click="clickTo(0, '/')"
+          v-if="index === 0"
+          class="block-item"
+          :class="{ 'is-active': blockType === 'home' && blockName === 'Introduction' }"
+          @click="clickTo('home', 'Introduction', '/')"
         >
-          <BlogA></BlogA>
+          <component :is="item.components[0]"></component>
         </div>
-
+        <!-- other block -->
         <div
-          tabindex="1"
-          class="block-item focus:outline-none cursor-pointer"
-          block-type="Blog"
-          block-name="BlogB"
-          :class="{ 'is-active': isActive === 1 }"
-          @click="clickTo(1, '/templates/demo1')"
+          v-for="(com, j) in item.components"
+          v-else
+          :key="j + 100"
+          class="block-item"
+          :class="{ 'is-active': blockType === item.pathName && blockName === com }"
+          :block-type="blockType"
+          :block-name="blockName"
+          @click="clickTo(item.pathName, com, `/${item.pathName}/${com}`)"
         >
-          <BlogB></BlogB>
+          <component :is="com"></component>
         </div>
-
-        <div
-          tabindex="2"
-          class="block-item focus:outline-none cursor-pointer"
-          block-type="Blog"
-          block-name="BlogC"
-          :class="{ 'is-active': isActive === 2 }"
-          @click="clickTo(2, '/components/modal')"
-        >
-          <BlogC></BlogC>
-        </div>
-
-        <div
-          tabindex="3"
-          class="block-item focus:outline-none cursor-pointer"
-          block-type="Blog"
-          block-name="BlogD"
-          :class="{ 'is-active': isActive === 3 }"
-          @click="clickTo(3, '/templates/demo2')"
-        >
-          <BlogD></BlogD>
-        </div>
-
-        <div
-          tabindex="4"
-          class="block-item focus:outline-none cursor-pointer"
-          block-type="Blog"
-          block-name="BlogE"
-          :class="{ 'is-active': isActive === 4 }"
-          @click="clickTo(4, '/templates/demo3')"
-        >
-          <BlogE></BlogE>
-        </div>
-        <!-- <BlockList></BlockList> -->
       </div>
     </div>
   </aside>
@@ -66,31 +33,32 @@
 <script lang="ts">
   import { mapMutations, mapState } from 'vuex';
   import { defineComponent } from '@vue/composition-api';
-  import { BlogA, BlogB, BlogC, BlogD, BlogE } from '@/components/AsideIcon/index';
-  //   import BlockList from './BlockList';
+  import { getIcons, blockList } from '@/components/AsideIcon/index';
+
   export default defineComponent({
-    components: {
-      BlogA,
-      BlogB,
-      BlogC,
-      BlogD,
-      BlogE,
-      //   BlockList,
-    },
+    components: getIcons,
     data() {
       return {
         isActive: 0,
+        blockList,
       };
     },
     computed: {
-      ...mapState('common', ['hasSidebar', 'darkMode', 'currentTheme']),
+      ...mapState('common', ['hasSidebar', 'darkMode', 'currentTheme', 'blockType', 'blockName']),
     },
     methods: {
-      ...mapMutations('common', ['SET_CODEVIEW']),
-      clickTo(index, path) {
-        this.isActive = index;
+      ...mapMutations('common', ['SET_CODEVIEW', 'SET_BLOCKTYPE', 'SET_BLOCKNAME']),
+      /**
+       * @description: 切换block
+       * @param {blockType} 模块类型
+       * @param {blockName} 模块名称
+       * @param {path} 跳转路由
+       */
+      clickTo(blockType: string, blockName: string, path: string) {
         this.SET_CODEVIEW(false);
-        this.$router.push(path);
+        this.SET_BLOCKTYPE(blockType);
+        this.SET_BLOCKNAME(blockName);
+        this.$router.push({ path });
       },
     },
   });

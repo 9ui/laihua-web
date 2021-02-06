@@ -51,7 +51,7 @@
     <Switcher></Switcher>
     <!-- device  -->
     <div
-      class="device cursor-pointer"
+      class="device"
       :class="{ 'is-active': view === 'desktop' }"
       data-view="desktop"
       @click="changeView('desktop')"
@@ -69,7 +69,7 @@
       </svg>
     </div>
     <div
-      class="device cursor-pointer"
+      class="device"
       :class="{ 'is-active': view === 'tablet' }"
       data-view="tablet"
       @click="changeView('tablet')"
@@ -87,7 +87,7 @@
       </svg>
     </div>
     <div
-      class="device cursor-pointer"
+      class="device"
       :class="{ 'is-active': view === 'phone' }"
       data-view="phone"
       @click="changeView('phone')"

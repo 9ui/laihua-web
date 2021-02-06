@@ -8,8 +8,8 @@ export const state = () => ({
   code: '', // 源码
   view: 'desktop', // 当前视图 默认pc端
   codeLines: 0, // 源码行数
-  blockType: 'Blog',
-  blockName: 'BlogA',
+  blockType: 'home', // 默认示例模块类型
+  blockName: 'Introduction', // 默认示例模块名称
 });
 
 export type RootState = ReturnType<typeof state>;

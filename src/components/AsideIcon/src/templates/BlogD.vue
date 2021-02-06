@@ -25,9 +25,3 @@
     <rect x="20" y="106" width="23" height="3" rx="1.5" fill="var(--solid-900)" />
   </svg>
 </template>
-
-<script>
-  export default {};
-</script>
-
-<style></style>
