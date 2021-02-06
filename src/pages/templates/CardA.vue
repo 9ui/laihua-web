@@ -1,15 +1,16 @@
 <template>
   <LayoutMain>
-    <SectionA id="sourceCode"></SectionA>
+    <CardA id="sourceCode"></CardA>
   </LayoutMain>
 </template>
+
 <script lang="ts">
   import { defineComponent } from '@vue/composition-api';
-  import { SectionA } from '@/components/Views/index';
+  import { CardA } from '@/components/Views/index';
   import { LayoutMain } from '@/components/Layouts/index';
   export default defineComponent({
     components: {
-      SectionA,
+      CardA,
       LayoutMain,
     },
   });

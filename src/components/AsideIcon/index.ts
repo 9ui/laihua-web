@@ -4,6 +4,9 @@ export const getIcons = {
   BlogB: () => import('./src/templates/BlogB.vue'),
   BlogC: () => import('./src/templates/BlogC.vue'),
   BlogD: () => import('./src/templates/BlogD.vue'),
+  SectionC: () => import('./src/templates/SectionC.vue'),
+  CardA: () => import('./src/templates/CardA.vue'),
+  CardB: () => import('./src/templates/CardB.vue'),
   Modal: () => import('./src/components/Modal.vue'),
   PageA: () => import('./src/page/PageA.vue'),
 };
@@ -28,7 +31,7 @@ export const blockList: BlockListType[] = [
   {
     name: '模板',
     pathName: 'templates',
-    components: ['BlogA', 'BlogB', 'BlogC', 'BlogD'],
+    components: ['BlogA', 'BlogB', 'BlogC', 'BlogD', 'CardA', 'CardB', 'SectionC'],
   },
   {
     name: '页面',
