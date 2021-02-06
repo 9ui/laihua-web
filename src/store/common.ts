@@ -6,7 +6,6 @@ export const state = () => ({
   codeView: false, // 是否显示源码
   currentTheme: 'indigo', // 当前主题色
   code: '', // 源码
-  view: 'desktop', // 当前视图 默认pc端
   codeLines: 0, // 源码行数
   blockType: 'home', // 默认示例模块类型
   blockName: 'Introduction', // 默认示例模块名称
@@ -32,9 +31,6 @@ export const mutations: MutationTree<RootState> = {
   },
   SET_CODELINES: (state, codeLines: number) => {
     state.codeLines = codeLines;
-  },
-  SET_VIEW: (state, view: string) => {
-    state.view = view;
   },
   SET_BLOCKTYPE: (state, blockType: string) => {
     state.blockType = blockType;

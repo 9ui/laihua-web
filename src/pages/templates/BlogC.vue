@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <!-- blok---1 -->
     <div class="border border-light-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto">
       <div class="flex space-x-4 animate-pulse">
@@ -25,5 +25,5 @@
         <p class="text-gray-500">You have a new message!</p>
       </div>
     </div>
-  </div>
+  </section>
 </template>

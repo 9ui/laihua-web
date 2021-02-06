@@ -49,61 +49,6 @@
     </div>
     <!-- switcher -->
     <Switcher></Switcher>
-    <!-- device  -->
-    <div
-      class="device"
-      :class="{ 'is-active': view === 'desktop' }"
-      data-view="desktop"
-      @click="changeView('desktop')"
-    >
-      <svg
-        stroke="currentColor"
-        stroke-width="2"
-        fill="none"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        viewBox="0 0 24 24"
-      >
-        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-        <path d="M8 21h8m-4-4v4"></path>
-      </svg>
-    </div>
-    <div
-      class="device"
-      :class="{ 'is-active': view === 'tablet' }"
-      data-view="tablet"
-      @click="changeView('tablet')"
-    >
-      <svg
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        stroke-width="2"
-        fill="none"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
-        <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
-        <path d="M12 18h.01"></path>
-      </svg>
-    </div>
-    <div
-      class="device"
-      :class="{ 'is-active': view === 'phone' }"
-      data-view="phone"
-      @click="changeView('phone')"
-    >
-      <svg
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        stroke-width="2"
-        fill="none"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
-        <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-        <path d="M12 18h.01"></path>
-      </svg>
-    </div>
     <!-- mode -->
     <div class="mode cursor-pointer" @click="changeMode"></div>
   </nav>
@@ -126,13 +71,7 @@
       ...mapState('common', ['hasSidebar', 'code', 'codeView', 'view']),
     },
     methods: {
-      ...mapMutations('common', [
-        'SET_SIDEBAR',
-        'SET_MODE',
-        'SET_CODEVIEW',
-        'SET_CODE',
-        'SET_VIEW',
-      ]),
+      ...mapMutations('common', ['SET_SIDEBAR', 'SET_MODE', 'SET_CODEVIEW', 'SET_CODE']),
       /**
        * @description：展开/收起 sidebar
        */
@@ -153,7 +92,6 @@
        */
       toggleView() {
         // 查看源码之前 回复视图到pc端
-        this.SET_VIEW('desktop');
         const _codeView = this.codeView ? !this.codeView : !this.codeView;
         this.SET_CODEVIEW(_codeView);
       },
@@ -171,14 +109,6 @@
         setTimeout(() => {
           this.copied = false;
         }, 2000);
-      },
-      /**
-       * @description: 切换视图
-       * @param {viewType} 视图类型
-       *  desktop：pc端 tablet： ipad端 phone：手机端
-       */
-      changeView(viewType: string) {
-        this.SET_VIEW(viewType);
       },
     },
   });

@@ -1,11 +1,11 @@
 <template>
   <!-- block---1 -->
-  <div class="w-full">
+  <section class="w-full">
     <!-- components -->
     <SectionA v-if="!codeView" id="sourceCode"></SectionA>
     <!-- code preview -->
     <SourceCode v-else :code="code"></SourceCode>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">

@@ -2,23 +2,19 @@
   <!-- block---1 -->
   <section class="w-full">
     <!-- components -->
-    <SectionB v-if="!codeView" id="sourceCode"></SectionB>
+    <slot v-if="!codeView"></slot>
     <!-- code preview -->
     <SourceCode v-else :code="code"></SourceCode>
   </section>
 </template>
 
 <script lang="ts">
-  import { beautifyHtml } from '@/utils/beautifyHtml';
-  import * as Core from '@/core';
-  import { mapMutations, mapState } from 'vuex';
-  import { SectionB } from '@/components/Blocks/index';
+  import { defineComponent } from '@vue/composition-api';
   import { SourceCode } from '@/components/CodePreview/index';
-  const { VueAPI } = Core;
-
-  export default VueAPI.defineComponent({
+  import { mapMutations, mapState } from 'vuex';
+  import { beautifyHtml } from '@/utils/beautifyHtml';
+  export default defineComponent({
     components: {
-      SectionB,
       SourceCode,
     },
     data() {
@@ -41,3 +37,5 @@
     },
   });
 </script>
+
+<style></style>

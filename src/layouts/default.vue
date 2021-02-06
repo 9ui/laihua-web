@@ -8,9 +8,12 @@
       `${view}`,
     ]"
   >
+    <!-- aside -->
     <LayoutSidebar></LayoutSidebar>
     <div class="layout-container">
+      <!-- header -->
       <LayoutHeader></LayoutHeader>
+      <!-- main -->
       <content class="main">
         <div class="view">
           <div class="content">
@@ -18,6 +21,7 @@
           </div>
         </div>
       </content>
+      <!-- github -->
       <a
         href="https://github.com/mertJF/tailblocks"
         class="github"
