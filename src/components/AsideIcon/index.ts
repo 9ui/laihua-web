@@ -1,17 +1,25 @@
 export const getIcons = {
-  Introduction: () => import('./src/home/Introduction.vue'),
-  BlogA: () => import('./src/templates/BlogA.vue'),
-  BlogB: () => import('./src/templates/BlogB.vue'),
-  BlogC: () => import('./src/templates/BlogC.vue'),
-  BlogD: () => import('./src/templates/BlogD.vue'),
-  SectionC: () => import('./src/templates/SectionC.vue'),
-  SectionD: () => import('./src/templates/SectionD.vue'),
-  SectionE: () => import('./src/templates/SectionE.vue'),
-  SectionF: () => import('./src/templates/SectionF.vue'),
-  CardA: () => import('./src/templates/CardA.vue'),
-  CardB: () => import('./src/templates/CardB.vue'),
-  Modal: () => import('./src/components/Modal.vue'),
-  PageA: () => import('./src/page/PageA.vue'),
+  // home
+  Introduction: () => import('./src/home/IconIntroduction.vue'),
+  // template
+  BlogA: () => import('./src/templates/IconBlogA.vue'),
+  BlogB: () => import('./src/templates/IconBlogB.vue'),
+  BlogC: () => import('./src/templates/IconBlogC.vue'),
+  BlogD: () => import('./src/templates/IconBlogD.vue'),
+  SectionC: () => import('./src/templates/IconSectionC.vue'),
+  SectionD: () => import('./src/templates/IconSectionD.vue'),
+  SectionE: () => import('./src/templates/IconSectionE.vue'),
+  SectionF: () => import('./src/templates/IconSectionF.vue'),
+  CardA: () => import('./src/templates/IconCardA.vue'),
+  CardB: () => import('./src/templates/IconCardB.vue'),
+  // template/header
+  HeaderA: () => import('./src/templates/header/IconHeaderA.vue'),
+  HeaderB: () => import('./src/templates/header/IconHeaderB.vue'),
+  // components
+  Modal: () => import('./src/components/IconModal.vue'),
+  // page
+  PageA: () => import('./src/page/IconPageA.vue'),
+  PageB: () => import('./src/page/IconPageB.vue'),
 };
 
 interface BlockListType {
@@ -45,11 +53,13 @@ export const blockList: BlockListType[] = [
       'SectionD',
       'SectionE',
       'SectionF',
+      'HeaderA',
+      'HeaderB',
     ],
   },
   {
     name: '页面',
     pathName: 'page',
-    components: ['PageA'],
+    components: ['PageA', 'PageB'],
   },
 ];

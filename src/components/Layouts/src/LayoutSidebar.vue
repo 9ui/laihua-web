@@ -55,9 +55,13 @@
        * @param {path} 跳转路由
        */
       clickTo(blockType: string, blockName: string, path: string) {
+        // 关闭源码预览
         this.SET_CODEVIEW(false);
+        // 设置模块类型
         this.SET_BLOCKTYPE(blockType);
+        // 设置模块名称
         this.SET_BLOCKNAME(blockName);
+        // 路由跳转
         this.$router.push({ path });
       },
     },
