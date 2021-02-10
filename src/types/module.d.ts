@@ -5,3 +5,5 @@ declare module 'fs-extra';
 declare module 'lodash';
 
 declare const React: string;
+
+declare module 'tailwindcss-dark-mode';

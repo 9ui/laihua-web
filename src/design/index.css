@@ -1,12 +1,12 @@
-@import './init.pcss';
+@import './init.css';
 
-@import './colors.pcss';
+@import './colors.css';
 
-@import './global.pcss';
+@import './global.css';
 
-@import './layout.pcss';
+@import './layout.css';
 
-.dark-mode.has-sidebar .sidebar {
+.dark.has-sidebar .sidebar {
   box-shadow: 2px 68px 10px rgba(26, 32, 44, 0.8);
 }
 
@@ -54,7 +54,6 @@
   border: 0;
   border-radius: 4px;
   box-shadow: var(--shadow);
-  @apply focus:outline-none cursor-pointer;
 }
 
 .block-item + .block-item {

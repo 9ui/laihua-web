@@ -1,6 +1,6 @@
 <template>
-  <div class="min-h-screen bg-gray-300 max-w-full flex justify-center items-center">
-    <div class="bg-white p-6 rounded-xl shadow-xl">
+  <div class="min-h-screen max-w-full flex justify-center items-center">
+    <div class="p-6 rounded-xl shadow-xl">
       <h3 class="text-lg font-semibold relative">
         Share file
         <button
@@ -33,12 +33,9 @@
       </form>
       <div class="flex justify-between text-sm mt-8 mb-4">
         <p>Anyone with the link <strong>can view</strong> this file.</p>
-        <a class="text-purple-500 underline inline-block ml-auto" href="#">Create link</a>
+        <a class="underline inline-block ml-auto" href="#">Create link</a>
       </div>
-      <button
-        class="bg-purple-500 text-white text-sm px-6 py-2 rounded-3xl mt-4 hover:bg-purple-700"
-        >Share file</button
-      >
+      <button class="text-sm px-6 py-2 rounded-3xl mt-4 hover:bg-purple-700">Share file</button>
     </div>
   </div>
 </template>

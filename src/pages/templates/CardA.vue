@@ -1,6 +1,6 @@
 <template>
   <LayoutMain>
-    <CardA id="sourceCode"></CardA>
+    <CardA></CardA>
   </LayoutMain>
 </template>
 

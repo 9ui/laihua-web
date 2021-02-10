@@ -1,8 +1,6 @@
 <template>
-  <section
-    class="box-border min-h-screen bg-gray-100 p-6 flex flex-col items-center justify-center"
-  >
-    <div class="max-w-xs bg-white pb-6 rounded-b-xl shadow-lg">
+  <section class="box-border min-h-screen p-6 flex flex-col items-center justify-center">
+    <div class="max-w-xs pb-6 rounded-b-xl shadow-lg">
       <header>
         <img
           class="rounded-t-xl"

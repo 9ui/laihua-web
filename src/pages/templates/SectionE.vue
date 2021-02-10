@@ -1,6 +1,6 @@
 <template>
   <LayoutMain>
-    <SectionE id="sourceCode"></SectionE>
+    <SectionE></SectionE>
   </LayoutMain>
 </template>
 

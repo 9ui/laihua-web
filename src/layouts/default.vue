@@ -5,7 +5,6 @@
       darkMode ? 'dark-mode' : '',
       hasSidebar ? 'has-sidebar' : undefined,
       `${currentTheme}`,
-      `${view}`,
     ]"
   >
     <!-- aside -->
@@ -16,7 +15,7 @@
       <!-- main -->
       <content class="main">
         <div class="view">
-          <div class="content">
+          <div id="sourceCode" class="content">
             <Nuxt />
           </div>
         </div>
@@ -48,7 +47,7 @@
   export default VueAPI.defineComponent({
     components: { LayoutHeader, LayoutSidebar },
     computed: {
-      ...mapState('common', ['hasSidebar', 'currentTheme', 'darkMode', 'view']),
+      ...mapState('common', ['hasSidebar', 'currentTheme', 'darkMode']),
     },
     methods: {},
   });

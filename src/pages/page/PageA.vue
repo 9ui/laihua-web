@@ -1,6 +1,16 @@
 <template>
-  <div
-    class="dark:bg-black dark:text-white h-auto py-80 box-border flex align-middle justify-center"
-    >PageA</div
-  >
+  <LayoutMain>
+    <PageA></PageA>
+  </LayoutMain>
 </template>
+<script lang="ts">
+  import { defineComponent } from '@vue/composition-api';
+  import { PageA } from '@/components/Views/index';
+  import { LayoutMain } from '@/components/Layouts/index';
+  export default defineComponent({
+    components: {
+      LayoutMain,
+      PageA,
+    },
+  });
+</script>

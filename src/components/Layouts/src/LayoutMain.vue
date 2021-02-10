@@ -1,6 +1,6 @@
 <template>
   <!-- block---1 -->
-  <section class="w-full">
+  <section class="w-full h-screen">
     <!-- components -->
     <slot v-if="!codeView"></slot>
     <!-- code preview -->

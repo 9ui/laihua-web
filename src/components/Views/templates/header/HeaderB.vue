@@ -12,7 +12,73 @@
         class="md:mr-auto md:ml-10 md:py-1 md:pl-4 flex flex-wrap items-center text-base justify-center dark:text-white"
       >
         <a class="mr-10 hover:text-white cursor-pointer text-gray-300 text-sm">工作台</a>
-        <a class="mr-10 hover:text-white cursor-pointer text-gray-300 text-sm">产品</a>
+        <a
+          class="relative mr-10 hover:text-white cursor-pointer text-gray-300 text-sm inline-block text-left"
+        >
+          <span @click="visible = true" @blur="visible = false" @mouseenter="visible = true"
+            >产品</span
+          >
+          <transition
+            enter-active-class="transition ease-out duration-100"
+            enter-to-class="opacity-100 scale-100"
+            enter-from-class="opacity-0 scale-95"
+            leave-active-class="transition ease-in duration-75"
+            leave-to-class="opacity-0 scale-95"
+            leave-from-class="opacity-100 scale-100"
+          >
+            <div
+              v-show="visible"
+              class="origin-top-right absolute -right-24 mt-6 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="options-menu"
+              @mouseleave="visible = false"
+            >
+              <div class="py-1">
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  role="menuitem"
+                  >Edit</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  role="menuitem"
+                  >Duplicate</a
+                >
+              </div>
+              <div class="py-1">
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  role="menuitem"
+                  >Edit</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  role="menuitem"
+                  >Duplicate</a
+                >
+              </div>
+              <div class="py-1">
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  role="menuitem"
+                  >Edit</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  role="menuitem"
+                  >Duplicate</a
+                >
+              </div>
+            </div>
+          </transition>
+        </a>
         <a class="mr-10 hover:text-white cursor-pointer text-gray-300 text-sm">发现</a>
         <a class="mr-10 hover:text-white cursor-pointer text-gray-300 text-sm">解决方案</a>
         <a class="mr-10 hover:text-white cursor-pointer text-gray-300 text-sm">会员定价</a>
@@ -28,3 +94,18 @@
     </div>
   </header>
 </template>
+<script>
+  import { defineComponent } from '@vue/composition-api';
+  export default defineComponent({
+    data() {
+      return {
+        visible: true,
+      };
+    },
+    methods: {
+      blur() {
+        console.log('被执行了');
+      },
+    },
+  });
+</script>

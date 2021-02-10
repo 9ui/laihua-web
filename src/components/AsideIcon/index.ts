@@ -1,17 +1,19 @@
 export const getIcons = {
   // home
   Introduction: () => import('./src/home/IconIntroduction.vue'),
-  // template
-  BlogA: () => import('./src/templates/IconBlogA.vue'),
-  BlogB: () => import('./src/templates/IconBlogB.vue'),
-  BlogC: () => import('./src/templates/IconBlogC.vue'),
-  BlogD: () => import('./src/templates/IconBlogD.vue'),
-  SectionC: () => import('./src/templates/IconSectionC.vue'),
+  // template/blog
+  BlogA: () => import('./src/templates/blog/IconBlogA.vue'),
+  BlogB: () => import('./src/templates/blog/IconBlogB.vue'),
+  BlogC: () => import('./src/templates/blog/IconBlogC.vue'),
+
   SectionD: () => import('./src/templates/IconSectionD.vue'),
   SectionE: () => import('./src/templates/IconSectionE.vue'),
   SectionF: () => import('./src/templates/IconSectionF.vue'),
-  CardA: () => import('./src/templates/IconCardA.vue'),
-  CardB: () => import('./src/templates/IconCardB.vue'),
+  // template/card
+  CardA: () => import('./src/templates/card/IconCardA.vue'),
+  CardB: () => import('./src/templates/card/IconCardB.vue'),
+  CardC: () => import('./src/templates/card/IconCardC.vue'),
+
   // template/header
   HeaderA: () => import('./src/templates/header/IconHeaderA.vue'),
   HeaderB: () => import('./src/templates/header/IconHeaderB.vue'),
@@ -46,10 +48,9 @@ export const blockList: BlockListType[] = [
       'BlogA',
       'BlogB',
       'BlogC',
-      'BlogD',
       'CardA',
       'CardB',
-      'SectionC',
+      'CardC',
       'SectionD',
       'SectionE',
       'SectionF',

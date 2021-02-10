@@ -1,6 +1,6 @@
 <template>
   <LayoutMain>
-    <HeaderA id="sourceCode"></HeaderA>
+    <HeaderA></HeaderA>
   </LayoutMain>
 </template>
 
