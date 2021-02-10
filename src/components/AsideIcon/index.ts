@@ -12,7 +12,7 @@ export const getIcons = {
   // template/card
   CardA: () => import('./src/templates/card/IconCardA.vue'),
   CardB: () => import('./src/templates/card/IconCardB.vue'),
-  CardC: () => import('./src/templates/card/IconCardC.vue'),
+  CardC: () => import('./src/templates/card/IconCardD.vue'),
 
   // template/header
   HeaderA: () => import('./src/templates/header/IconHeaderA.vue'),
