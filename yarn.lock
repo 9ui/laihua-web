@@ -4845,20 +4845,20 @@ es6-promisify@^5.0.0:
   dependencies:
     es6-promise "^4.0.3"
 
-esbuild-register@^1.1.1:
-  version "1.2.1"
-  resolved "https://registry.npmjs.org/esbuild-register/-/esbuild-register-1.2.1.tgz#a430decedd7cb83ecf05141c7a7050b990724d41"
-  integrity sha512-Pg00Woeg+2hpRyZkxSjvBUIabQ6DZIdCUgeBCzWgYfiFCnetQF8Cmrr5/+M/rMJCP/trhNlV0Kc4KnbYssIrFg==
+esbuild-register@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/esbuild-register/-/esbuild-register-2.0.0.tgz#579a6eff4e5713a318602b4d305bcb6f8c5b08f9"
+  integrity sha512-98i1+7OnCURCbKaWw5wnY05e4v7uknFEER7LtVxi/lCs8U+sl6/LnITvfeoDLrsqxlA3O6BjxK8QqsirfYULfA==
   dependencies:
     joycon "^2.2.5"
     pirates "^4.0.1"
     source-map-support "^0.5.19"
     strip-json-comments "^3.1.1"
 
-esbuild@^0.8.17:
-  version "0.8.41"
-  resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.8.41.tgz#d177f35354cf2b5a3eeddd8c927066fff82771b3"
-  integrity sha512-xejVYquAHrYaHkn/7Itm0aTAALvY1ZJTWMQ14Ww8wEeeg6B/8BN3rjDJ4LMbLoEdVEAFS2b5OZ3jPRYm8Ikm0g==
+esbuild@^0.8.48:
+  version "0.8.50"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.8.50.tgz#ebf24fde0cdad1a369789dd6fd7a820b0a01e46c"
+  integrity sha512-oidFLXssA7IccYzkqLVZSqNJDwDq8Mh/vqvrW+3fPWM7iUiC5O2bCllhnO8+K9LlyL/2Z6n+WwRJAz9fqSIVRg==
 
 escalade@^3.1.1:
   version "3.1.1"
@@ -5185,14 +5185,13 @@ esm@^3.2.25:
   resolved "https://registry.npmjs.org/esm/-/esm-3.2.25.tgz#342c18c29d56157688ba5ce31f8431fbb795cc10"
   integrity sha512-U1suiZ2oDVWv4zPO56S0NcR5QriEahGtdN2OR6FiOG4WJvcjBVFB0qI4+eKoWFH483PKGuLuu6V8Z4T5g63UVA==
 
-esno@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.npmjs.org/esno/-/esno-0.3.0.tgz#c818996bdaaf2deaf81413d6f45538ffa6e41b42"
-  integrity sha512-4sF/j8jruQv9jScU8tNkgoDFLjyGxTTB8bmjRmWHyNNygra3WS3X0U1Cc7GuOvfSEjn3NDS57P0LRnzgiupKJg==
+esno@^0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/esno/-/esno-0.4.4.tgz#88b20add264401321a6545de00c9437edd81ca24"
+  integrity sha512-YthG7d+wodPWKkJTdQPMrKZCbJgtyWsel6UBekjZw8AahUTtkqvtLXcMnRXeZ5YIcjviLXw3Cmq7hVlvB7dFyw==
   dependencies:
-    esbuild "^0.8.17"
-    esbuild-register "^1.1.1"
-    esm "^3.2.25"
+    esbuild "^0.8.48"
+    esbuild-register "^2.0.0"
 
 espree@^6.2.1:
   version "6.2.1"
