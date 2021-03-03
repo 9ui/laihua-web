@@ -22,6 +22,7 @@ export const getIcons = {
   // page
   PageA: () => import('./src/page/IconPageA.vue'),
   PageB: () => import('./src/page/IconPageB.vue'),
+  PageC: () => import('./src/page/IconPageC.vue'),
 };
 
 interface BlockListType {
@@ -61,6 +62,6 @@ export const blockList: BlockListType[] = [
   {
     name: '页面',
     pathName: 'page',
-    components: ['PageA', 'PageB'],
+    components: ['PageA', 'PageB', 'PageC'],
   },
 ];

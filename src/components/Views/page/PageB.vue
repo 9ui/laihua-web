@@ -1,9 +1,12 @@
 <template>
   <section class="w-full mx-auto">
     <div class="relative">
-      <img src="https://soom.us/_nuxt/img/162e32a.jpg" class="w-full absolute top-0 left-0 z-0" />
+      <img
+        src="https://soom.us/_nuxt/img/banner-bg.162e32a.jpg"
+        class="w-full absolute top-0 left-0 z-0"
+      />
       <nav class="w-full h-auto flex px-10 pt-5 absolute left-0 top-0 z-10">
-        <img src="https://soom.us/_nuxt/img/e1cd00a.png" class="w-auto h-7" />
+        <img src="https://soom.us/_nuxt/img/logo.e1cd00a.png" class="w-auto h-7" />
       </nav>
       <div
         class="flex flex-col relative w-full items-center pt-36 text-center select-none container mx-auto"
