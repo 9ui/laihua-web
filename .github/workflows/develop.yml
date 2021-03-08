@@ -52,7 +52,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-${{ matrix.node-version }}-nodemodules-
 
-       # 下载依赖
+        # 下载依赖
       - run: yarn
         if: |
           steps.cache-yarn-cache.outputs.cache-hit != 'true' ||
@@ -102,24 +102,30 @@ jobs:
             yarn install --production
             pm2 reload pm2.config.json
 
-      # 微信通知
-      - name: Wechat Notification
-        if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
-        uses: chf007/action-wechat-work@master
-        env:
-          WECHAT_WORK_BOT_WEBHOOK: ${{ secrets.DEV_WECHAT_WEBHOOK }}
+      # Notify
+      - name: Success
+        uses: rjstone/discord-webhook-notify@v1
+        if: success()
         with:
-          msgtype: markdown
-          content: "<font color=\"warning\">来画平台</font>更新了，快来试试看吧～。\n
-          > \n
-          ##### 修改内容：\n
-          > <font color=\"info\">${{ github.event.head_commit.message }}</font> \n
-          ##### 修改分支:\n
-          > <font color=\"info\">${{ github.event.ref }}</font> \n
-          ##### 修改时间:\n
-          > <font color=\"info\">${{ github.event.head_commit.timestamp }}</font> \n
-          ##### 修改人:\n
-          > <font color=\"info\">${{ github.event.head_commit.committer.name }}</font> \n
-
-          <font color=\"warning\">[查看详情](https://web.90c.vip)</font>\n"
-          mentioned_list: "['@all']"
+          severity: info
+          avatarUrl: https://avatars.githubusercontent.com/u/71952965?s=400&u=b4330492595a29cdba1c8c3029c078d1cb70631e&v=4
+          username: ${{ github.event.head_commit.committer.name }}
+          description: 以后完善
+          footer: ${{ github.event.ref }}
+          text: 平台更新.
+          details: ${{ github.event.head_commit.message }}
+          webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+      - name: Failure
+        uses: rjstone/discord-webhook-notify@v1
+        if: failure()
+        with:
+          severity: error
+          details: 平台更新失败
+          webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+      - name: Cancelled
+        uses: rjstone/discord-webhook-notify@v1
+        if: cancelled()
+        with:
+          severity: warn
+          details: 平台取消更新
+          webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
