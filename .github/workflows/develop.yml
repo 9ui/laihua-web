@@ -110,7 +110,7 @@ jobs:
           severity: info
           avatarUrl: https://avatars.githubusercontent.com/u/71952965?s=400&u=b4330492595a29cdba1c8c3029c078d1cb70631e&v=4
           username: ${{ github.event.head_commit.committer.name }}
-          description: 以后完善
+          description: 更新内容如下
           footer: ${{ github.event.ref }}
           text: 平台更新.
           details: ${{ github.event.head_commit.message }}

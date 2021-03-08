@@ -1,6 +1,6 @@
 {
   "apps": {
-    "name": "laihua-web",
+    "name": "laihua-ui",
     "script": "npm run start",
     "ignore_watch": ["node_modules", "logs"],
     "error_file": "logs/err.log",
