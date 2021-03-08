@@ -4,6 +4,10 @@ export const NuxtConfig = {
   // modern: 'server',
   // 指定要部署的路径。
   srcDir: './src',
+  server: {
+    port: 3002, // default: 3000
+    host: '0.0.0.0', // default: localhost,
+  },
   router: {
     // middleware: ['auth', 'store'],
   },
