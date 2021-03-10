@@ -8,6 +8,7 @@ body {
   width: 100%;
   height: 100%;
   color: var(--main-500);
-  background-color: var(--solid);
+
+  /* background-color: var(--solid); */
   border: 0;
 }
