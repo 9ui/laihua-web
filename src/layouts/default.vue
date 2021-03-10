@@ -22,7 +22,7 @@
       </content>
       <!-- github -->
       <a
-        href="https://github.com/mertJF/tailblocks"
+        href="https://github.com/9ui/laihua-web"
         class="github"
         target="_blank"
         rel="noopener noreferrer"

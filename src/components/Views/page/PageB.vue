@@ -150,12 +150,7 @@
       <div class="container flex flex-col items-center mx-auto overflow-hidden">
         <div class="text-5xl">How SOOM works?</div>
         <div class="flex items-center justify-center mt-24">
-          <img
-            class="w-full h-auto"
-            src="https://soom.us/_nuxt/img/step-2.19f49c2.png"
-            alt=""
-            srcset=""
-          />
+          <img class="h-auto" src="https://soom.us/_nuxt/img/step-2.19f49c2.png" alt="" srcset="" />
           <ul class="flex flex-col w-4/12 ml-16">
             <li class="mb-4">
               <h4 class="text-xl font-bold text-gray-800">STEP1</h4>
