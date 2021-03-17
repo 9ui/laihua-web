@@ -17,12 +17,12 @@ export const CssConfig = {
     rtl: false, // 加载条方向
   },
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ['@/design/index.css'],
+  css: ['@/assets/styles/index.css'],
   styleResources: {
-    css: ['@/design/index.css'],
+    css: ['@/assets/styles/index.css'],
   },
   tailwindcss: {
-    cssPath: '~/design/tailwind.css',
+    cssPath: '~/assets/styles/tailwind.css',
     configPath: 'tailwind.config.js',
     exposeConfig: true,
     config: {},

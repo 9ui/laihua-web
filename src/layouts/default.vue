@@ -41,10 +41,9 @@
 </template>
 <script lang="ts">
   import { mapState } from 'vuex';
-  import * as Core from '@/core';
+  import { defineComponent } from '@vue/composition-api';
   import { LayoutHeader, LayoutSidebar } from '@/components/Layouts/index';
-  const { VueAPI } = Core;
-  export default VueAPI.defineComponent({
+  export default defineComponent({
     components: { LayoutHeader, LayoutSidebar },
     computed: {
       ...mapState('common', ['hasSidebar', 'currentTheme', 'darkMode']),

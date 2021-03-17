@@ -1,4 +1,4 @@
-## [1.1.4](https://github.com/9ui/laihua-web/compare/1.1.1...1.1.4) (2021-02-04)
+## [1.1.5](https://github.com/9ui/laihua-web/compare/1.1.1...1.1.5) (2021-03-17)
 
 ### ⏪ Reverts
 
@@ -17,14 +17,17 @@
 ### ✅ Tests
 
 - 测试图钉组件 ([8fb7506](https://github.com/9ui/laihua-web/commit/8fb7506))
+- 测试 tsx ([e329370](https://github.com/9ui/laihua-web/commit/e329370))
 - 新增测试页面 ([9a0916d](https://github.com/9ui/laihua-web/commit/9a0916d))
 
 ### ✨ Features
 
+- 封装侧边栏，优化侧边栏数据结构 ([70b6fe8](https://github.com/9ui/laihua-web/commit/70b6fe8))
 - 首页布局演示 ([dd78364](https://github.com/9ui/laihua-web/commit/dd78364))
 - 添加测试状态 ([75e6e29](https://github.com/9ui/laihua-web/commit/75e6e29))
 - 完善按钮组件 ([59b16c4](https://github.com/9ui/laihua-web/commit/59b16c4))
 - 完善侧边栏 ([6120514](https://github.com/9ui/laihua-web/commit/6120514))
+- 完善侧边栏滚动以及源码预览 ([56f9ef6](https://github.com/9ui/laihua-web/commit/56f9ef6))
 - 完善代码结构 ([185ce49](https://github.com/9ui/laihua-web/commit/185ce49))
 - 完善弹框组件 ([8ac0f12](https://github.com/9ui/laihua-web/commit/8ac0f12))
 - 完善弹框组件 ([d34a2b1](https://github.com/9ui/laihua-web/commit/d34a2b1))
@@ -35,18 +38,27 @@
 - 完善头部布局 ([b08c6d3](https://github.com/9ui/laihua-web/commit/b08c6d3))
 - 完善头部导航栏 ([dd56f66](https://github.com/9ui/laihua-web/commit/dd56f66))
 - 完善页面布局 ([b208323](https://github.com/9ui/laihua-web/commit/b208323))
+- 完善源码预览布局以及新增 secion 示例 ([7add3c3](https://github.com/9ui/laihua-web/commit/7add3c3))
 - 完善主题色切换 ([45b8fc5](https://github.com/9ui/laihua-web/commit/45b8fc5))
 - 完善主题色切换 ([32be40c](https://github.com/9ui/laihua-web/commit/32be40c))
 - 完善 dropdown 组件 ([8f881eb](https://github.com/9ui/laihua-web/commit/8f881eb))
 - 项目继承版本信息 ([11cc9ef](https://github.com/9ui/laihua-web/commit/11cc9ef))
 - 新增复制粘贴功能以及完善源码预览模块 ([f254642](https://github.com/9ui/laihua-web/commit/f254642))
 - 新增会员定价路由 ([c18e657](https://github.com/9ui/laihua-web/commit/c18e657))
+- 新增模板 ([d6ac3b9](https://github.com/9ui/laihua-web/commit/d6ac3b9))
+- 新增模板示例 ([0d7c28c](https://github.com/9ui/laihua-web/commit/0d7c28c))
+- 新增示例模板 ([06e6548](https://github.com/9ui/laihua-web/commit/06e6548))
+- 新增页面 以及优化项目结构 ([55d50bb](https://github.com/9ui/laihua-web/commit/55d50bb))
 - 新增折叠面板 ([6ac2959](https://github.com/9ui/laihua-web/commit/6ac2959))
 - 新增组件源码预览功能 ([1e440f9](https://github.com/9ui/laihua-web/commit/1e440f9))
+- 修改名称 ([73918d1](https://github.com/9ui/laihua-web/commit/73918d1))
 - 引入七牛云 ([fb5a4c7](https://github.com/9ui/laihua-web/commit/fb5a4c7))
 - 优化工作流 ([517f68d](https://github.com/9ui/laihua-web/commit/517f68d))
 - 优化主题色 ([aa7e429](https://github.com/9ui/laihua-web/commit/aa7e429))
 - 优化 tailwind 配置 ([8ba965d](https://github.com/9ui/laihua-web/commit/8ba965d))
+- add page module ([257e6c0](https://github.com/9ui/laihua-web/commit/257e6c0))
+- edit pageB ([dcdca64](https://github.com/9ui/laihua-web/commit/dcdca64))
+- view ([f7de7ff](https://github.com/9ui/laihua-web/commit/f7de7ff))
 
 ### 🎫 Chores
 
@@ -61,16 +73,26 @@
 ### 🐛 Bug Fixes
 
 - 删除冗余代码 ([0791323](https://github.com/9ui/laihua-web/commit/0791323))
-- **deps:** bump @nuxtjs/pwa from 3.3.2 to 3.3.5 ([655fc5a](https://github.com/9ui/laihua-web/commit/655fc5a))
 - 设置缓存路径 ([77b373b](https://github.com/9ui/laihua-web/commit/77b373b))
+- 完善主题背景色 ([d6b2e5d](https://github.com/9ui/laihua-web/commit/d6b2e5d))
+- 修复不能预览源码问题以及关闭测试 cdn ([3a67654](https://github.com/9ui/laihua-web/commit/3a67654))
+- 修复点击出现边框问题 ([bbcb646](https://github.com/9ui/laihua-web/commit/bbcb646))
 - 修复路径错误 ([5c5fa7a](https://github.com/9ui/laihua-web/commit/5c5fa7a))
 - 修复图钉组件无法固定在底部问题 ([6f7dadc](https://github.com/9ui/laihua-web/commit/6f7dadc))
 - 修复文件打包到服务器缺少文件 ([88754ae](https://github.com/9ui/laihua-web/commit/88754ae))
-- **deps:** bump @vue/composition-api from 1.0.0-beta.20 to 1.0.0-rc.1 ([550e6f5](https://github.com/9ui/laihua-web/commit/550e6f5))
+- 修复无法使用 cz 命令 ([510d879](https://github.com/9ui/laihua-web/commit/510d879))
 - 修复折叠面板组件不能展开问题 ([466ca68](https://github.com/9ui/laihua-web/commit/466ca68))
+- 修改端口号 ([44c6f32](https://github.com/9ui/laihua-web/commit/44c6f32))
+- 修改组件引入错误 ([1097ff6](https://github.com/9ui/laihua-web/commit/1097ff6))
+- 优化项目结构 ([bbb4078](https://github.com/9ui/laihua-web/commit/bbb4078))
+- modify theme color dipaly error ([bd5c6c1](https://github.com/9ui/laihua-web/commit/bd5c6c1))
+- modify ui ([75e88f2](https://github.com/9ui/laihua-web/commit/75e88f2))
+- **deps:** bump @nuxtjs/pwa from 3.3.2 to 3.3.5 ([655fc5a](https://github.com/9ui/laihua-web/commit/655fc5a))
+- **deps:** bump @vue/composition-api from 1.0.0-beta.20 to 1.0.0-rc.1 ([550e6f5](https://github.com/9ui/laihua-web/commit/550e6f5))
 
 ### 💄 Styles
 
+- 修复内容背景色 ([d4c9036](https://github.com/9ui/laihua-web/commit/d4c9036))
 - 修改顶部导航样式 ([ab5ca98](https://github.com/9ui/laihua-web/commit/ab5ca98))
 - 样式错误调整 ([fa33da2](https://github.com/9ui/laihua-web/commit/fa33da2))
 - 样式调整 ([d7375c1](https://github.com/9ui/laihua-web/commit/d7375c1))
@@ -78,6 +100,10 @@
 ### 📝 Documentation
 
 - 更新修改记录 ([9f1e9e1](https://github.com/9ui/laihua-web/commit/9f1e9e1))
+
+### 🔧 Continuous Integration
+
+- modify ci ([c7b2c8f](https://github.com/9ui/laihua-web/commit/c7b2c8f))
 
 ## [1.1.1](https://github.com/9ui/laihua-web/compare/ee4c7e9...1.1.1) (2021-01-01)
 
