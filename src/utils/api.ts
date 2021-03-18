@@ -1,10 +1,10 @@
-import { NuxtAxiosInstance } from '@nuxtjs/axios';
+// import { NuxtAxiosInstance } from '@nuxtjs/axios';
 
-// eslint-disable-next-line
-let $axios: NuxtAxiosInstance;
+// // eslint-disable-next-line
+// let $axios: NuxtAxiosInstance;
 
-export function initializeAxios(axiosInstance: NuxtAxiosInstance) {
-  $axios = axiosInstance;
-}
+// export function initializeAxios(axiosInstance: NuxtAxiosInstance) {
+//   $axios = axiosInstance;
+// }
 
-export { $axios };
+// export { $axios };

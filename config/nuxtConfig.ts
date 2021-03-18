@@ -17,7 +17,7 @@ export const NuxtConfig = {
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: ['@/plugins/composition-api', '@/plugins/nuxt'],
   modules: [
-    '@nuxtjs/axios',
+    // '@nuxtjs/axios',
     // 'nuxt-lifecycle',
     // '@nuxtjs/universal-storage',
     // '@nuxtjs/gtm',
@@ -51,29 +51,29 @@ export const NuxtConfig = {
   moment: {
     locales: ['zh-cn'],
   },
-  loader: [
-    {
-      test: /\.less$/,
-      loaders: 'style-loader!css-loader!less-loader',
-    },
-  ],
+  //   loader: [
+  //     {
+  //       test: /\.less$/,
+  //       loaders: 'style-loader!css-loader!less-loader',
+  //     },
+  //   ],
   /**
    * @description: 设置请求前缀以及跨域设置
    */
-  axios: {
-    proxy: true,
-    prefix: '/webpai', // 表示给请求url加个前缀 /api
-  },
+  //   axios: {
+  //     proxy: true,
+  //     prefix: '/webpai', // 表示给请求url加个前缀 /api
+  //   },
   /**
    * @description: 请求代理
    */
-  proxy: {
-    '/webpai': {
-      target: 'https://beta.laihua.com', // 代理地址
-      changeOrigin: true,
-      pathRewrite: {
-        '^/webpai': '/',
-      },
-    },
-  },
+  //   proxy: {
+  //     '/webpai': {
+  //       target: 'https://beta.laihua.com', // 代理地址
+  //       changeOrigin: true,
+  //       pathRewrite: {
+  //         '^/webpai': '/',
+  //       },
+  //     },
+  //   },
 } as Config.Interface.IConfig;

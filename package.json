@@ -21,10 +21,8 @@
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.0",
-    "@nuxtjs/axios": "^5.12.4",
     "@nuxtjs/moment": "^1.6.1",
     "@nuxtjs/pwa": "^3.3.5",
-    "@tailwindcss/ui": "^0.7.2",
     "@vue/composition-api": "^1.0.0-rc.1",
     "core-js": "^3.6.5",
     "mitt": "^2.1.0",
@@ -96,8 +94,8 @@
   "changelog": {
     "bugsUrl": "https://github.com/9ui/laihua-web7.0/issues",
     "emojis": true,
-    "authorName": false,
-    "authorEmail": false
+    "authorName": true,
+    "authorEmail": true
   },
   "husky": {
     "hooks": {

@@ -67,10 +67,10 @@ export const BuildConfig = {
         config.devtool = 'eval-source-map';
       }
       // 此处容易出问题 需要使用相对路径
-      config.resolve.alias['@ant-design/icons/lib/dist$'] = resolve(
-        __dirname,
-        '../src/assets/icons/antd-icon.ts'
-      );
+      //   config.resolve.alias['@ant-design/icons/lib/dist$'] = resolve(
+      //     __dirname,
+      //     '../src/assets/icons/antd-icon.ts'
+      //   );
       if (!isDev && isClient) {
         /**
          *  performance就是关闭每次打包之后的文件过大警告
