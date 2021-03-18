@@ -206,9 +206,7 @@
               <div class="box-border mt-5 text-sm font-semibold text-indigo-900 uppercase">
                 秋叶
               </div>
-              <div class="box-border text-left text-gray-700" style="quotes: auto;">
-                秋叶PPT、秋叶商学院创始人
-              </div>
+              <div class="box-border text-left text-gray-700"> 秋叶PPT、秋叶商学院创始人 </div>
             </div>
           </div>
 
@@ -226,9 +224,7 @@
               <div class="box-border mt-5 text-sm font-semibold text-indigo-900 uppercase">
                 于晓雷
               </div>
-              <div class="box-border text-left text-gray-700" style="quotes: auto;">
-                京东卖家论坛负责人
-              </div>
+              <div class="box-border text-left text-gray-700"> 京东卖家论坛负责人 </div>
             </div>
           </div>
 
@@ -246,9 +242,7 @@
               <div class="box-border mt-5 text-sm font-semibold text-indigo-900 uppercase">
                 陈鹤平
               </div>
-              <div class="box-border text-left text-gray-700" style="quotes: auto;">
-                深圳市文化创意行业协会 秘书长
-              </div>
+              <div class="box-border text-left text-gray-700"> 深圳市文化创意行业协会 秘书长 </div>
             </div>
           </div>
 
@@ -266,9 +260,7 @@
               <div class="box-border mt-5 text-sm font-semibold text-indigo-900 uppercase">
                 孙晓芳
               </div>
-              <div class="box-border text-left text-gray-700" style="quotes: auto;">
-                135编辑器合伙人COO
-              </div>
+              <div class="box-border text-left text-gray-700"> 135编辑器合伙人COO </div>
             </div>
           </div>
         </div>
