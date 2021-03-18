@@ -15,7 +15,7 @@ export const NuxtConfig = {
   // 默认情况下，该路径查看〜/components
   components: true,
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: ['@/plugins/composition-api', '@/plugins/nuxt', '@/plugins/extend'],
+  plugins: ['@/plugins/composition-api', '@/plugins/nuxt'],
   modules: [
     '@nuxtjs/axios',
     // 'nuxt-lifecycle',
@@ -45,6 +45,9 @@ export const NuxtConfig = {
     // 引入composition-api
     // '@nuxtjs/composition-api',
   ],
+  tailwindcss: {
+    jit: true,
+  },
   moment: {
     locales: ['zh-cn'],
   },

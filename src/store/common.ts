@@ -1,7 +1,7 @@
 import { MutationTree } from 'vuex';
 
 export const state = () => ({
-  hasSidebar: true, // 是否展开侧边栏
+  hasSidebar: false, // 是否展开侧边栏
   darkMode: true, // 是否黑色主题
   codeView: false, // 是否显示源码
   currentTheme: 'indigo', // 当前主题色
