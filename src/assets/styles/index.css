@@ -78,7 +78,7 @@
 .copy-the-block {
   position: relative;
   display: flex;
-  width: 130px;
+  width: 80px;
   height: 32px;
   padding: 0 12px;
   margin-right: 14px;
@@ -120,6 +120,7 @@
 .clipboard-tooltip {
   position: absolute;
   right: 100%;
+  width: 55px;
   padding: 2px 5px;
   font-size: 13px;
   letter-spacing: 0.2px;
@@ -131,6 +132,7 @@
 }
 
 .clipboard-tooltip.is-copied {
+  width: 55px;
   margin-right: 6px;
   opacity: 1;
 }

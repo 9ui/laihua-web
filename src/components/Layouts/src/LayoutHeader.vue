@@ -1,6 +1,6 @@
 <template>
-  <nav class="bg-gray-800 toolbar flex align-middle">
-    <div class="opener cursor-pointer" @click="setSidebar">示例列表</div>
+  <nav class="flex align-middle bg-gray-800 toolbar">
+    <div class="cursor-pointer opener" @click="setSidebar">示例列表</div>
     <!-- code view -->
     <div v-if="codeView" class="clipboard-wrapper">
       <div class="copy-the-block copy-to-clipboard" @click="copyToClipboard">
@@ -15,11 +15,11 @@
           <path d="M19.914 1h-18v19" />
           <path d="M6 5v18h18V5z" />
         </svg>
-        <span class="cursor-pointer">COPY TO CLIPBOARD</span>
+        <span class="cursor-pointer">复制</span>
       </div>
-      <span :class="[`clipboard-tooltip${copied ? ' is-copied ' : ''}`]">Copied!</span>
+      <span :class="[`clipboard-tooltip${copied ? ' is-copied ' : ''}`]">已复制!</span>
     </div>
-    <div class="copy-the-block cursor-pointer" @click="toggleView">
+    <div class="cursor-pointer copy-the-block" @click="toggleView">
       <svg
         v-if="!codeView"
         fill="none"
@@ -45,12 +45,12 @@
         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
         <circle cx="12" cy="12" r="3"></circle>
       </svg>
-      <span>{{ !codeView ? 'VIEW CODE' : 'PREVIEW' }}</span>
+      <span>{{ !codeView ? '源码' : '预览' }}</span>
     </div>
     <!-- switcher -->
     <Switcher></Switcher>
     <!-- mode -->
-    <div class="mode cursor-pointer" @click="changeMode"></div>
+    <div class="cursor-pointer mode" @click="changeMode"></div>
   </nav>
 </template>
 <script lang="ts">
