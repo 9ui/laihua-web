@@ -50,7 +50,7 @@
     <!-- switcher -->
     <Switcher></Switcher>
     <!-- mode -->
-    <div class="cursor-pointer mode" @click="changeMode"></div>
+    <!-- <div class="cursor-pointer mode" @click="changeMode"></div> -->
   </nav>
 </template>
 <script lang="ts">

@@ -1,7 +1,7 @@
 import * as Config from './';
 
 export const HeadConfig = {
-  title: '来画视频',
+  title: '来画视频UI库',
   meta: [
     { charset: 'utf-8' },
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },

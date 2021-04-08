@@ -2,7 +2,7 @@ import * as Config from './';
 
 export const PWAConfig = {
   manifest: {
-    name: '来画视频',
+    name: '来画视频UI库',
     short_name: 'zzw',
     theme_color: '#0088f5',
     background_color: '#eee',
