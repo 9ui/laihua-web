@@ -17,6 +17,10 @@ export const getIcons = {
   // template/header
   HeaderA: () => import('./src/templates/header/IconHeaderA.vue'),
   HeaderB: () => import('./src/templates/header/IconHeaderB.vue'),
+
+  // form
+  FormA: () => import('./src/templates/form/IconFormA.vue'),
+
   // components
   Modal: () => import('./src/components/IconModal.vue'),
   // page
@@ -52,6 +56,7 @@ export const blockList: BlockListType[] = [
       'CardA',
       'CardB',
       'CardC',
+      'FormA',
       'SectionD',
       'SectionE',
       'SectionF',

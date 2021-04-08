@@ -23,6 +23,9 @@ export { default as HeaderA } from './templates/header/HeaderA.vue';
 
 export { default as HeaderB } from './templates/header/HeaderB.vue';
 
+// from
+export { default as FormA } from './templates/form/FormA.vue';
+
 // page
 export { default as PageA } from './page/PageA.vue';
 export { default as PageB } from './page/PageB.vue';

@@ -1,15 +1,15 @@
 <template>
   <transition
-    enter-active-class="ease-out duration-300"
+    enter-active-class="duration-300 ease-out"
     enter-to-class="opacity-100"
     enter-from-class="opacity-0"
-    leave-active-class="ease-in duration-200"
+    leave-active-class="duration-200 ease-in"
     leave-to-class="opacity-0"
     leave-from-class="opacity-100"
   >
-    <div v-if="visible" class="fixed z-10 inset-0 overflow-y-auto">
+    <div v-if="visible" class="fixed inset-0 z-10 overflow-y-auto">
       <div
-        class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0"
+        class="flex items-end justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0"
       >
         <div class="fixed inset-0 transition-opacity" aria-hidden="true">
           <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
@@ -18,26 +18,26 @@
           >&#8203;</span
         >
         <transition
-          enter-active-class="ease-out duration-300"
-          enter-to-class="opacity-100 translate-y-0 sm:scale-100"
-          enter-from-class="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-          leave-active-class="ease-in duration-200"
-          leave-to-class="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-          leave-from-class="opacity-100 translate-y-0 sm:scale-100"
+          enter-active-class="duration-300 ease-out"
+          enter-to-class="translate-y-0 opacity-100 sm:scale-100"
+          enter-from-class="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
+          leave-active-class="duration-200 ease-in"
+          leave-to-class="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
+          leave-from-class="translate-y-0 opacity-100 sm:scale-100"
         >
           <div
-            class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
+            class="inline-block overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
             role="dialog"
             aria-modal="true"
             aria-labelledby="modal-headline"
           >
-            <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+            <div class="px-4 pt-5 pb-4 bg-white sm:p-6 sm:pb-4">
               <div class="sm:flex sm:items-start">
                 <div
-                  class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10"
+                  class="flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto bg-red-100 rounded-full sm:mx-0 sm:h-10 sm:w-10"
                 >
                   <svg
-                    class="h-6 w-6 text-red-600"
+                    class="w-6 h-6 text-red-600"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -53,32 +53,31 @@
                   </svg>
                 </div>
                 <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                  <h3 id="modal-headline" class="text-lg leading-6 font-medium text-gray-900">
-                    Deactivate account
+                  <h3 id="modal-headline" class="text-lg font-medium leading-6 text-gray-900">
+                    停用帐户
                   </h3>
                   <div class="mt-2">
                     <p class="text-sm text-gray-500">
-                      Are you sure you want to deactivate your account? All of your data will be
-                      permanently removed. This action cannot be undone.
+                      您确定要停用帐户吗？您的所有数据将被永久删除。此操作无法撤消
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+            <div class="px-4 py-3 bg-gray-50 sm:px-6 sm:flex sm:flex-row-reverse">
               <button
                 type="button"
-                class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
+                class="inline-flex justify-center w-full px-4 py-2 text-base font-medium text-white bg-red-600 border border-transparent rounded-md shadow-sm hover:bg-red-700 focus:outline-none sm:ml-3 sm:w-auto sm:text-sm"
                 @click="visible = false"
               >
-                Deactivate
+                关闭
               </button>
               <button
                 type="button"
-                class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+                class="inline-flex justify-center w-full px-4 py-2 mt-3 text-base font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
                 @click="visible = false"
               >
-                Cancel
+                取消
               </button>
             </div>
           </div>
