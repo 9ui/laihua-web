@@ -111,8 +111,8 @@ jobs:
           avatarUrl: https://avatars.githubusercontent.com/u/71952965?s=400&u=b4330492595a29cdba1c8c3029c078d1cb70631e&v=4
           username: ${{ github.event.head_commit.committer.name }}
           description: 更新内容如下
-          footer: ${{ github.event.ref }}
-          text: 平台更新.
+          footer: https://web.90c.vip
+          text: 来画UI库更新成功.
           details: ${{ github.event.head_commit.message }}
           webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
       - name: Failure
@@ -120,12 +120,12 @@ jobs:
         if: failure()
         with:
           severity: error
-          details: 平台更新失败
+          details: 来画UI库更新失败
           webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
       - name: Cancelled
         uses: rjstone/discord-webhook-notify@v1
         if: cancelled()
         with:
           severity: warn
-          details: 平台取消更新
+          details: 来画UI库更新取消
           webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
