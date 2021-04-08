@@ -190,7 +190,7 @@
           </div>
         </div>
         <div
-          class="box-border flex grid flex-wrap justify-center gap-10 -mx-4 text-center md:grid-cols-2 lg:gap-16 lg:justify-start lg:text-left"
+          class="box-border grid flex-wrap justify-center gap-10 -mx-4 text-center md:grid-cols-2 lg:gap-16 lg:justify-start lg:text-left"
         >
           <div class="flex col-span-1">
             <div class="relative flex-shrink-0 w-20 h-20 text-left">

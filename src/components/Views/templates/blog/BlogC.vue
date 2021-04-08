@@ -1,159 +1,132 @@
 <template>
-  <section class="text-gray-600 body-font overflow-hidden">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-wrap -m-12">
-        <div class="p-12 md:w-1/2 flex flex-col items-start">
-          <span
-            class="inline-block py-1 px-2 rounded bg-green-50 text-green-500 text-xs font-medium tracking-widest"
-            >CATEGORY</span
-          >
-          <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4"
-            >Roof party normcore before they sold out, cornhole vape</h2
-          >
-          <p class="leading-relaxed mb-8"
-            >Live-edge letterpress cliche, salvia fanny pack humblebrag narwhal portland. VHS man
-            braid palo santo hoodie brunch trust fund. Bitters hashtag waistcoat fashion axe chia
-            unicorn. Plaid fixie chambray 90's, slow-carb etsy tumeric. Cray pug you probably
-            haven't heard of them hexagon kickstarter craft beer pork chic.</p
-          >
-          <div
-            class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full"
-          >
-            <a class="text-green-500 inline-flex items-center"
-              >Learn More
-              <svg
-                class="w-4 h-4 ml-2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M5 12h14"></path>
-                <path d="M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
-            <span
-              class="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"
-            >
-              <svg
-                class="w-4 h-4 mr-1"
-                stroke="currentColor"
-                stroke-width="2"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                viewBox="0 0 24 24"
-              >
-                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                <circle cx="12" cy="12" r="3"></circle></svg
-              >1.2K
-            </span>
-            <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-              <svg
-                class="w-4 h-4 mr-1"
-                stroke="currentColor"
-                stroke-width="2"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
-                ></path></svg
-              >6
-            </span>
-          </div>
-          <a class="inline-flex items-center">
-            <img
-              alt="blog"
-              src="https://dummyimage.com/104x104"
-              class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
-            />
-            <span class="flex-grow flex flex-col pl-4">
-              <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
-              <span class="text-gray-400 text-xs tracking-widest mt-0.5">UI DEVELOPER</span>
-            </span>
-          </a>
-        </div>
-        <div class="p-12 md:w-1/2 flex flex-col items-start">
-          <span
-            class="inline-block py-1 px-2 rounded bg-green-50 text-green-500 text-xs font-medium tracking-widest"
-            >CATEGORY</span
-          >
-          <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4"
-            >Pinterest DIY dreamcatcher gentrify single-origin coffee</h2
-          >
-          <p class="leading-relaxed mb-8"
-            >Live-edge letterpress cliche, salvia fanny pack humblebrag narwhal portland. VHS man
-            braid palo santo hoodie brunch trust fund. Bitters hashtag waistcoat fashion axe chia
-            unicorn. Plaid fixie chambray 90's, slow-carb etsy tumeric.</p
-          >
-          <div
-            class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full"
-          >
-            <a class="text-green-500 inline-flex items-center"
-              >Learn More
-              <svg
-                class="w-4 h-4 ml-2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M5 12h14"></path>
-                <path d="M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
-            <span
-              class="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"
-            >
-              <svg
-                class="w-4 h-4 mr-1"
-                stroke="currentColor"
-                stroke-width="2"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                viewBox="0 0 24 24"
-              >
-                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                <circle cx="12" cy="12" r="3"></circle></svg
-              >1.2K
-            </span>
-            <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-              <svg
-                class="w-4 h-4 mr-1"
-                stroke="currentColor"
-                stroke-width="2"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
-                ></path></svg
-              >6
-            </span>
-          </div>
-          <a class="inline-flex items-center">
-            <img
-              alt="blog"
-              src="https://dummyimage.com/103x103"
-              class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
-            />
-            <span class="flex-grow flex flex-col pl-4">
-              <span class="title-font font-medium text-gray-900">Alper Kamu</span>
-              <span class="text-gray-400 text-xs tracking-widest mt-0.5">DESIGNER</span>
-            </span>
-          </a>
-        </div>
+  <div
+    class="flex flex-col items-center pt-20"
+    style="
+      background: url('https://cdn2.laihua.com/dev-dist/static/img/banner_bg.262e63c.png') no-repeat;
+    "
+  >
+    <h1 class="text-5xl font-bold text-white">一站式视频创作及营销解决方案</h1>
+    <section class="container flex items-start max-w-screen-xl pt-20 mx-auto space-x-16">
+      <div
+        class="flex flex-col items-center w-1/3 px-10 pt-10 pb-20 bg-white rounded-lg shadow-xl hover:shadow-2xl"
+      >
+        <h2 class="text-2xl font-bold text-gray-900">多账号采购</h2>
+        <p class="mt-1 text-gray-600">多人创作，协同办公</p>
+        <img
+          src="https://cdn2.laihua.com/dev-dist/static/img/3.5778ed9.png"
+          class="w-20 h-auto my-8"
+        />
+        <button
+          class="px-10 py-2 text-white bg-purple-700 rounded-full hover:bg-purple-800 focus:outline-none"
+          >获取报价</button
+        >
+        <ul class="mt-5 space-y-1">
+          <li class="flex items-center">
+            <span class="w-1 h-1 mr-2 bg-gray-700 rounded-full"></span>
+            <span class="text-sm text-gray-700">团队协作功能</span>
+          </li>
+          <li class="flex items-center">
+            <span class="w-1 h-1 mr-2 bg-gray-700 rounded-full"></span>
+            <span class="text-sm text-gray-700">线上线下培训</span>
+          </li>
+          <li class="flex items-center">
+            <span class="w-1 h-1 mr-2 bg-gray-700 rounded-full"></span>
+            <span class="text-sm text-gray-700">定制化模板</span>
+          </li>
+          <li class="flex items-center">
+            <span class="w-1 h-1 mr-2 bg-gray-700 rounded-full"></span>
+            <span class="text-sm text-gray-700">定制化素材</span>
+          </li>
+          <li class="flex items-center">
+            <span class="w-1 h-1 mr-2 bg-gray-700 rounded-full"></span>
+            <span class="text-sm text-gray-700">专属客服</span>
+          </li>
+          <li class="flex items-center">
+            <span class="w-1 h-1 mr-2 bg-gray-700 rounded-full"></span>
+            <span class="text-sm text-gray-700">一站式服务</span>
+          </li>
+        </ul>
       </div>
-    </div>
-  </section>
+      <div
+        class="flex flex-col items-center w-1/3 px-10 pt-10 pb-20 bg-white rounded-lg shadow-xl hover:shadow-2xl"
+      >
+        <h2 class="text-2xl font-bold text-gray-900">API定制</h2>
+        <p class="mt-1 text-gray-600">系统接入，高效赋能</p>
+        <img
+          src="https://cdn2.laihua.com/dev-dist/static/img/4.ca5a6fc.png"
+          class="w-20 h-auto my-8"
+        />
+        <button
+          class="px-10 py-2 text-white bg-purple-700 rounded-full hover:bg-purple-800 focus:outline-none"
+          >获取报价</button
+        >
+        <div class="mt-5 font-semibold text-purple-700">多账号采购所有服务</div>
+        <div class="mb-2 text-4xl font-bold text-purple-700">+</div>
+        <ul class="space-y-1">
+          <li class="flex items-center">
+            <span class="w-1 h-1 mr-2 bg-gray-700 rounded-full"></span>
+            <span class="text-sm text-gray-700">视频创作编辑器</span>
+          </li>
+          <li class="flex items-center">
+            <span class="w-1 h-1 mr-2 bg-gray-700 rounded-full"></span>
+            <span class="text-sm text-gray-700">模板应用中心</span>
+          </li>
+          <li class="flex items-center">
+            <span class="w-1 h-1 mr-2 bg-gray-700 rounded-full"></span>
+            <span class="text-sm text-gray-700">视觉资产管理中心</span>
+          </li>
+          <li class="flex items-center">
+            <span class="w-1 h-1 mr-2 bg-gray-700 rounded-full"></span>
+            <span class="text-sm text-gray-700">用户数据管理平台</span>
+          </li>
+          <li class="flex items-center">
+            <span class="w-1 h-1 mr-2 bg-gray-700 rounded-full"></span>
+            <span class="text-sm text-gray-700">视频办公宝</span>
+          </li>
+          <li class="flex items-center">
+            <span class="w-1 h-1 mr-2 bg-gray-700 rounded-full"></span>
+            <span class="text-sm text-gray-700">专人一对一服务</span>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="flex flex-col items-center w-1/3 px-10 pt-10 pb-20 bg-white rounded-lg shadow-xl hover:shadow-2xl"
+      >
+        <h2 class="text-2xl font-bold text-gray-900">多账号采购</h2>
+        <p class="text-gray-600">多人创作，协同办公</p>
+        <img
+          src="https://cdn2.laihua.com/dev-dist/static/img/3.5778ed9.png"
+          class="w-20 h-auto my-8"
+        />
+        <button
+          class="px-10 py-2 text-white bg-purple-700 rounded-full hover:bg-purple-800 focus:outline-none"
+          >获取报价</button
+        >
+        <div class="mt-5 font-semibold text-purple-700">API定制所有服务</div>
+        <div class="mb-2 text-4xl font-bold text-purple-700">+</div>
+        <ul class="space-y-1">
+          <li class="flex items-center">
+            <span class="w-1 h-1 mr-2 bg-gray-700 rounded-full"></span>
+            <span class="text-sm text-gray-700">应用和数据本地化</span>
+          </li>
+          <li class="flex items-center">
+            <span class="w-1 h-1 mr-2 bg-gray-700 rounded-full"></span>
+            <span class="text-sm text-gray-700">深层需求定制</span>
+          </li>
+          <li class="flex items-center">
+            <span class="w-1 h-1 mr-2 bg-gray-700 rounded-full"></span>
+            <span class="text-sm text-gray-700">全套接入方案</span>
+          </li>
+          <li class="flex items-center">
+            <span class="w-1 h-1 mr-2 bg-gray-700 rounded-full"></span>
+            <span class="text-sm text-gray-700">定制化素材</span>
+          </li>
+          <li class="flex items-center">
+            <span class="w-1 h-1 mr-2 bg-gray-700 rounded-full"></span>
+            <span class="text-sm text-gray-700">全方位产品技术对接</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
 </template>
