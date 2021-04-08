@@ -109,7 +109,7 @@ jobs:
         with:
           avatarUrl: https://avatars.githubusercontent.com/u/71952965?s=400&u=b4330492595a29cdba1c8c3029c078d1cb70631e&v=4
           username: ${{ github.event.head_commit.committer.name }}
-          description: ${{ github.event.head_commit.message }}
+          description: 来画UI库
           image: ${{ secrets.EMBED_IMAGE }}
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
       - name: Failure
