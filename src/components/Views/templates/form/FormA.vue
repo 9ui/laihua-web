@@ -23,9 +23,9 @@
                       http://
                     </span>
                     <input
+                      id="company_website"
                       type="text"
                       name="company_website"
-                      id="company_website"
                       class="flex-1 block w-full border-gray-300 rounded-none focus:ring-indigo-500 focus:border-indigo-500 rounded-r-md sm:text-sm"
                       placeholder="www.example.com"
                     />
@@ -142,9 +142,9 @@
                       >姓</label
                     >
                     <input
+                      id="first_name"
                       type="text"
                       name="first_name"
-                      id="first_name"
                       autocomplete="given-name"
                       class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     />
@@ -155,9 +155,9 @@
                       >名</label
                     >
                     <input
+                      id="last_name"
                       type="text"
                       name="last_name"
-                      id="last_name"
                       autocomplete="family-name"
                       class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     />
@@ -168,9 +168,9 @@
                       >邮箱</label
                     >
                     <input
+                      id="email_address"
                       type="text"
                       name="email_address"
-                      id="email_address"
                       autocomplete="email"
                       class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     />
@@ -197,9 +197,9 @@
                       >街道地址</label
                     >
                     <input
+                      id="street_address"
                       type="text"
                       name="street_address"
-                      id="street_address"
                       autocomplete="street-address"
                       class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     />
@@ -208,9 +208,9 @@
                   <div class="col-span-6 sm:col-span-6 lg:col-span-2">
                     <label for="city" class="block text-sm font-medium text-gray-700">城市</label>
                     <input
+                      id="city"
                       type="text"
                       name="city"
-                      id="city"
                       class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     />
                   </div>
@@ -220,9 +220,9 @@
                       >市 / 省</label
                     >
                     <input
+                      id="state"
                       type="text"
                       name="state"
-                      id="state"
                       class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     />
                   </div>
@@ -232,9 +232,9 @@
                       >ZIP / Postal</label
                     >
                     <input
+                      id="postal_code"
                       type="text"
                       name="postal_code"
-                      id="postal_code"
                       autocomplete="postal-code"
                       class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     />

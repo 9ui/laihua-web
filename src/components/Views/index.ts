@@ -1,13 +1,6 @@
 // components
 export { default as LhButton } from './components/Button.vue';
 
-// templates
-export { default as SectionD } from './templates/SectionD.vue';
-
-export { default as SectionE } from './templates/SectionE.vue';
-
-export { default as SectionF } from './templates/SectionF.vue';
-
 // templates/blog
 export { default as BlogA } from './templates/blog/BlogA.vue';
 export { default as BlogB } from './templates/blog/BlogB.vue';
@@ -25,6 +18,13 @@ export { default as HeaderB } from './templates/header/HeaderB.vue';
 
 // from
 export { default as FormA } from './templates/form/FormA.vue';
+
+// sidebar
+export { default as SidebarA } from './templates/sidebar/SidebarA.vue';
+export { default as SidebarB } from './templates/sidebar/SidebarB.vue';
+
+// side
+export { default as SideOversA } from './templates/side/SideOversA.vue';
 
 // page
 export { default as PageA } from './page/PageA.vue';
