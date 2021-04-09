@@ -1,9 +1,6 @@
 <template>
   <div class="mx-auto">
-    <div
-      class="w-full text-white h-96"
-      style="background: url('https://cdn2.laihua.com/tmp-dist/static/img/solution-bg.d83b7b6.png');"
-    >
+    <div class="w-full text-white h-96" :style="style">
       <div class="flex flex-col items-center max-w-screen-xl mx-auto contanier">
         <h1 class="mt-16 text-5xl font-bold">行业解决方案</h1>
         <p class="mt-12 text-3xl">视频创作为各行各业赋能，100W+ 企业和政府组织的共同选择</p>
@@ -42,7 +39,7 @@
       </div>
     </div>
     <div class="flex flex-wrap justify-between w-full max-w-screen-xl mx-auto mt-48 -m-4 contanier">
-      <div class="w-1/3 p-4 cursor-pointer" v-for="i in 6" :key="i">
+      <div v-for="i in 6" :key="i" class="w-1/3 p-4 cursor-pointer">
         <div
           class="flex flex-col items-center justify-between p-10 border border-gray-200 rounded-lg hover:shadow-lg"
         >
@@ -64,3 +61,17 @@
     </div>
   </div>
 </template>
+<script>
+  import { defineComponent, ref } from '@vue/composition-api';
+
+  export default defineComponent({
+    setup() {
+      const style = ref(
+        "background:url('https://cdn2.laihua.com/tmp-dist/static/img/solution-bg.d83b7b6.png')"
+      );
+      return {
+        style,
+      };
+    },
+  });
+</script>

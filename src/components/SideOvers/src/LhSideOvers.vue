@@ -1,21 +1,20 @@
 <template>
   <transition :duration="700">
-    <div class="fixed inset-0 overflow-hidden" v-show="visible">
+    <div v-show="visible" class="fixed inset-0 overflow-hidden">
       <div class="absolute inset-0 overflow-hidden">
         <!-- Background overlay, show/hide based on slide-over state. -->
         <transition
-          enter-active-class="duration-700 ease-in-out "
+          enter-active-class="duration-700 ease-in-out"
           enter-to-class="opacity-100"
           enter-from-class="opacity-0"
-          leave-active-class="duration-700 ease-in-out "
+          leave-active-class="duration-700 ease-in-out"
           leave-to-class="opacity-0"
           leave-from-class="opacity-100"
         >
           <div
             v-show="visible"
-            @click="closePanel"
             class="absolute inset-0 transition-opacity bg-gray-500 bg-opacity-75"
-            aria-hidden="true"
+            @click="closePanel"
           ></div>
         </transition>
 
@@ -29,7 +28,7 @@
             leave-to-class="translate-x-full"
             leave-from-class="translate-x-0"
           >
-            <div class="relative w-screen max-w-md" v-show="visible">
+            <div v-show="visible" class="relative w-screen max-w-md">
               <!-- Close button, show/hide based on slide-over state  -->
               <transition
                 enter-active-class="duration-500 ease-in-out"
@@ -40,8 +39,8 @@
                 leave-from-class="opacity-100"
               >
                 <div
-                  class="absolute top-0 left-0 flex pt-4 pr-2 -ml-8 sm:-ml-10 sm:pr-4"
                   v-show="visible"
+                  class="absolute top-0 left-0 flex pt-4 pr-2 -ml-8 sm:-ml-10 sm:pr-4"
                 >
                   <button
                     class="text-gray-300 rounded-md hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
@@ -69,17 +68,12 @@
               </transition>
               <div class="flex flex-col h-full py-6 overflow-y-scroll bg-white shadow-xl">
                 <div class="px-4 sm:px-6">
-                  <h2 class="text-lg font-medium text-gray-900" id="slide-over-title">
-                    Panel title
-                  </h2>
+                  <h2 class="text-lg font-medium text-gray-900">Panel title</h2>
                 </div>
                 <div class="relative flex-1 px-4 mt-6 sm:px-6">
                   <!-- Replace with your content -->
                   <div class="absolute inset-0 px-4 sm:px-6">
-                    <div
-                      class="h-full border-2 border-gray-200 border-dashed"
-                      aria-hidden="true"
-                    ></div>
+                    <div class="h-full border-2 border-gray-200 border-dashed"></div>
                   </div>
                   <!-- /End replace -->
                 </div>

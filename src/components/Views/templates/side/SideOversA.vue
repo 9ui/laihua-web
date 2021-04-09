@@ -9,7 +9,7 @@
       Open Dialog
     </button>
     <transition :duration="700">
-      <div class="fixed inset-0 overflow-hidden" v-show="isOpen">
+      <div v-show="isOpen" class="fixed inset-0 overflow-hidden">
         <div class="absolute inset-0 overflow-hidden">
           <!-- Background overlay, show/hide based on slide-over state. -->
           <transition
@@ -22,9 +22,8 @@
           >
             <div
               v-show="isOpen"
-              @click="closePanel"
               class="absolute inset-0 transition-opacity bg-gray-500 bg-opacity-75"
-              aria-hidden="true"
+              @click="closePanel"
             ></div>
           </transition>
 
@@ -38,7 +37,7 @@
               leave-to-class="translate-x-full"
               leave-from-class="translate-x-0"
             >
-              <div class="relative w-screen max-w-md" v-show="isOpen">
+              <div v-show="isOpen" class="relative w-screen max-w-md">
                 <!-- Close button, show/hide based on slide-over state  -->
                 <transition
                   enter-active-class="duration-500 ease-in-out"
@@ -49,8 +48,8 @@
                   leave-from-class="opacity-100"
                 >
                   <div
-                    class="absolute top-0 left-0 flex pt-4 pr-2 -ml-8 sm:-ml-10 sm:pr-4"
                     v-show="isOpen"
+                    class="absolute top-0 left-0 flex pt-4 pr-2 -ml-8 sm:-ml-10 sm:pr-4"
                   >
                     <button
                       class="text-gray-300 rounded-md hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
@@ -78,9 +77,7 @@
                 </transition>
                 <div class="flex flex-col h-full py-6 overflow-y-scroll bg-white shadow-xl">
                   <div class="px-4 sm:px-6">
-                    <h2 class="text-lg font-medium text-gray-900" id="slide-over-title">
-                      Panel title
-                    </h2>
+                    <h2 class="text-lg font-medium text-gray-900">Panel title</h2>
                   </div>
                   <div class="relative flex-1 px-4 mt-6 sm:px-6">
                     <!-- Replace with your content -->
