@@ -1,6 +1,6 @@
 <template>
   <aside class="sidebar body-font">
-    <div v-for="(item, index) in blockList" :key="index" class="blocks">
+    <div v-for="(item, index) in sideMenus" :key="index" class="blocks">
       <div class="block-category">{{ item.name }}</div>
       <div class="block-list">
         <!-- home block -->
@@ -33,14 +33,15 @@
 <script lang="ts">
   import { mapMutations, mapState } from 'vuex';
   import { defineComponent } from '@vue/composition-api';
-  import { getIcons, blockList } from '@/components/AsideIcon/index';
+  import { getIcons } from '@/components/AsideIcon/icons';
+  import { sideMenus } from '@/components/AsideIcon/index';
 
   export default defineComponent({
     components: getIcons,
     data() {
       return {
         isActive: 0,
-        blockList,
+        sideMenus,
       };
     },
     computed: {

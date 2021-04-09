@@ -30,3 +30,4 @@ export { default as SideOversA } from './templates/side/SideOversA.vue';
 export { default as PageA } from './page/PageA.vue';
 export { default as PageB } from './page/PageB.vue';
 export { default as PageC } from './page/PageC.vue';
+export { default as PageD } from './page/PageD.vue';
