@@ -7,6 +7,7 @@ export const getIcons = {
   BlogB: () => import('./src/templates/blog/IconBlogB.vue'),
   BlogC: () => import('./src/templates/blog/IconBlogC.vue'),
   BlogD: () => import('./src/templates/blog/IconBlogD.vue'),
+  BlogE: () => import('./src/templates/blog/IconBlogE.vue'),
 
   // card
   CardA: () => import('./src/templates/card/IconCardA.vue'),

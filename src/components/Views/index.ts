@@ -6,6 +6,7 @@ export { default as BlogA } from './templates/blog/BlogA.vue';
 export { default as BlogB } from './templates/blog/BlogB.vue';
 export { default as BlogC } from './templates/blog/BlogC.vue';
 export { default as BlogD } from './templates/blog/BlogD.vue';
+export { default as BlogE } from './templates/blog/BlogE.vue';
 
 // templates/card
 export { default as CardA } from './templates/card/CardA.vue';

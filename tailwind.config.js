@@ -12,12 +12,6 @@ module.exports = {
     colors: {
       red: 'red',
     },
-    width: {
-      145: '145rem',
-      300: '300rem',
-      320: '320rem',
-      480: '480rem',
-    },
     fontSize: {
       '4.5xl': '2.0625rem',
     },
@@ -32,6 +26,10 @@ module.exports = {
     backgroundColor: ['dark', 'dark-hover', 'dark-group-hover', 'dark-even', 'dark-odd'],
     borderColor: ['dark', 'dark-focus', 'dark-focus-within'],
     textColor: ['dark', 'dark-hover', 'dark-active'],
+    extend: {
+      transitionDelay: ['hover', 'focus'],
+      translate: ['motion-safe'],
+    },
   },
 
   plugins: [require('tailwindcss-dark-mode')(), require('autoprefixer')],
