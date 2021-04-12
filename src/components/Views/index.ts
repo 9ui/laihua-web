@@ -5,6 +5,7 @@ export { default as LhButton } from './components/Button.vue';
 export { default as BlogA } from './templates/blog/BlogA.vue';
 export { default as BlogB } from './templates/blog/BlogB.vue';
 export { default as BlogC } from './templates/blog/BlogC.vue';
+export { default as BlogD } from './templates/blog/BlogD.vue';
 
 // templates/card
 export { default as CardA } from './templates/card/CardA.vue';
@@ -31,3 +32,4 @@ export { default as PageA } from './page/PageA.vue';
 export { default as PageB } from './page/PageB.vue';
 export { default as PageC } from './page/PageC.vue';
 export { default as PageD } from './page/PageD.vue';
+export { default as PageE } from './page/PageE.vue';

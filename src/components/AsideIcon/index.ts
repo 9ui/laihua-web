@@ -18,7 +18,7 @@ export const sideMenus: MenusType[] = [
   {
     name: 'Blog',
     pathName: 'blog',
-    components: ['BlogA', 'BlogB', 'BlogC'],
+    components: ['BlogA', 'BlogB', 'BlogC', 'BlogD'],
   },
   {
     name: 'Card',
@@ -48,6 +48,6 @@ export const sideMenus: MenusType[] = [
   {
     name: 'Page',
     pathName: 'page',
-    components: ['PageA', 'PageB', 'PageC', 'PageD'],
+    components: ['PageA', 'PageB', 'PageC', 'PageD', 'PageE'],
   },
 ];

@@ -6,3 +6,20 @@
   @apply bg-gray-800;
   @apply text-white;
 }
+
+/** width **/
+.w-300 {
+  width: 1200px;
+}
+
+.w-320 {
+  width: 1280px;
+}
+
+.w-480 {
+  width: 1920px;
+}
+
+.w-145 {
+  width: 580px;
+}

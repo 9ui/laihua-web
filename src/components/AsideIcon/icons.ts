@@ -6,6 +6,7 @@ export const getIcons = {
   BlogA: () => import('./src/templates/blog/IconBlogA.vue'),
   BlogB: () => import('./src/templates/blog/IconBlogB.vue'),
   BlogC: () => import('./src/templates/blog/IconBlogC.vue'),
+  BlogD: () => import('./src/templates/blog/IconBlogD.vue'),
 
   // card
   CardA: () => import('./src/templates/card/IconCardA.vue'),
@@ -34,4 +35,5 @@ export const getIcons = {
   PageB: () => import('./src/page/IconPageB.vue'),
   PageC: () => import('./src/page/IconPageC.vue'),
   PageD: () => import('./src/page/IconPageD.vue'),
+  PageE: () => import('./src/page/IconPageE.vue'),
 };

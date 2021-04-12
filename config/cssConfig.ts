@@ -22,9 +22,14 @@ export const CssConfig = {
     css: ['@/assets/styles/index.css'],
   },
   tailwindcss: {
+    // 定义Tailwind CSS文件的路径，如果该文件存在，则将导入该文件，而不是模块的默认文件
     cssPath: '~/assets/styles/tailwind.css',
     configPath: 'tailwind.config.js',
+    // jit: true,
+    // 如果需要在运行时解析tailwind配置，则可以在nuxt.config中启用暴露配置选项
     exposeConfig: true,
+    // 要禁用开发中的查看器，请将其设置为false：
+    viewer: false,
     config: {},
   },
   purgeCSS: {

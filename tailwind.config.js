@@ -9,8 +9,17 @@ module.exports = {
       xl: '1280px',
       '2xl': '1536px',
     },
+    colors: {
+      red: 'red',
+    },
     width: {
-      120: '300rem',
+      145: '145rem',
+      300: '300rem',
+      320: '320rem',
+      480: '480rem',
+    },
+    fontSize: {
+      '4.5xl': '2.0625rem',
     },
     extends: {
       shadow: {
