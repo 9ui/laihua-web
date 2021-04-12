@@ -1,16 +1,16 @@
 <template>
   <LayoutMain>
-    <BlogE></BlogE>
+    <BlogD></BlogD>
   </LayoutMain>
 </template>
 <script lang="ts">
   import { defineComponent } from '@vue/composition-api';
-  import { BlogE } from '@/components/Views/index';
+  import { BlogD } from '@/components/Views/index';
   import { LayoutMain } from '@/components/Layouts/index';
   export default defineComponent({
     components: {
       LayoutMain,
-      BlogE,
+      BlogD,
     },
   });
 </script>
