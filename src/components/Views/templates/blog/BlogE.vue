@@ -107,7 +107,7 @@
         >
       </div>
       <img
-        class="absolute w-20 h-20 top-5 left-124"
+        class="absolute w-20 h-20 top-5 left-150"
         src="https://lhcdn.lanhuapp.com/home/img/emoj1.png"
         alt=""
       />
