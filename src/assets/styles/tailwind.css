@@ -24,6 +24,10 @@
   width: 580px;
 }
 
+.w-120 {
+  width: 480px;
+}
+
 /* height */
 .h-235 {
   height: 940px;
@@ -31,4 +35,18 @@
 
 .h-135 {
   height: 540px;
+}
+
+/** right */
+.right-120 {
+  right: 480px;
+}
+
+/* left */
+.left-150 {
+  left: 600px;
+}
+
+.left-128 {
+  left: 512px;
 }
