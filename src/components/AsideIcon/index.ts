@@ -18,36 +18,36 @@ export const sideMenus: MenusType[] = [
   {
     name: 'Blog',
     pathName: 'blog',
-    components: ['blogA', 'blogB', 'blogC', 'blogD', 'blogE'],
+    components: ['blog01', 'blog02', 'blog03', 'blog04', 'blog05'],
   },
   {
     name: 'Card',
     pathName: 'card',
-    components: ['cardA', 'cardB', 'cardC'],
+    components: ['card01', 'card02', 'card03'],
   },
   {
     name: 'Header',
     pathName: 'header',
-    components: ['headerA', 'headerB'],
+    components: ['header01', 'header02'],
   },
   {
     name: 'Sidebar',
     pathName: 'sidebar',
-    components: ['sidebarA', 'sidebarB'],
+    components: ['sidebar01', 'sidebar02'],
   },
   {
     name: 'Side',
     pathName: 'side',
-    components: ['sideOversA'],
+    components: ['sideOvers01'],
   },
   {
     name: 'Form',
     pathName: 'form',
-    components: ['formA'],
+    components: ['form01'],
   },
   {
     name: 'Page',
     pathName: 'page',
-    components: ['pageA', 'pageB', 'pageC', 'pageD', 'pageE'],
+    components: ['page01', 'page02', 'page03', 'page04', 'page05'],
   },
 ];

@@ -1,17 +1,16 @@
 <template>
   <LayoutMain>
-    <SidebarB></SidebarB>
+    <Page04></Page04>
   </LayoutMain>
 </template>
-
 <script lang="ts">
   import { defineComponent } from '@vue/composition-api';
-  import { SidebarB } from '@/components/Views/index';
+  import { Page04 } from '@/components/Views/index';
   import { LayoutMain } from '@/components/Layouts/index';
   export default defineComponent({
     components: {
-      SidebarB,
       LayoutMain,
+      Page04,
     },
   });
 </script>

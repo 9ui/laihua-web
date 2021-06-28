@@ -1,16 +1,16 @@
 <template>
   <LayoutMain>
-    <CardB></CardB>
+    <Sidebar01></Sidebar01>
   </LayoutMain>
 </template>
 
 <script lang="ts">
   import { defineComponent } from '@vue/composition-api';
-  import { CardB } from '@/components/Views/index';
+  import { Sidebar01 } from '@/components/Views/index';
   import { LayoutMain } from '@/components/Layouts/index';
   export default defineComponent({
     components: {
-      CardB,
+      Sidebar01,
       LayoutMain,
     },
   });

@@ -1,33 +1,33 @@
 // templates/blog
-export { default as BlogA } from './templates/blog/BlogA.vue';
-export { default as BlogB } from './templates/blog/BlogB.vue';
-export { default as BlogC } from './templates/blog/BlogC.vue';
-export { default as BlogD } from './templates/blog/BlogD.vue';
-export { default as BlogE } from './templates/blog/BlogE.vue';
+export { default as Blog01 } from './templates/blog/Blog01.vue';
+export { default as Blog02 } from './templates/blog/Blog02.vue';
+export { default as Blog03 } from './templates/blog/Blog03.vue';
+export { default as Blog04 } from './templates/blog/Blog04.vue';
+export { default as Blog05 } from './templates/blog/Blog05.vue';
 
 // templates/card
-export { default as CardA } from './templates/card/CardA.vue';
-export { default as CardB } from './templates/card/CardB.vue';
-export { default as CardC } from './templates/card/CardC.vue';
+export { default as Card01 } from './templates/card/Card01.vue';
+export { default as Card02 } from './templates/card/Card02.vue';
+export { default as Card03 } from './templates/card/Card03.vue';
 
 // templates/header
-export { default as HeaderA } from './templates/header/HeaderA.vue';
+export { default as Header01 } from './templates/header/Header01.vue';
 
-export { default as HeaderB } from './templates/header/HeaderB.vue';
+export { default as Header02 } from './templates/header/Header02.vue';
 
 // from
-export { default as FormA } from './templates/form/FormA.vue';
+export { default as Form01 } from './templates/form/Form01.vue';
 
 // sidebar
-export { default as SidebarA } from './templates/sidebar/SidebarA.vue';
-export { default as SidebarB } from './templates/sidebar/SidebarB.vue';
+export { default as Sidebar01 } from './templates/sidebar/Sidebar01.vue';
+export { default as Sidebar02 } from './templates/sidebar/Sidebar02.vue';
 
 // side
-export { default as SideOversA } from './templates/side/SideOversA.vue';
+export { default as SideOvers01 } from './templates/side/SideOvers01.vue';
 
 // page
-export { default as PageA } from './page/PageA.vue';
-export { default as PageB } from './page/PageB.vue';
-export { default as PageC } from './page/PageC.vue';
-export { default as PageD } from './page/PageD.vue';
-export { default as PageE } from './page/PageE.vue';
+export { default as Page01 } from './page/Page01.vue';
+export { default as Page02 } from './page/Page02.vue';
+export { default as Page03 } from './page/Page03.vue';
+export { default as Page04 } from './page/Page04.vue';
+export { default as Page05 } from './page/Page05.vue';

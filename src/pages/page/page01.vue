@@ -1,16 +1,16 @@
 <template>
   <LayoutMain>
-    <PageE></PageE>
+    <Page01></Page01>
   </LayoutMain>
 </template>
 <script lang="ts">
   import { defineComponent } from '@vue/composition-api';
-  import { PageE } from '@/components/Views/index';
+  import { Page01 } from '@/components/Views/index';
   import { LayoutMain } from '@/components/Layouts/index';
   export default defineComponent({
     components: {
       LayoutMain,
-      PageE,
+      Page01,
     },
   });
 </script>

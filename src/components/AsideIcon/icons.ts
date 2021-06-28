@@ -3,39 +3,39 @@ export const getIcons = {
   Introduction: () => import('./src/home/IconIntroduction.vue'),
 
   // blog
-  BlogA: () => import('./src/templates/blog/IconBlogA.vue'),
-  BlogB: () => import('./src/templates/blog/IconBlogB.vue'),
-  BlogC: () => import('./src/templates/blog/IconBlogC.vue'),
-  BlogD: () => import('./src/templates/blog/IconBlogD.vue'),
-  BlogE: () => import('./src/templates/blog/IconBlogE.vue'),
+  Blog01: () => import('./src/templates/blog/IconBlog01.vue'),
+  Blog02: () => import('./src/templates/blog/IconBlog02.vue'),
+  Blog03: () => import('./src/templates/blog/IconBlog03.vue'),
+  Blog04: () => import('./src/templates/blog/IconBlog04.vue'),
+  Blog05: () => import('./src/templates/blog/IconBlog05.vue'),
 
   // card
-  CardA: () => import('./src/templates/card/IconCardA.vue'),
-  CardB: () => import('./src/templates/card/IconCardB.vue'),
-  CardC: () => import('./src/templates/card/IconCardD.vue'),
+  Card01: () => import('./src/templates/card/IconCard01.vue'),
+  Card02: () => import('./src/templates/card/IconCard02.vue'),
+  Card03: () => import('./src/templates/card/IconCard03.vue'),
 
   // header
-  HeaderA: () => import('./src/templates/header/IconHeaderA.vue'),
-  HeaderB: () => import('./src/templates/header/IconHeaderB.vue'),
+  Header01: () => import('./src/templates/header/IconHeader01.vue'),
+  Header02: () => import('./src/templates/header/IconHeader02.vue'),
 
   // form
-  FormA: () => import('./src/templates/form/IconFormA.vue'),
+  Form01: () => import('./src/templates/form/IconForm01.vue'),
 
   // sidebar
-  SidebarA: () => import('./src/templates/sidebar/IconSidebarA.vue'),
-  SidebarB: () => import('./src/templates/sidebar/IconSidebarB.vue'),
+  Sidebar01: () => import('./src/templates/sidebar/IconSidebar01.vue'),
+  Sidebar02: () => import('./src/templates/sidebar/IconSidebar02.vue'),
 
   // components
   Modal: () => import('./src/components/IconSideOvers.vue'),
   LhButton: () => import('./src/components/IconSideOvers.vue'),
 
   // side
-  SideOversA: () => import('./src/components/IconSideOvers.vue'),
+  SideOvers: () => import('./src/components/IconSideOvers.vue'),
 
   // page
-  PageA: () => import('./src/page/IconPageA.vue'),
-  PageB: () => import('./src/page/IconPageB.vue'),
-  PageC: () => import('./src/page/IconPageC.vue'),
-  PageD: () => import('./src/page/IconPageD.vue'),
-  PageE: () => import('./src/page/IconPageE.vue'),
+  Page01: () => import('./src/page/IconPage01.vue'),
+  Page02: () => import('./src/page/IconPage02.vue'),
+  Page03: () => import('./src/page/IconPage03.vue'),
+  Page04: () => import('./src/page/IconPage04.vue'),
+  Page05: () => import('./src/page/IconPage05.vue'),
 };

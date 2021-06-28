@@ -1,16 +1,17 @@
 <template>
   <LayoutMain>
-    <BlogB></BlogB>
+    <Card02></Card02>
   </LayoutMain>
 </template>
+
 <script lang="ts">
   import { defineComponent } from '@vue/composition-api';
-  import { BlogB } from '@/components/Views/index';
+  import { Card02 } from '@/components/Views/index';
   import { LayoutMain } from '@/components/Layouts/index';
   export default defineComponent({
     components: {
+      Card02,
       LayoutMain,
-      BlogB,
     },
   });
 </script>
