@@ -1,16 +1,16 @@
 <template>
   <LayoutMain>
-    <SideOversA></SideOversA>
+    <SideOvers01></SideOvers01>
   </LayoutMain>
 </template>
 
 <script lang="ts">
   import { defineComponent } from '@vue/composition-api';
-  import { SideOversA } from '@/components/Views/index';
+  import { SideOvers01 } from '@/components/Views/index';
   import { LayoutMain } from '@/components/Layouts/index';
   export default defineComponent({
     components: {
-      SideOversA,
+      SideOvers01,
       LayoutMain,
     },
   });
