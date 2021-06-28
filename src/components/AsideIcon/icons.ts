@@ -4,12 +4,13 @@ export const getIcons = {
 
   // banner
   Banner01: () => import('./src/templates/banner/IconBanner01.vue'),
+  Banner02: () => import('./src/templates/banner/IconBanner01.vue'),
 
   // blog
   Blog01: () => import('./src/templates/blog/IconBlog01.vue'),
   Blog02: () => import('./src/templates/blog/IconBlog02.vue'),
   Blog03: () => import('./src/templates/blog/IconBlog03.vue'),
-  Blog04: () => import('./src/templates/blog/IconBlog04.vue'),
+
   Blog05: () => import('./src/templates/blog/IconBlog05.vue'),
   Blog06: () => import('./src/templates/blog/IconBlog07.vue'),
 

@@ -13,7 +13,7 @@ export const sideMenus: MenusType[] = [
   {
     name: 'Banner',
     pathName: 'banner',
-    components: ['banner01'],
+    components: ['banner01', 'banner02'],
   },
   {
     name: 'Components',
@@ -23,7 +23,7 @@ export const sideMenus: MenusType[] = [
   {
     name: 'Blog',
     pathName: 'blog',
-    components: ['blog01', 'blog02', 'blog03', 'blog04', 'blog05', 'blog06'],
+    components: ['blog01', 'blog02', 'blog03', 'blog05', 'blog06'],
   },
   {
     name: 'Card',

@@ -1,11 +1,12 @@
 // templates/banner
 export { default as Banner01 } from './templates/banner/Banner01.vue';
+export { default as Banner02 } from './templates/banner/Banner02.vue';
 
 // templates/blog
 export { default as Blog01 } from './templates/blog/Blog01.vue';
 export { default as Blog02 } from './templates/blog/Blog02.vue';
 export { default as Blog03 } from './templates/blog/Blog03.vue';
-export { default as Blog04 } from './templates/blog/Blog04.vue';
+
 export { default as Blog05 } from './templates/blog/Blog05.vue';
 export { default as Blog06 } from './templates/blog/Blog06.vue';
 

@@ -37,6 +37,10 @@
   height: 540px;
 }
 
+.h-150 {
+  height: 600px;
+}
+
 /** right */
 .right-120 {
   right: 480px;
