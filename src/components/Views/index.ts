@@ -1,9 +1,13 @@
+// templates/banner
+export { default as Banner01 } from './templates/banner/Banner01.vue';
+
 // templates/blog
 export { default as Blog01 } from './templates/blog/Blog01.vue';
 export { default as Blog02 } from './templates/blog/Blog02.vue';
 export { default as Blog03 } from './templates/blog/Blog03.vue';
 export { default as Blog04 } from './templates/blog/Blog04.vue';
 export { default as Blog05 } from './templates/blog/Blog05.vue';
+export { default as Blog06 } from './templates/blog/Blog06.vue';
 
 // templates/card
 export { default as Card01 } from './templates/card/Card01.vue';
@@ -23,7 +27,7 @@ export { default as Sidebar01 } from './templates/sidebar/Sidebar01.vue';
 export { default as Sidebar02 } from './templates/sidebar/Sidebar02.vue';
 
 // side
-export { default as SideOvers01 } from './templates/side/SideOvers01.vue';
+export { default as SideOvers } from './templates/side/SideOvers.vue';
 
 // page
 export { default as Page01 } from './page/Page01.vue';

@@ -11,14 +11,19 @@ export const sideMenus: MenusType[] = [
     components: ['introduction'],
   },
   {
-    name: 'components',
+    name: 'Banner',
+    pathName: 'banner',
+    components: ['banner01'],
+  },
+  {
+    name: 'Components',
     pathName: 'components',
     components: ['modal', 'lhButton'],
   },
   {
     name: 'Blog',
     pathName: 'blog',
-    components: ['blog01', 'blog02', 'blog03', 'blog04', 'blog05'],
+    components: ['blog01', 'blog02', 'blog03', 'blog04', 'blog05', 'blog06'],
   },
   {
     name: 'Card',
@@ -38,7 +43,7 @@ export const sideMenus: MenusType[] = [
   {
     name: 'Side',
     pathName: 'side',
-    components: ['sideOvers01'],
+    components: ['sideOvers'],
   },
   {
     name: 'Form',

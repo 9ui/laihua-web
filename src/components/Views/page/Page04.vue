@@ -9,11 +9,11 @@
             class="flex flex-col items-center justify-center w-48 h-48 bg-white rounded-sm shadow-md cursor-pointer hover:shadow-xl group"
           >
             <div
-              class="flex w-20 h-20 text-3xl bg-gray-200 rounded-full group-hover:bg-blue-500 item-center"
+              class="flex justify-center items-center w-20 h-20 bg-gray-200 rounded-full group-hover:bg-blue-500"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-6 h-6"
+                class="w-8 h-8"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
