@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center pt-20 mx-auto bg-black w-480 contanier h-235">
+  <div class="flex flex-col items-center w-full pt-20 mx-auto bg-black contanier h-235 lg:w-480">
     <h2 class="text-5xl font-bold text-white">用户好评</h2>
     <p class="text-gray-100 pt-9"
       >我们会<span class="text-green-700">悉心听取每一位</span>用户的评价</p

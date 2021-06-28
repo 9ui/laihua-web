@@ -1,6 +1,3 @@
-// components
-export { default as LhButton } from './components/Button.vue';
-
 // templates/blog
 export { default as BlogA } from './templates/blog/BlogA.vue';
 export { default as BlogB } from './templates/blog/BlogB.vue';

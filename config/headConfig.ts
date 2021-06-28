@@ -12,6 +12,7 @@ export const HeadConfig = {
     { rel: 'dns-prefetch', href: '//at.alicdn.com' },
     { rel: 'dns-prefetch', href: '//web.90c.vip' },
   ],
-  // 全局引入外部或本地static目录下的资源,路径不用加static
-  script: [],
+  script: [
+    { src: '//at.alicdn.com/t/font_1909239_jwn7sf3lvy.js', async: true, rel: 'preload' }, //平台 icon
+  ],
 } as Config.Interface.IConfig;
