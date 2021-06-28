@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col items-center pt-20"
+    class="flex flex-col items-center py-20"
     style="
       background: url('https://cdn2.laihua.com/dev-dist/static/img/banner_bg.262e63c.png') no-repeat;
     "

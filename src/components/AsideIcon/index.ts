@@ -13,7 +13,7 @@ export const sideMenus: MenusType[] = [
   {
     name: 'components',
     pathName: 'components',
-    components: ['modal'],
+    components: ['modal', 'lhButton'],
   },
   {
     name: 'Blog',

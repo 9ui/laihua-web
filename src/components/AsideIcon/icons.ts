@@ -27,6 +27,7 @@ export const getIcons = {
 
   // components
   Modal: () => import('./src/components/IconSideOvers.vue'),
+  LhButton: () => import('./src/components/IconSideOvers.vue'),
 
   // side
   SideOversA: () => import('./src/components/IconSideOvers.vue'),
