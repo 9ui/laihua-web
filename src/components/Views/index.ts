@@ -2,6 +2,9 @@
 export { default as Banner01 } from './templates/banner/Banner01.vue';
 export { default as Banner02 } from './templates/banner/Banner02.vue';
 
+// tempaltes/Price
+export { default as Price01 } from './templates/price/Price01.vue';
+
 // templates/blog
 export { default as Blog01 } from './templates/blog/Blog01.vue';
 export { default as Blog02 } from './templates/blog/Blog02.vue';

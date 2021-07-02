@@ -2,6 +2,9 @@ export const getIcons = {
   // home
   Introduction: () => import('./src/home/IconIntroduction.vue'),
 
+  // price
+  Price01: () => import('./src/templates/price/IconPrice01.vue'),
+
   // banner
   Banner01: () => import('./src/templates/banner/IconBanner01.vue'),
   Banner02: () => import('./src/templates/banner/IconBanner01.vue'),

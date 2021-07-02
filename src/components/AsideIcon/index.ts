@@ -11,14 +11,14 @@ export const sideMenus: MenusType[] = [
     components: ['introduction'],
   },
   {
+    name: 'Header',
+    pathName: 'header',
+    components: ['header01', 'header02'],
+  },
+  {
     name: 'Banner',
     pathName: 'banner',
     components: ['banner01', 'banner02'],
-  },
-  {
-    name: 'Components',
-    pathName: 'components',
-    components: ['modal', 'lhButton'],
   },
   {
     name: 'Blog',
@@ -31,9 +31,9 @@ export const sideMenus: MenusType[] = [
     components: ['card01', 'card02', 'card03'],
   },
   {
-    name: 'Header',
-    pathName: 'header',
-    components: ['header01', 'header02'],
+    name: 'Price',
+    pathName: 'price',
+    components: ['price01'],
   },
   {
     name: 'Sidebar',
@@ -49,6 +49,11 @@ export const sideMenus: MenusType[] = [
     name: 'Form',
     pathName: 'form',
     components: ['form01'],
+  },
+  {
+    name: 'Components',
+    pathName: 'components',
+    components: ['modal', 'lhButton'],
   },
   {
     name: 'Page',
