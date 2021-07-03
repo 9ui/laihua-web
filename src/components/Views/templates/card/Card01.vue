@@ -18,11 +18,7 @@
         <div
           class="absolute top-2 right-2 p-1 bg-gray-700 opacity-0 rounded-sm group-hover:opacity-90 hover:bg-blue-600"
         >
-          <svg
-            aria-hidden="true"
-            class="lh-iconfont"
-            style="width: 1em; height: 1em; font-size: 15px; fill: currentColor;"
-          >
+          <svg aria-hidden="true" class="w-4 h-4">
             <use data-v-5651378e="" xlink:href="#icon-wb-unlike">
               <svg id="icon-wb-unlike" viewBox="0 0 1224 1024">
                 <path

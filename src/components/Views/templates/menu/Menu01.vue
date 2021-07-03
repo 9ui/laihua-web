@@ -1,5 +1,5 @@
 <template>
-  <div class="w-56 min-w-0 bg-white rounded-lg shadow-lg" style="margin: 100px auto;">
+  <div class="w-56 min-w-0 bg-white rounded-lg shadow-lg">
     <ul class="p-2 space-y-1">
       <li class="relative">
         <button
@@ -53,10 +53,9 @@
           </svg>
         </button>
         <ul
-          class="absolute left-0 z-10 w-full p-2 space-y-1 bg-white border border-t-0 rounded-t-none rounded-b-lg shadow-lg sm:w-48 sm:-mt-2 sm:ml-4 sm:top-0 sm:left-full sm:border-0 sm:rounded-lg"
+          class="absolute left-0 z-10 w-full opacity-0 p-2 space-y-1 bg-white border border-t-0 rounded-t-none rounded-b-lg shadow-lg sm:w-48 sm:-mt-2 sm:ml-4 sm:top-0 sm:left-full sm:border-0 sm:rounded-lg"
           v-show="open1"
           @click="open1 = false"
-          style="display: none;"
         >
           <li>
             <a href="#" class="block px-2 py-1 rounded hover:bg-gray-200">Facebook</a>
@@ -304,5 +303,3 @@
     },
   };
 </script>
-
-<style></style>

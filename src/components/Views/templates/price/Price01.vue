@@ -37,12 +37,7 @@
                 <div
                   class="flex w-14 h-14 bg-yellow-500 rounded-md mr-2 p-2 items-center justify-center"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="text-white"
-                    style="width: 40px; height: 40px; font-size: 12px; fill: currentColor;"
-                    data-v-5651378e=""
-                  >
+                  <svg aria-hidden="true" class="text-white w-10 h-10 fill-current">
                     <use xlink:href="#icon-animation" data-v-5651378e="">
                       <svg id="icon-animation" viewBox="0 0 1671 1024">
                         <path
@@ -116,8 +111,7 @@
                 >
                   <svg
                     aria-hidden="true"
-                    class="text-white"
-                    style="width: 40px; height: 40px; font-size: 12px; fill: currentColor;"
+                    class="text-white w-10 h-10 fill-current"
                     data-v-5651378e=""
                   >
                     <use xlink:href="#icon-animation" data-v-5651378e="">
@@ -193,8 +187,7 @@
                 >
                   <svg
                     aria-hidden="true"
-                    class="text-white"
-                    style="width: 40px; height: 40px; font-size: 12px; fill: currentColor;"
+                    class="text-white w-10 h-10 fill-current"
                     data-v-5651378e=""
                   >
                     <use xlink:href="#icon-animation" data-v-5651378e="">
