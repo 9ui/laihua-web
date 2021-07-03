@@ -5,6 +5,8 @@ export const getIcons = {
   // price
   Price01: () => import('./src/templates/price/IconPrice01.vue'),
 
+  Menu01: () => import('./src/templates/menu/IconMenu01.vue'),
+
   // banner
   Banner01: () => import('./src/templates/banner/IconBanner01.vue'),
   Banner02: () => import('./src/templates/banner/IconBanner01.vue'),
