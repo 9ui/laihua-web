@@ -15,8 +15,5 @@
       Card01,
       LayoutMain,
     },
-    data() {
-      templates: [];
-    },
   });
 </script>
