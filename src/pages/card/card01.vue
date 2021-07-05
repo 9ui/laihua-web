@@ -1,6 +1,8 @@
 <template>
   <LayoutMain>
-    <Card01></Card01>
+    <div class="min-h-screen max-w-full p-10 flex flex-wrap">
+      <Card01 v-for="i in 10" :key="i"></Card01>
+    </div>
   </LayoutMain>
 </template>
 
@@ -12,6 +14,9 @@
     components: {
       Card01,
       LayoutMain,
+    },
+    data() {
+      templates: [];
     },
   });
 </script>
