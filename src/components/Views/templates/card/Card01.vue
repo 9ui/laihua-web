@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col lg:w-1/3 md:w-1/2 xl:w-1/4 p-5">
+  <div class="flex flex-col lg:w-1/3 md:w-1/2 xl:w-1/4 2xl:w-1/5 p-5">
     <div
       @mouseenter="showVideo = true"
       @mouseleave="showVideo = false"
