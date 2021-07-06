@@ -8,6 +8,15 @@
 }
 
 /** width **/
+
+.w-145 {
+  width: 580px;
+}
+
+.w-120 {
+  width: 480px;
+}
+
 .w-300 {
   width: 1200px;
 }
@@ -18,14 +27,6 @@
 
 .w-480 {
   width: 1920px;
-}
-
-.w-145 {
-  width: 580px;
-}
-
-.w-120 {
-  width: 480px;
 }
 
 /* height */

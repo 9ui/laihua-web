@@ -53,8 +53,8 @@
           </svg>
         </button>
         <ul
-          class="absolute left-0 z-10 w-full opacity-0 p-2 space-y-1 bg-white border border-t-0 rounded-t-none rounded-b-lg shadow-lg sm:w-48 sm:-mt-2 sm:ml-4 sm:top-0 sm:left-full sm:border-0 sm:rounded-lg"
           v-show="open1"
+          class="absolute left-0 z-10 w-full opacity-0 p-2 space-y-1 bg-white border border-t-0 rounded-t-none rounded-b-lg shadow-lg sm:w-48 sm:-mt-2 sm:ml-4 sm:top-0 sm:left-full sm:border-0 sm:rounded-lg"
           @click="open1 = false"
         >
           <li>
@@ -126,8 +126,8 @@
           </svg>
         </button>
         <ul
-          class="absolute left-0 z-10 w-full p-2 space-y-1 bg-white border border-t-0 rounded-t-none rounded-b-lg shadow-lg sm:w-48 sm:-mt-2 sm:ml-4 sm:top-0 sm:left-full sm:border-0 sm:rounded-lg"
           v-show="open"
+          class="absolute left-0 z-10 w-full p-2 space-y-1 bg-white border border-t-0 rounded-t-none rounded-b-lg shadow-lg sm:w-48 sm:-mt-2 sm:ml-4 sm:top-0 sm:left-full sm:border-0 sm:rounded-lg"
           @click="open = false"
         >
           <li>
