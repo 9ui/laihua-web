@@ -26,7 +26,8 @@ export const getIcons = {
 
   // header
   Header01: () => import('./src/templates/header/IconHeader01.vue'),
-  Header02: () => import('./src/templates/header/IconHeader02.vue'),
+  Header03: () => import('./src/templates/header/IconHeader04.vue'),
+  Header04: () => import('./src/templates/header/IconHeader04.vue'),
 
   // form
   Form01: () => import('./src/templates/form/IconForm01.vue'),
@@ -41,6 +42,9 @@ export const getIcons = {
 
   // side
   SideOvers: () => import('./src/components/IconSideOvers.vue'),
+
+  // faqs
+  Faq01: () => import('./src/templates/faq/IconFaq01.vue'),
 
   // page
   Page01: () => import('./src/page/IconPage01.vue'),

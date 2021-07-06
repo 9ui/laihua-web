@@ -1,4 +1,4 @@
-## [1.1.6](https://github.com/9ui/laihua-web/compare/1.1.1...1.1.6) (2021-04-08)
+## [1.1.6](https://github.com/9ui/laihua-web/compare/1.1.1...1.1.6) (2021-07-06)
 
 ### ⏪ Reverts
 
@@ -22,7 +22,9 @@
 
 ### ✨ Features
 
+- 按钮组件优化 ([870c9cf](https://github.com/9ui/laihua-web/commit/870c9cf)) by: **laihua** (zzw9059190@gmail.com)
 - 封装侧边栏，优化侧边栏数据结构 ([70b6fe8](https://github.com/9ui/laihua-web/commit/70b6fe8)) by: **9ui** (71952965+9ui@users.noreply.github.com)
+- 删除未定义变量 ([5b2eeb3](https://github.com/9ui/laihua-web/commit/5b2eeb3)) by: **9ui** (zzw9059190@gmail.com)
 - 首页布局演示 ([dd78364](https://github.com/9ui/laihua-web/commit/dd78364)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 添加测试状态 ([75e6e29](https://github.com/9ui/laihua-web/commit/75e6e29)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 完善按钮组件 ([59b16c4](https://github.com/9ui/laihua-web/commit/59b16c4)) by: **9ui** (71952965+9ui@users.noreply.github.com)
@@ -41,8 +43,12 @@
 - 完善源码预览布局以及新增 secion 示例 ([7add3c3](https://github.com/9ui/laihua-web/commit/7add3c3)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 完善主题色切换 ([45b8fc5](https://github.com/9ui/laihua-web/commit/45b8fc5)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 完善主题色切换 ([32be40c](https://github.com/9ui/laihua-web/commit/32be40c)) by: **9ui** (71952965+9ui@users.noreply.github.com)
+- 完善 banner 组件 ([1eefc19](https://github.com/9ui/laihua-web/commit/1eefc19)) by: **9ui** (zzw9059190@gmail.com)
+- 完善 blog 模块 ([9d8f072](https://github.com/9ui/laihua-web/commit/9d8f072)) by: **laihua** (zzw9059190@gmail.com)
+- 完善 card 响应式布局参数' ([c523f18](https://github.com/9ui/laihua-web/commit/c523f18)) by: **9ui** (zzw9059190@gmail.com)
 - 完善 dropdown 组件 ([8f881eb](https://github.com/9ui/laihua-web/commit/8f881eb)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 项目继承版本信息 ([11cc9ef](https://github.com/9ui/laihua-web/commit/11cc9ef)) by: **9ui** (71952965+9ui@users.noreply.github.com)
+- 新增表单模块 ([e30053a](https://github.com/9ui/laihua-web/commit/e30053a)) by: **laihua** (zzw9059190@gmail.com)
 - 新增复制粘贴功能以及完善源码预览模块 ([f254642](https://github.com/9ui/laihua-web/commit/f254642)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 新增会员定价路由 ([c18e657](https://github.com/9ui/laihua-web/commit/c18e657)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 新增模板 ([f0ad033](https://github.com/9ui/laihua-web/commit/f0ad033)) by: **laihua** (zzw9059190@gmail.com)
@@ -50,12 +56,19 @@
 - 新增模板 ([d6ac3b9](https://github.com/9ui/laihua-web/commit/d6ac3b9)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 新增模板示例 ([0d7c28c](https://github.com/9ui/laihua-web/commit/0d7c28c)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 新增示例模板 ([06e6548](https://github.com/9ui/laihua-web/commit/06e6548)) by: **9ui** (71952965+9ui@users.noreply.github.com)
+- 新增演示 demo ([a7a851c](https://github.com/9ui/laihua-web/commit/a7a851c)) by: **9ui** (zzw9059190@gmail.com)
 - 新增页面 以及优化项目结构 ([55d50bb](https://github.com/9ui/laihua-web/commit/55d50bb)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 新增折叠面板 ([6ac2959](https://github.com/9ui/laihua-web/commit/6ac2959)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 新增组件源码预览功能 ([1e440f9](https://github.com/9ui/laihua-web/commit/1e440f9)) by: **9ui** (71952965+9ui@users.noreply.github.com)
+- 新增 blog 模块 ([020d0b2](https://github.com/9ui/laihua-web/commit/020d0b2)) by: **laihua** (zzw9059190@gmail.com)
+- 新增 blog 模块 ([d1926ad](https://github.com/9ui/laihua-web/commit/d1926ad)) by: **laihua** (zzw9059190@gmail.com)
+- 新增 page ([22ceca8](https://github.com/9ui/laihua-web/commit/22ceca8)) by: **laihua** (zzw9059190@gmail.com)
+- 新增 side 模块 ([fd4a5c2](https://github.com/9ui/laihua-web/commit/fd4a5c2)) by: **laihua** (zzw9059190@gmail.com)
 - 修改布局 ([7ce3d43](https://github.com/9ui/laihua-web/commit/7ce3d43)) by: **laihua** (zzw9059190@gmail.com)
+- 修改路由名称大小写 ([2389acd](https://github.com/9ui/laihua-web/commit/2389acd)) by: **laihua-coder** (coder@192.168.2.78)
 - 修改名称 ([73918d1](https://github.com/9ui/laihua-web/commit/73918d1)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 修改默认配置 ([0dd7263](https://github.com/9ui/laihua-web/commit/0dd7263)) by: **laihua** (zzw9059190@gmail.com)
+- 修改 card 页面高度问题 ([db1698b](https://github.com/9ui/laihua-web/commit/db1698b)) by: **9ui** (zzw9059190@gmail.com)
 - 引入七牛云 ([fb5a4c7](https://github.com/9ui/laihua-web/commit/fb5a4c7)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 优化工作流 ([517f68d](https://github.com/9ui/laihua-web/commit/517f68d)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 优化主题色 ([aa7e429](https://github.com/9ui/laihua-web/commit/aa7e429)) by: **9ui** (71952965+9ui@users.noreply.github.com)
@@ -77,22 +90,36 @@
 
 ### 🐛 Bug Fixes
 
+- 更新 card 组件 ([3bbc2d2](https://github.com/9ui/laihua-web/commit/3bbc2d2)) by: **9ui** (zzw9059190@gmail.com)
 - 删除冗余代码 ([a01542b](https://github.com/9ui/laihua-web/commit/a01542b)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 删除冗余代码 ([0791323](https://github.com/9ui/laihua-web/commit/0791323)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 删除冗余文件 ([11f6bb4](https://github.com/9ui/laihua-web/commit/11f6bb4)) by: **zzw** (zzw9059190@gmail.com)
+- 删除未使用变量 ([4a620cc](https://github.com/9ui/laihua-web/commit/4a620cc)) by: **9ui** (zzw9059190@gmail.com)
+- 删除未引用变量参数 ([6d08e0c](https://github.com/9ui/laihua-web/commit/6d08e0c)) by: **9ui** (zzw9059190@gmail.com)
+- 删除文件 ([0d0ab78](https://github.com/9ui/laihua-web/commit/0d0ab78)) by: **laihua-coder** (coder@192.168.2.78)
 - 刪除冗余代码 ([1826719](https://github.com/9ui/laihua-web/commit/1826719)) by: **zzw** (zzw9059190@gmail.com)
 - 设置缓存路径 ([77b373b](https://github.com/9ui/laihua-web/commit/77b373b)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 完善主题背景色 ([d6b2e5d](https://github.com/9ui/laihua-web/commit/d6b2e5d)) by: **9ui** (71952965+9ui@users.noreply.github.com)
+- 完善 card 组件 ([ea94aa9](https://github.com/9ui/laihua-web/commit/ea94aa9)) by: **9ui** (zzw9059190@gmail.com)
+- 新增模块 ([9766525](https://github.com/9ui/laihua-web/commit/9766525)) by: **9ui** (zzw9059190@gmail.com)
+- 修复按钮组件 bug ([24f430c](https://github.com/9ui/laihua-web/commit/24f430c)) by: **9ui** (zzw9059190@gmail.com)
 - 修复不能预览源码问题以及关闭测试 cdn ([3a67654](https://github.com/9ui/laihua-web/commit/3a67654)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 修复点击出现边框问题 ([bbcb646](https://github.com/9ui/laihua-web/commit/bbcb646)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 修复路径错误 ([5c5fa7a](https://github.com/9ui/laihua-web/commit/5c5fa7a)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 修复图钉组件无法固定在底部问题 ([6f7dadc](https://github.com/9ui/laihua-web/commit/6f7dadc)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 修复文件打包到服务器缺少文件 ([88754ae](https://github.com/9ui/laihua-web/commit/88754ae)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 修复无法使用 cz 命令 ([510d879](https://github.com/9ui/laihua-web/commit/510d879)) by: **9ui** (71952965+9ui@users.noreply.github.com)
+- 修复语法格式错误 ([a834dc2](https://github.com/9ui/laihua-web/commit/a834dc2)) by: **9ui** (zzw9059190@gmail.com)
 - 修复折叠面板组件不能展开问题 ([466ca68](https://github.com/9ui/laihua-web/commit/466ca68)) by: **9ui** (71952965+9ui@users.noreply.github.com)
+- 修复 blogE 模块显示问题 ([fb7d336](https://github.com/9ui/laihua-web/commit/fb7d336)) by: **zzw** (zzw9059190@gmail.com)
 - 修改端口号 ([44c6f32](https://github.com/9ui/laihua-web/commit/44c6f32)) by: **9ui** (71952965+9ui@users.noreply.github.com)
+- 修改路由 ([f73c189](https://github.com/9ui/laihua-web/commit/f73c189)) by: **laihua** (zzw9059190@gmail.com)
+- 修改命名遗漏问题 ([6cf5ca7](https://github.com/9ui/laihua-web/commit/6cf5ca7)) by: **9ui** (zzw9059190@gmail.com)
+- 修改项目结构 ([edd1e57](https://github.com/9ui/laihua-web/commit/edd1e57)) by: **9ui** (zzw9059190@gmail.com)
+- 修改组件和页面命名规则 ([161e58d](https://github.com/9ui/laihua-web/commit/161e58d)) by: **9ui** (zzw9059190@gmail.com)
 - 修改组件引入错误 ([1097ff6](https://github.com/9ui/laihua-web/commit/1097ff6)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 优化项目结构 ([bbb4078](https://github.com/9ui/laihua-web/commit/bbb4078)) by: **9ui** (71952965+9ui@users.noreply.github.com)
+- fix style ([255fe0c](https://github.com/9ui/laihua-web/commit/255fe0c)) by: **zzw** (zzw9059190@gmail.com)
 - modify theme color dipaly error ([bd5c6c1](https://github.com/9ui/laihua-web/commit/bd5c6c1)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - modify ui ([75e88f2](https://github.com/9ui/laihua-web/commit/75e88f2)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - **deps:** bump @nuxtjs/pwa from 3.3.2 to 3.3.5 ([655fc5a](https://github.com/9ui/laihua-web/commit/655fc5a)) by: **dependabot[bot]** (49699333+dependabot[bot]@users.noreply.github.com)
@@ -112,6 +139,9 @@
 
 ### 🔧 Continuous Integration
 
+- 测试 ci/cd ([c009c52](https://github.com/9ui/laihua-web/commit/c009c52)) by: **laihua** (zzw9059190@gmail.com)
+- 更新配置 ([f920315](https://github.com/9ui/laihua-web/commit/f920315)) by: **laihua** (zzw9059190@gmail.com)
+- 修改 ci 配置 ([015dccb](https://github.com/9ui/laihua-web/commit/015dccb)) by: **laihua** (zzw9059190@gmail.com)
 - modify ci ([c7b2c8f](https://github.com/9ui/laihua-web/commit/c7b2c8f)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 
 ## [1.1.1](https://github.com/9ui/laihua-web/compare/ee4c7e9...1.1.1) (2021-01-01)
