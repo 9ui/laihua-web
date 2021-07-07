@@ -7,15 +7,7 @@
     leave-to-class="scale-95 opacity-0"
     leave-from-class="scale-100 opacity-100"
   >
-    <div
-      v-if="visible"
-      @blur="close"
-      class="panel"
-      :style="style"
-      role="menu"
-      aria-orientation="vertical"
-      aria-labelledby="options-menu"
-    >
+    <div v-if="visible" class="panel" :style="style" @blur="close">
       <slot></slot>
     </div>
   </transition>
@@ -51,7 +43,7 @@
       },
     },
     setup(props, { emit }) {
-      let style = computed(() => {
+      const style = computed(() => {
         const width = props.with,
           height = props.height,
           offsetRight = props.offsetRight,
@@ -67,7 +59,7 @@
         const bottom = 0 - height;
         return `bottom:${bottom}px;left:${left}px;width:${width}px;height:${height}px`;
       });
-      let close = () => {
+      const close = () => {
         emit('close');
       };
       return {

@@ -14,10 +14,10 @@
         <!-- menu-item product start -->
         <PopoverButton
           class="nav-item group"
-          :panelHeight="228"
-          :panelWidth="620"
-          :panelCenter="true"
-          :offsetRight="100"
+          :panel-height="228"
+          :panel-width="620"
+          :panel-center="true"
+          :offset-right="100"
         >
           <span class="nav-text">产品</span>
           <div slot="panel" class="flex p-5">
@@ -53,7 +53,12 @@
         <!-- menu-item product end -->
 
         <!-- menu-item price start -->
-        <PopoverButton class="nav-item group" :panelHeight="90" :panelWidth="90" :offsetLeft="20">
+        <PopoverButton
+          class="nav-item group"
+          :panel-height="90"
+          :panel-width="90"
+          :offset-left="20"
+        >
           <span class="nav-text">定价</span>
           <div slot="panel">
             <div class="py-1 mt-1">
@@ -97,12 +102,7 @@
     components: {
       PopoverButton,
     },
-    setup() {
-      let visible = ref(false);
-      return {
-        visible,
-      };
-    },
+    setup() {},
   });
 </script>
 
