@@ -14,6 +14,7 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.formatOnPaste": true, //自动格式化粘贴的内容
     "editor.formatOnSave": true, //保存自动格式化
+    "editor.formatOnType": true,
     "editor.suggestSelection": "first",
     "editor.trimAutoWhitespace": true,
     "editor.quickSuggestions": {
