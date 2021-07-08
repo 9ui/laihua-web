@@ -43,12 +43,12 @@
       },
     },
     setup(props, { emit }) {
-      const width = props.with,
-        height = props.height,
-        offsetRight = props.offsetRight,
-        offsetLeft = props.offsetLeft,
-        bottom = 0 - height;
       const style = computed(() => {
+        const width = props.with;
+        const height = props.height;
+        const offsetRight = props.offsetRight;
+        const offsetLeft = props.offsetLeft;
+        const bottom = 0 - height;
         let left = props.center ? 0 - width / 2 : 0;
         if (offsetRight) {
           left = left + offsetRight;
