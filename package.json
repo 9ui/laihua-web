@@ -17,7 +17,9 @@
     "lint": "yarn lint:js && yarn lint:style",
     "clean": "rm -rf .nuxt && rm -rf node_modules && yarn",
     "log": "esno ./build/script/changelog.ts",
-    "changelog": "conventional-changelog -p angular -i Changelog.md -s",
+    "patch": "yarn version --patch",
+    "minor": "yarn version --minor",
+    "major": "yarn version --major",
     "cz": "git-cz"
   },
   "dependencies": {

@@ -1,3 +1,10 @@
+## [1.1.8](https://github.com/9ui/laihua-web/compare/v1.1.7...v1.1.8) (2021-07-08)
+
+### 🐛 Bug Fixes
+
+- 修复变量定义语法使用错误 ([f08509b](https://github.com/9ui/laihua-web/commit/f08509b)) by: **9ui** (zzw9059190@gmail.com)
+- 修复代码编写不规范问题 ([8f70ab1](https://github.com/9ui/laihua-web/commit/8f70ab1)) by: **9ui** (zzw9059190@gmail.com)
+
 ## [1.1.7](https://github.com/9ui/laihua-web/compare/1.1.1...v1.1.7) (2021-07-08)
 
 ### ⏪ Reverts
