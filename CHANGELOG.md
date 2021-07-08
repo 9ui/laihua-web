@@ -1,4 +1,4 @@
-## [1.1.6](https://github.com/9ui/laihua-web/compare/1.1.1...1.1.6) (2021-07-06)
+## [1.1.7](https://github.com/9ui/laihua-web/compare/1.1.1...v1.1.7) (2021-07-08)
 
 ### ⏪ Reverts
 
@@ -49,6 +49,7 @@
 - 完善 dropdown 组件 ([8f881eb](https://github.com/9ui/laihua-web/commit/8f881eb)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 项目继承版本信息 ([11cc9ef](https://github.com/9ui/laihua-web/commit/11cc9ef)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 新增表单模块 ([e30053a](https://github.com/9ui/laihua-web/commit/e30053a)) by: **laihua** (zzw9059190@gmail.com)
+- 新增导航头模板以及新增下拉面板组件 ([468a746](https://github.com/9ui/laihua-web/commit/468a746)) by: **9ui** (zzw9059190@gmail.com)
 - 新增复制粘贴功能以及完善源码预览模块 ([f254642](https://github.com/9ui/laihua-web/commit/f254642)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 新增会员定价路由 ([c18e657](https://github.com/9ui/laihua-web/commit/c18e657)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 新增模板 ([f0ad033](https://github.com/9ui/laihua-web/commit/f0ad033)) by: **laihua** (zzw9059190@gmail.com)
@@ -56,6 +57,7 @@
 - 新增模板 ([d6ac3b9](https://github.com/9ui/laihua-web/commit/d6ac3b9)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 新增模板示例 ([0d7c28c](https://github.com/9ui/laihua-web/commit/0d7c28c)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 新增示例模板 ([06e6548](https://github.com/9ui/laihua-web/commit/06e6548)) by: **9ui** (71952965+9ui@users.noreply.github.com)
+- 新增头部导航 03 以及 faqs ([1fd7516](https://github.com/9ui/laihua-web/commit/1fd7516)) by: **9ui** (zzw9059190@gmail.com)
 - 新增演示 demo ([a7a851c](https://github.com/9ui/laihua-web/commit/a7a851c)) by: **9ui** (zzw9059190@gmail.com)
 - 新增页面 以及优化项目结构 ([55d50bb](https://github.com/9ui/laihua-web/commit/55d50bb)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 新增折叠面板 ([6ac2959](https://github.com/9ui/laihua-web/commit/6ac2959)) by: **9ui** (71952965+9ui@users.noreply.github.com)
@@ -104,6 +106,7 @@
 - 新增模块 ([9766525](https://github.com/9ui/laihua-web/commit/9766525)) by: **9ui** (zzw9059190@gmail.com)
 - 修复按钮组件 bug ([24f430c](https://github.com/9ui/laihua-web/commit/24f430c)) by: **9ui** (zzw9059190@gmail.com)
 - 修复不能预览源码问题以及关闭测试 cdn ([3a67654](https://github.com/9ui/laihua-web/commit/3a67654)) by: **9ui** (71952965+9ui@users.noreply.github.com)
+- 修复代码编写不规范问题 ([727b103](https://github.com/9ui/laihua-web/commit/727b103)) by: **9ui** (zzw9059190@gmail.com)
 - 修复点击出现边框问题 ([bbcb646](https://github.com/9ui/laihua-web/commit/bbcb646)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 修复路径错误 ([5c5fa7a](https://github.com/9ui/laihua-web/commit/5c5fa7a)) by: **9ui** (71952965+9ui@users.noreply.github.com)
 - 修复图钉组件无法固定在底部问题 ([6f7dadc](https://github.com/9ui/laihua-web/commit/6f7dadc)) by: **9ui** (71952965+9ui@users.noreply.github.com)
