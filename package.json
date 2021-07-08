@@ -1,6 +1,6 @@
 {
   "name": "laihua-web",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "scripts": {
     "dev": "esno ./build/script/preserve.ts && nuxt-ts",
     "build": "nuxt-ts build",
@@ -17,6 +17,7 @@
     "lint": "yarn lint:js && yarn lint:style",
     "clean": "rm -rf .nuxt && rm -rf node_modules && yarn",
     "log": "esno ./build/script/changelog.ts",
+    "changelog": "conventional-changelog -p angular -i Changelog.md -s",
     "cz": "git-cz"
   },
   "dependencies": {
@@ -25,6 +26,7 @@
     "@nuxtjs/pwa": "^3.3.5",
     "@vue/composition-api": "^1.0.0-rc.1",
     "core-js": "^3.6.5",
+    "globl": "^0.3.0",
     "mitt": "^2.1.0",
     "nuxt": "^2.14.6",
     "nuxt-helmet": "^2.0.0",
