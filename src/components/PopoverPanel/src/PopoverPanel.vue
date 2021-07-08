@@ -43,11 +43,12 @@
       },
     },
     setup(props, { emit }) {
+      const width = props.with,
+        height = props.height,
+        offsetRight = props.offsetRight,
+        offsetLeft = props.offsetLeft,
+        bottom = 0 - height;
       const style = computed(() => {
-        const width = props.with,
-          height = props.height,
-          offsetRight = props.offsetRight,
-          offsetLeft = props.offsetLeft;
         let left = props.center ? 0 - width / 2 : 0;
         if (offsetRight) {
           left = left + offsetRight;
@@ -55,8 +56,6 @@
         if (offsetLeft) {
           left = left - offsetLeft;
         }
-
-        const bottom = 0 - height;
         return `bottom:${bottom}px;left:${left}px;width:${width}px;height:${height}px`;
       });
       const close = () => {

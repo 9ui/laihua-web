@@ -5,8 +5,8 @@
       :with="panelWidth"
       :height="panelHeight"
       :center="panelCenter"
-      :offsetLeft="offsetLeft"
-      :offsetRight="offsetRight"
+      :offset-left="offsetLeft"
+      :offset-right="offsetRight"
       :visible="visible"
       @close="visible = false"
     >
@@ -45,7 +45,7 @@
       },
     },
     setup() {
-      let visible = ref(false);
+      const visible = ref(false);
       return {
         visible,
       };

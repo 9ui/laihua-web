@@ -96,7 +96,7 @@
   </header>
 </template>
 <script lang="ts">
-  import { defineComponent, ref } from '@vue/composition-api';
+  import { defineComponent } from '@vue/composition-api';
   import { PopoverButton } from '@/components/PopoverPanel/index';
   export default defineComponent({
     components: {
