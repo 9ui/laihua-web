@@ -43,7 +43,12 @@
                   class="absolute top-0 left-0 flex pt-4 pr-2 -ml-8 sm:-ml-10 sm:pr-4"
                 >
                   <button
-                    class="text-gray-300 rounded-md hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
+                    class="
+                      text-gray-300
+                      rounded-md
+                      hover:text-white
+                      focus:outline-none focus:ring-2 focus:ring-white
+                    "
                     @click="closePanel"
                   >
                     <span class="sr-only">Close panel</span>

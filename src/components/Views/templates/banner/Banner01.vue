@@ -22,6 +22,6 @@
 <style lang="postcss" scoped>
   .btn {
     @apply px-10 py-3 cursor-pointer font-bold text-yellow-600 border-yellow-600 border-2
-      bg-white rounded-full focus:outline-none hover:text-yellow-500 hover:border-yellow-500;
+    bg-white rounded-full focus:outline-none hover:text-yellow-500 hover:border-yellow-500;
   }
 </style>

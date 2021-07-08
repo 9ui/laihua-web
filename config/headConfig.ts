@@ -13,6 +13,6 @@ export const HeadConfig = {
     { rel: 'dns-prefetch', href: '//web.90c.vip' },
   ],
   script: [
-    { src: '//at.alicdn.com/t/font_1909239_jwn7sf3lvy.js', async: true, rel: 'preload' }, //平台 icon
+    { src: '//at.alicdn.com/t/font_2660617_cczysaqm84t.js', async: true, rel: 'preload' }, //平台 icon
   ],
 } as Config.Interface.IConfig;

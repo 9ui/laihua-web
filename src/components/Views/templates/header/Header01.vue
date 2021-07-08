@@ -9,7 +9,14 @@
         />
       </a>
       <nav
-        class="md:mr-auto md:ml-10 md:py-1 md:pl-4 flex flex-wrap items-center text-base justify-center dark:text-white"
+        class="
+          md:mr-auto md:ml-10 md:py-1 md:pl-4
+          flex flex-wrap
+          items-center
+          text-base
+          justify-center
+          dark:text-white
+        "
       >
         <a class="mr-10 hover:text-white cursor-pointer text-gray-300 text-sm">工作台</a>
         <a class="mr-10 hover:text-white cursor-pointer text-gray-300 text-sm">产品</a>
@@ -21,7 +28,20 @@
       </nav>
       <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
         <button
-          class="inline-flex items-center bg-gray-100 border-0 py-2 px-5 focus:outline-none hover:bg-gray-200 rounded-3xl text-base mt-4 md:mt-0"
+          class="
+            inline-flex
+            items-center
+            bg-gray-100
+            border-0
+            py-2
+            px-5
+            focus:outline-none
+            hover:bg-gray-200
+            rounded-3xl
+            text-base
+            mt-4
+            md:mt-0
+          "
           >登录/注册
         </button>
       </div>

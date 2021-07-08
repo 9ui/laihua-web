@@ -8,7 +8,18 @@
     <h1 class="text-5xl font-bold text-white">一站式视频创作及营销解决方案</h1>
     <section class="container flex items-start max-w-screen-xl pt-20 mx-auto space-x-16">
       <div
-        class="flex flex-col items-center w-1/3 px-10 pt-10 pb-20 bg-white rounded-lg shadow-xl hover:shadow-2xl"
+        class="
+          flex flex-col
+          items-center
+          w-1/3
+          px-10
+          pt-10
+          pb-20
+          bg-white
+          rounded-lg
+          shadow-xl
+          hover:shadow-2xl
+        "
       >
         <h2 class="text-2xl font-bold text-gray-900">多账号采购</h2>
         <p class="mt-1 text-gray-600">多人创作，协同办公</p>
@@ -17,7 +28,15 @@
           class="w-20 h-auto my-8"
         />
         <button
-          class="px-10 py-2 text-white bg-purple-700 rounded-full hover:bg-purple-800 focus:outline-none"
+          class="
+            px-10
+            py-2
+            text-white
+            bg-purple-700
+            rounded-full
+            hover:bg-purple-800
+            focus:outline-none
+          "
           >获取报价</button
         >
         <ul class="mt-5 space-y-1">
@@ -48,7 +67,18 @@
         </ul>
       </div>
       <div
-        class="flex flex-col items-center w-1/3 px-10 pt-10 pb-20 bg-white rounded-lg shadow-xl hover:shadow-2xl"
+        class="
+          flex flex-col
+          items-center
+          w-1/3
+          px-10
+          pt-10
+          pb-20
+          bg-white
+          rounded-lg
+          shadow-xl
+          hover:shadow-2xl
+        "
       >
         <h2 class="text-2xl font-bold text-gray-900">API定制</h2>
         <p class="mt-1 text-gray-600">系统接入，高效赋能</p>
@@ -57,7 +87,15 @@
           class="w-20 h-auto my-8"
         />
         <button
-          class="px-10 py-2 text-white bg-purple-700 rounded-full hover:bg-purple-800 focus:outline-none"
+          class="
+            px-10
+            py-2
+            text-white
+            bg-purple-700
+            rounded-full
+            hover:bg-purple-800
+            focus:outline-none
+          "
           >获取报价</button
         >
         <div class="mt-5 font-semibold text-purple-700">多账号采购所有服务</div>
@@ -90,7 +128,18 @@
         </ul>
       </div>
       <div
-        class="flex flex-col items-center w-1/3 px-10 pt-10 pb-20 bg-white rounded-lg shadow-xl hover:shadow-2xl"
+        class="
+          flex flex-col
+          items-center
+          w-1/3
+          px-10
+          pt-10
+          pb-20
+          bg-white
+          rounded-lg
+          shadow-xl
+          hover:shadow-2xl
+        "
       >
         <h2 class="text-2xl font-bold text-gray-900">多账号采购</h2>
         <p class="text-gray-600">多人创作，协同办公</p>
@@ -99,7 +148,15 @@
           class="w-20 h-auto my-8"
         />
         <button
-          class="px-10 py-2 text-white bg-purple-700 rounded-full hover:bg-purple-800 focus:outline-none"
+          class="
+            px-10
+            py-2
+            text-white
+            bg-purple-700
+            rounded-full
+            hover:bg-purple-800
+            focus:outline-none
+          "
           >获取报价</button
         >
         <div class="mt-5 font-semibold text-purple-700">API定制所有服务</div>

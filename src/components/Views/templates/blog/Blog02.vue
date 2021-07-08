@@ -23,7 +23,16 @@
           </li>
         </ul>
         <button
-          class="px-16 py-3 mt-4 text-sm text-white bg-blue-600 rounded-full focus:outline-none hover:bg-blue-500"
+          class="
+            px-16
+            py-3
+            mt-4
+            text-sm text-white
+            bg-blue-600
+            rounded-full
+            focus:outline-none
+            hover:bg-blue-500
+          "
           >进入</button
         >
       </div>
@@ -58,7 +67,16 @@
           </li>
         </ul>
         <button
-          class="px-16 py-3 mt-4 text-sm text-white bg-blue-600 rounded-full focus:outline-none hover:bg-blue-500"
+          class="
+            px-16
+            py-3
+            mt-4
+            text-sm text-white
+            bg-blue-600
+            rounded-full
+            focus:outline-none
+            hover:bg-blue-500
+          "
           >进入</button
         >
       </div>
@@ -93,7 +111,16 @@
           </li>
         </ul>
         <button
-          class="px-16 py-3 mt-4 text-sm text-white bg-blue-600 rounded-full focus:outline-none hover:bg-blue-500"
+          class="
+            px-16
+            py-3
+            mt-4
+            text-sm text-white
+            bg-blue-600
+            rounded-full
+            focus:outline-none
+            hover:bg-blue-500
+          "
           >进入</button
         >
       </div>

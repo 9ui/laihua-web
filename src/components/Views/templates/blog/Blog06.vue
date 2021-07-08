@@ -2,7 +2,18 @@
   <!-- Section 1 -->
   <section class="bg-white">
     <div
-      class="w-full px-5 py-6 mx-auto space-y-5 sm:py-8 md:py-12 sm:space-y-8 md:space-y-16 max-w-7xl"
+      class="
+        w-full
+        px-5
+        py-6
+        mx-auto
+        space-y-5
+        sm:py-8
+        md:py-12
+        sm:space-y-8
+        md:space-y-16
+        max-w-7xl
+      "
     >
       <div class="flex flex-col items-center sm:px-5 md:flex-row">
         <div class="w-full md:w-1/2">
@@ -17,10 +28,33 @@
           class="flex flex-col items-start justify-center w-full h-full py-6 mb-6 md:mb-0 md:w-1/2"
         >
           <div
-            class="flex flex-col items-start justify-center h-full space-y-3 transform md:pl-10 lg:pl-16 md:space-y-5"
+            class="
+              flex flex-col
+              items-start
+              justify-center
+              h-full
+              space-y-3
+              transform
+              md:pl-10
+              lg:pl-16
+              md:space-y-5
+            "
           >
             <div
-              class="bg-pink-500 flex items-center pl-2 pr-3 py-1.5 leading-none rounded-full text-xs font-medium uppercase text-white"
+              class="
+                bg-pink-500
+                flex
+                items-center
+                pl-2
+                pr-3
+                py-1.5
+                leading-none
+                rounded-full
+                text-xs
+                font-medium
+                uppercase
+                text-white
+              "
             >
               <svg
                 class="w-3.5 h-3.5 mr-1"
@@ -40,8 +74,8 @@
             <p class="pt-2 text-sm font-medium"
               >by <a href="#_" class="mr-1 underline">John Doe</a> ·
               <span class="mx-1">April 23rd, 2021</span> ·
-              <span class="mx-1 text-gray-600">5 min. read</span></p
-            >
+              <span class="mx-1 text-gray-600">5 min. read</span>
+            </p>
           </div>
         </div>
       </div>
@@ -54,7 +88,19 @@
             />
           </a>
           <div
-            class="bg-purple-500 flex items-center px-3 py-1.5 leading-none rounded-full text-xs font-medium uppercase text-white"
+            class="
+              bg-purple-500
+              flex
+              items-center
+              px-3
+              py-1.5
+              leading-none
+              rounded-full
+              text-xs
+              font-medium
+              uppercase
+              text-white
+            "
           >
             <span>Lifestyle</span>
           </div>
@@ -68,8 +114,8 @@
           <p class="pt-2 text-xs font-medium"
             ><a href="#_" class="mr-1 underline">Mary Jane</a> ·
             <span class="mx-1">April 17, 2021</span> ·
-            <span class="mx-1 text-gray-600">3 min. read</span></p
-          >
+            <span class="mx-1 text-gray-600">3 min. read</span>
+          </p>
         </div>
 
         <div class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4">
@@ -80,7 +126,19 @@
             />
           </a>
           <div
-            class="bg-pink-500 flex items-center px-3 py-1.5 leading-none rounded-full text-xs font-medium uppercase text-white"
+            class="
+              bg-pink-500
+              flex
+              items-center
+              px-3
+              py-1.5
+              leading-none
+              rounded-full
+              text-xs
+              font-medium
+              uppercase
+              text-white
+            "
           >
             <span>Health</span>
           </div>
@@ -92,8 +150,8 @@
           <p class="pt-2 text-xs font-medium"
             ><a href="#_" class="mr-1 underline">Fred Jones</a> ·
             <span class="mx-1">April 10, 2021</span> ·
-            <span class="mx-1 text-gray-600">3 min. read</span></p
-          >
+            <span class="mx-1 text-gray-600">3 min. read</span>
+          </p>
         </div>
 
         <div class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4">
@@ -104,7 +162,19 @@
             />
           </a>
           <div
-            class="bg-red-500 flex items-center px-3 py-1.5 leading-none rounded-full text-xs font-medium uppercase text-white"
+            class="
+              bg-red-500
+              flex
+              items-center
+              px-3
+              py-1.5
+              leading-none
+              rounded-full
+              text-xs
+              font-medium
+              uppercase
+              text-white
+            "
           >
             <span>Food</span>
           </div>
@@ -116,8 +186,8 @@
           <p class="pt-2 text-xs font-medium"
             ><a href="#_" class="mr-1 underline">Mike Roberts</a> ·
             <span class="mx-1">April 6, 2021</span> ·
-            <span class="mx-1 text-gray-600">3 min. read</span></p
-          >
+            <span class="mx-1 text-gray-600">3 min. read</span>
+          </p>
         </div>
 
         <div class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4">
@@ -128,7 +198,19 @@
             />
           </a>
           <div
-            class="bg-blue-500 flex items-center px-3 py-1.5 leading-none rounded-full text-xs font-medium uppercase text-white"
+            class="
+              bg-blue-500
+              flex
+              items-center
+              px-3
+              py-1.5
+              leading-none
+              rounded-full
+              text-xs
+              font-medium
+              uppercase
+              text-white
+            "
           >
             <span>Motivation</span>
           </div>
@@ -140,8 +222,8 @@
           <p class="pt-2 text-xs font-medium"
             ><a href="#_" class="mr-1 underline">Tom Johnson</a> ·
             <span class="mx-1">May 25, 2021</span> ·
-            <span class="mx-1 text-gray-600">3 min. read</span></p
-          >
+            <span class="mx-1 text-gray-600">3 min. read</span>
+          </p>
         </div>
 
         <div class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4">
@@ -152,7 +234,19 @@
             />
           </a>
           <div
-            class="bg-gray-800 flex items-center px-3 py-1.5 leading-none rounded-full text-xs font-medium uppercase text-white"
+            class="
+              bg-gray-800
+              flex
+              items-center
+              px-3
+              py-1.5
+              leading-none
+              rounded-full
+              text-xs
+              font-medium
+              uppercase
+              text-white
+            "
           >
             <span>Business</span>
           </div>
@@ -164,8 +258,8 @@
           <p class="pt-2 text-xs font-medium"
             ><a href="#_" class="mr-1 underline">Scott Reedman</a> ·
             <span class="mx-1">May 18, 2021</span> ·
-            <span class="mx-1 text-gray-600">3 min. read</span></p
-          >
+            <span class="mx-1 text-gray-600">3 min. read</span>
+          </p>
         </div>
 
         <div class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4">
@@ -176,7 +270,19 @@
             />
           </a>
           <div
-            class="bg-yellow-400 flex items-center px-3 py-1.5 leading-none rounded-full text-xs font-medium uppercase text-white"
+            class="
+              bg-yellow-400
+              flex
+              items-center
+              px-3
+              py-1.5
+              leading-none
+              rounded-full
+              text-xs
+              font-medium
+              uppercase
+              text-white
+            "
           >
             <span>Nutrition</span>
           </div>
@@ -188,8 +294,8 @@
           <p class="pt-2 text-xs font-medium"
             ><a href="#_" class="mr-1 underline">Jake Caldwell</a> ·
             <span class="mx-1">May 15, 2021</span> ·
-            <span class="mx-1 text-gray-600">3 min. read</span></p
-          >
+            <span class="mx-1 text-gray-600">3 min. read</span>
+          </p>
         </div>
       </div>
     </div>

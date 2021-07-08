@@ -52,7 +52,20 @@
 
       <footer class="flex justify-end mt-6 mr-6">
         <button
-          class="transition-all transform uppercase text-lg font-bold text-white bg-red-600 px-5 py-3 rounded focus:outline-none hover:bg-red-500 hover:scale-105"
+          class="
+            transition-all
+            transform
+            uppercase
+            text-lg
+            font-bold
+            text-white
+            bg-red-600
+            px-5
+            py-3
+            rounded
+            focus:outline-none
+            hover:bg-red-500 hover:scale-105
+          "
           >Buy now</button
         >
       </footer>

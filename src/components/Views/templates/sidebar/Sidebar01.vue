@@ -8,7 +8,17 @@
         <li>
           <a
             href="#"
-            class="flex flex-row items-center h-12 text-gray-500 transition-transform duration-200 ease-in transform hover:translate-x-2 hover:text-gray-800"
+            class="
+              flex flex-row
+              items-center
+              h-12
+              text-gray-500
+              transition-transform
+              duration-200
+              ease-in
+              transform
+              hover:translate-x-2 hover:text-gray-800
+            "
           >
             <span class="inline-flex items-center justify-center w-12 h-12 text-lg text-gray-400"
               ><i class="bx bx-home"></i
@@ -19,7 +29,17 @@
         <li>
           <a
             href="#"
-            class="flex flex-row items-center h-12 text-gray-500 transition-transform duration-200 ease-in transform hover:translate-x-2 hover:text-gray-800"
+            class="
+              flex flex-row
+              items-center
+              h-12
+              text-gray-500
+              transition-transform
+              duration-200
+              ease-in
+              transform
+              hover:translate-x-2 hover:text-gray-800
+            "
           >
             <span class="inline-flex items-center justify-center w-12 h-12 text-lg text-gray-400"
               ><i class="bx bx-music"></i
@@ -30,7 +50,17 @@
         <li>
           <a
             href="#"
-            class="flex flex-row items-center h-12 text-gray-500 transition-transform duration-200 ease-in transform hover:translate-x-2 hover:text-gray-800"
+            class="
+              flex flex-row
+              items-center
+              h-12
+              text-gray-500
+              transition-transform
+              duration-200
+              ease-in
+              transform
+              hover:translate-x-2 hover:text-gray-800
+            "
           >
             <span class="inline-flex items-center justify-center w-12 h-12 text-lg text-gray-400"
               ><i class="bx bx-drink"></i
@@ -41,7 +71,17 @@
         <li>
           <a
             href="#"
-            class="flex flex-row items-center h-12 text-gray-500 transition-transform duration-200 ease-in transform hover:translate-x-2 hover:text-gray-800"
+            class="
+              flex flex-row
+              items-center
+              h-12
+              text-gray-500
+              transition-transform
+              duration-200
+              ease-in
+              transform
+              hover:translate-x-2 hover:text-gray-800
+            "
           >
             <span class="inline-flex items-center justify-center w-12 h-12 text-lg text-gray-400"
               ><i class="bx bx-shopping-bag"></i
@@ -52,7 +92,17 @@
         <li>
           <a
             href="#"
-            class="flex flex-row items-center h-12 text-gray-500 transition-transform duration-200 ease-in transform hover:translate-x-2 hover:text-gray-800"
+            class="
+              flex flex-row
+              items-center
+              h-12
+              text-gray-500
+              transition-transform
+              duration-200
+              ease-in
+              transform
+              hover:translate-x-2 hover:text-gray-800
+            "
           >
             <span class="inline-flex items-center justify-center w-12 h-12 text-lg text-gray-400"
               ><i class="bx bx-chat"></i
@@ -63,7 +113,17 @@
         <li>
           <a
             href="#"
-            class="flex flex-row items-center h-12 text-gray-500 transition-transform duration-200 ease-in transform hover:translate-x-2 hover:text-gray-800"
+            class="
+              flex flex-row
+              items-center
+              h-12
+              text-gray-500
+              transition-transform
+              duration-200
+              ease-in
+              transform
+              hover:translate-x-2 hover:text-gray-800
+            "
           >
             <span class="inline-flex items-center justify-center w-12 h-12 text-lg text-gray-400"
               ><i class="bx bx-user"></i
@@ -74,7 +134,17 @@
         <li>
           <a
             href="#"
-            class="flex flex-row items-center h-12 text-gray-500 transition-transform duration-200 ease-in transform hover:translate-x-2 hover:text-gray-800"
+            class="
+              flex flex-row
+              items-center
+              h-12
+              text-gray-500
+              transition-transform
+              duration-200
+              ease-in
+              transform
+              hover:translate-x-2 hover:text-gray-800
+            "
           >
             <span class="inline-flex items-center justify-center w-12 h-12 text-lg text-gray-400"
               ><i class="bx bx-bell"></i
@@ -88,7 +158,17 @@
         <li>
           <a
             href="#"
-            class="flex flex-row items-center h-12 text-gray-500 transition-transform duration-200 ease-in transform hover:translate-x-2 hover:text-gray-800"
+            class="
+              flex flex-row
+              items-center
+              h-12
+              text-gray-500
+              transition-transform
+              duration-200
+              ease-in
+              transform
+              hover:translate-x-2 hover:text-gray-800
+            "
           >
             <span class="inline-flex items-center justify-center w-12 h-12 text-lg text-gray-400"
               ><i class="bx bx-log-out"></i

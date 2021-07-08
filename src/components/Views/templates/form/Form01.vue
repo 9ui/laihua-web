@@ -18,7 +18,15 @@
                   </label>
                   <div class="flex mt-1 rounded-md shadow-sm">
                     <span
-                      class="inline-flex items-center px-3 text-sm text-gray-500 border border-r-0 border-gray-300 rounded-l-md bg-gray-50"
+                      class="
+                        inline-flex
+                        items-center
+                        px-3
+                        text-sm text-gray-500
+                        border border-r-0 border-gray-300
+                        rounded-l-md
+                        bg-gray-50
+                      "
                     >
                       http://
                     </span>
@@ -26,7 +34,16 @@
                       id="company_website"
                       type="text"
                       name="company_website"
-                      class="flex-1 block w-full border-gray-300 rounded-none focus:ring-indigo-500 focus:border-indigo-500 rounded-r-md sm:text-sm"
+                      class="
+                        flex-1
+                        block
+                        w-full
+                        border-gray-300
+                        rounded-none
+                        focus:ring-indigo-500 focus:border-indigo-500
+                        rounded-r-md
+                        sm:text-sm
+                      "
                       placeholder="www.example.com"
                     />
                   </div>
@@ -40,7 +57,16 @@
                     id="about"
                     name="about"
                     rows="3"
-                    class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    class="
+                      block
+                      w-full
+                      mt-1
+                      border-gray-300
+                      rounded-md
+                      shadow-sm
+                      focus:ring-indigo-500 focus:border-indigo-500
+                      sm:text-sm
+                    "
                     placeholder="you@example.com"
                   ></textarea>
                 </div>
@@ -63,7 +89,21 @@
                   </span>
                   <button
                     type="button"
-                    class="px-3 py-2 ml-5 text-sm font-medium leading-4 text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    class="
+                      px-3
+                      py-2
+                      ml-5
+                      text-sm
+                      font-medium
+                      leading-4
+                      text-gray-700
+                      bg-white
+                      border border-gray-300
+                      rounded-md
+                      shadow-sm
+                      hover:bg-gray-50
+                      focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+                    "
                   >
                     Change
                   </button>
@@ -73,7 +113,16 @@
               <div>
                 <label class="block text-sm font-medium text-gray-700"> Cover photo </label>
                 <div
-                  class="flex justify-center px-6 pt-5 pb-6 mt-1 border-2 border-gray-300 border-dashed rounded-md"
+                  class="
+                    flex
+                    justify-center
+                    px-6
+                    pt-5
+                    pb-6
+                    mt-1
+                    border-2 border-gray-300 border-dashed
+                    rounded-md
+                  "
                 >
                   <div class="space-y-1 text-center">
                     <svg
@@ -93,7 +142,19 @@
                     <div class="flex text-sm text-gray-600">
                       <label
                         for="file-upload"
-                        class="relative font-medium text-indigo-600 bg-white rounded-md cursor-pointer hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500"
+                        class="
+                          relative
+                          font-medium
+                          text-indigo-600
+                          bg-white
+                          rounded-md
+                          cursor-pointer
+                          hover:text-indigo-500
+                          focus-within:outline-none
+                          focus-within:ring-2
+                          focus-within:ring-offset-2
+                          focus-within:ring-indigo-500
+                        "
                       >
                         <span>上传文件</span>
                         <input id="file-upload" name="file-upload" type="file" class="sr-only" />
@@ -108,7 +169,21 @@
             <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
               <button
                 type="submit"
-                class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                class="
+                  inline-flex
+                  justify-center
+                  px-4
+                  py-2
+                  text-sm
+                  font-medium
+                  text-white
+                  bg-indigo-600
+                  border border-transparent
+                  rounded-md
+                  shadow-sm
+                  hover:bg-indigo-700
+                  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+                "
               >
                 保存
               </button>
@@ -146,7 +221,16 @@
                       type="text"
                       name="first_name"
                       autocomplete="given-name"
-                      class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                      class="
+                        block
+                        w-full
+                        mt-1
+                        border-gray-300
+                        rounded-md
+                        shadow-sm
+                        focus:ring-indigo-500 focus:border-indigo-500
+                        sm:text-sm
+                      "
                     />
                   </div>
 
@@ -159,7 +243,16 @@
                       type="text"
                       name="last_name"
                       autocomplete="family-name"
-                      class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                      class="
+                        block
+                        w-full
+                        mt-1
+                        border-gray-300
+                        rounded-md
+                        shadow-sm
+                        focus:ring-indigo-500 focus:border-indigo-500
+                        sm:text-sm
+                      "
                     />
                   </div>
 
@@ -172,7 +265,16 @@
                       type="text"
                       name="email_address"
                       autocomplete="email"
-                      class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                      class="
+                        block
+                        w-full
+                        mt-1
+                        border-gray-300
+                        rounded-md
+                        shadow-sm
+                        focus:ring-indigo-500 focus:border-indigo-500
+                        sm:text-sm
+                      "
                     />
                   </div>
 
@@ -184,7 +286,19 @@
                       id="country"
                       name="country"
                       autocomplete="country"
-                      class="block w-full px-3 py-2 mt-1 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                      class="
+                        block
+                        w-full
+                        px-3
+                        py-2
+                        mt-1
+                        bg-white
+                        border border-gray-300
+                        rounded-md
+                        shadow-sm
+                        focus:outline-none focus:ring-indigo-500 focus:border-indigo-500
+                        sm:text-sm
+                      "
                     >
                       <option>中国</option>
                       <option>伊朗</option>
@@ -201,7 +315,16 @@
                       type="text"
                       name="street_address"
                       autocomplete="street-address"
-                      class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                      class="
+                        block
+                        w-full
+                        mt-1
+                        border-gray-300
+                        rounded-md
+                        shadow-sm
+                        focus:ring-indigo-500 focus:border-indigo-500
+                        sm:text-sm
+                      "
                     />
                   </div>
 
@@ -211,7 +334,16 @@
                       id="city"
                       type="text"
                       name="city"
-                      class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                      class="
+                        block
+                        w-full
+                        mt-1
+                        border-gray-300
+                        rounded-md
+                        shadow-sm
+                        focus:ring-indigo-500 focus:border-indigo-500
+                        sm:text-sm
+                      "
                     />
                   </div>
 
@@ -223,7 +355,16 @@
                       id="state"
                       type="text"
                       name="state"
-                      class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                      class="
+                        block
+                        w-full
+                        mt-1
+                        border-gray-300
+                        rounded-md
+                        shadow-sm
+                        focus:ring-indigo-500 focus:border-indigo-500
+                        sm:text-sm
+                      "
                     />
                   </div>
 
@@ -236,7 +377,16 @@
                       type="text"
                       name="postal_code"
                       autocomplete="postal-code"
-                      class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                      class="
+                        block
+                        w-full
+                        mt-1
+                        border-gray-300
+                        rounded-md
+                        shadow-sm
+                        focus:ring-indigo-500 focus:border-indigo-500
+                        sm:text-sm
+                      "
                     />
                   </div>
                 </div>
@@ -244,7 +394,21 @@
               <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
                 <button
                   type="submit"
-                  class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  class="
+                    inline-flex
+                    justify-center
+                    px-4
+                    py-2
+                    text-sm
+                    font-medium
+                    text-white
+                    bg-indigo-600
+                    border border-transparent
+                    rounded-md
+                    shadow-sm
+                    hover:bg-indigo-700
+                    focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+                  "
                 >
                   保存
                 </button>
@@ -282,7 +446,14 @@
                           id="comments"
                           name="comments"
                           type="checkbox"
-                          class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
+                          class="
+                            w-4
+                            h-4
+                            text-indigo-600
+                            border-gray-300
+                            rounded
+                            focus:ring-indigo-500
+                          "
                         />
                       </div>
                       <div class="ml-3 text-sm">
@@ -296,7 +467,14 @@
                           id="candidates"
                           name="candidates"
                           type="checkbox"
-                          class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
+                          class="
+                            w-4
+                            h-4
+                            text-indigo-600
+                            border-gray-300
+                            rounded
+                            focus:ring-indigo-500
+                          "
                         />
                       </div>
                       <div class="ml-3 text-sm">
@@ -310,7 +488,14 @@
                           id="offers"
                           name="offers"
                           type="checkbox"
-                          class="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
+                          class="
+                            w-4
+                            h-4
+                            text-indigo-600
+                            border-gray-300
+                            rounded
+                            focus:ring-indigo-500
+                          "
                         />
                       </div>
                       <div class="ml-3 text-sm">
@@ -371,7 +556,21 @@
               <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
                 <button
                   type="submit"
-                  class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  class="
+                    inline-flex
+                    justify-center
+                    px-4
+                    py-2
+                    text-sm
+                    font-medium
+                    text-white
+                    bg-indigo-600
+                    border border-transparent
+                    rounded-md
+                    shadow-sm
+                    hover:bg-indigo-700
+                    focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+                  "
                 >
                   保存
                 </button>

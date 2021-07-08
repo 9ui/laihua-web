@@ -2,7 +2,22 @@
   <div class="container">
     <button
       type="button"
-      class="inline-flex justify-center w-full px-4 py-2 mt-10 text-base font-medium text-white border border-transparent rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 sm:ml-3 sm:w-auto sm:text-sm"
+      class="
+        inline-flex
+        justify-center
+        w-full
+        px-4
+        py-2
+        mt-10
+        text-base
+        font-medium
+        text-white
+        border border-transparent
+        rounded-md
+        shadow-sm
+        focus:outline-none focus:ring-2 focus:ring-offset-2
+        sm:ml-3 sm:w-auto sm:text-sm
+      "
       :class="`bg-${currentTheme}-500 hover:bg-${currentTheme}-700 focus:ring-${currentTheme}-500`"
       @click="isOpen = true"
     >
@@ -52,7 +67,12 @@
                     class="absolute top-0 left-0 flex pt-4 pr-2 -ml-8 sm:-ml-10 sm:pr-4"
                   >
                     <button
-                      class="text-gray-300 rounded-md hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
+                      class="
+                        text-gray-300
+                        rounded-md
+                        hover:text-white
+                        focus:outline-none focus:ring-2 focus:ring-white
+                      "
                       @click="closePanel"
                     >
                       <span class="sr-only">Close panel</span>

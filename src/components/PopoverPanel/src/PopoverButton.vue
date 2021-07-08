@@ -52,5 +52,3 @@
     },
   });
 </script>
-
-<style></style>

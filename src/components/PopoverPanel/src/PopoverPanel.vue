@@ -72,6 +72,6 @@
 <style lang="postcss" scoped>
   .panel {
     @apply absolute origin-top-right bg-white divide-y divide-gray-100
-   rounded-md shadow-lg ring-1 ring-black ring-opacity-5;
+    rounded-md shadow-lg ring-1 ring-black ring-opacity-5 cursor-default;
   }
 </style>

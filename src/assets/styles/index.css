@@ -1,9 +1,6 @@
 @import './init.css';
-
 @import './colors.css';
-
 @import './global.css';
-
 @import './layout.css';
 
 .dark.has-sidebar .sidebar {
@@ -181,6 +178,7 @@
   color: #fff;
   opacity: 0.3;
   transition: 0.3s;
+
   @apply cursor-pointer;
 }
 

@@ -19,7 +19,17 @@
         src="https://resources.laihua.com/2021-6-14/1c1c6995-ac85-48a9-aaf6-cd7f87379d44nail.mp4"
       ></video>
       <div
-        class="absolute top-2 right-2 p-1 bg-gray-700 opacity-0 rounded-sm group-hover:opacity-90 hover:bg-blue-600"
+        class="
+          absolute
+          top-2
+          right-2
+          p-1
+          bg-gray-700
+          opacity-0
+          rounded-sm
+          group-hover:opacity-90
+          hover:bg-blue-600
+        "
       >
         <svg aria-hidden="true" class="w-4 h-4">
           <use data-v-5651378e="" xlink:href="#icon-wb-unlike">
@@ -37,11 +47,35 @@
         </svg>
       </div>
       <div
-        class="absolute top-2 right-10 px-2 py-1 text-xs rounded-sm text-white bg-gray-700 opacity-0 group-hover:opacity-90 hover:bg-blue-600"
+        class="
+          absolute
+          top-2
+          right-10
+          px-2
+          py-1
+          text-xs
+          rounded-sm
+          text-white
+          bg-gray-700
+          opacity-0
+          group-hover:opacity-90
+          hover:bg-blue-600
+        "
         >使用</div
       >
       <div
-        class="absolute bottom-2 right-2 z-10 bg-gray-700 opacity-90 text-white text-xs p-1 rounded-md group-hover:opacity-0"
+        class="
+          absolute
+          bottom-2
+          right-2
+          z-10
+          bg-gray-700
+          opacity-90
+          text-white text-xs
+          p-1
+          rounded-md
+          group-hover:opacity-0
+        "
         >01:24</div
       >
       <div class="absolute bottom-2 right-2 w-8 h-8">

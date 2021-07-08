@@ -1,8 +1,6 @@
 import { VNode } from 'vue'; // eslint-disable-line
 import { ComponentRenderProxy } from '@vue/composition-api'; // eslint-disable-line
 
-declare module '*.tsx' {}
-
 declare global {
   namespace JSX {
     // tslint:disable no-empty-interface
