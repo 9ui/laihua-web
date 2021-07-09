@@ -25,9 +25,9 @@ export const HelmetConfig = {
      * strict-origin - 仅在协议安全级别相同的情况下才包括域地址.
      * unsafe-url - 它会告诉您所有地址，无论您转到哪个页面.
      */
-    referrerPolicy: {
-      policy: 'strict-origin', // * 默认 no-referrer
-    },
+    // referrerPolicy: {
+    //   policy: 'strict-origin', // * 默认 no-referrer
+    // },
     /**
      * X-DNS-Prefetch-Control
      * 允许页面预加载要通过域访问的IP
@@ -35,10 +35,9 @@ export const HelmetConfig = {
      * @example
      * <link rel="dns-prefetch" href="地址">
      */
-    dnsPrefetchControl: {
-      allow: false, // 默认值: false
-    },
-
+    // dnsPrefetchControl: {
+    //   allow: true, // 默认值: false
+    // },
     /**
      * CT（证书透明性）代表证书透明性,
      * 几乎实时监控认证机构颁发的证书
@@ -60,11 +59,10 @@ export const HelmetConfig = {
      * 如果您无法收到正确的CT信息
      * 浏览器应将报告发送到的URL值。
      */
-    expectCt: {
-      maxAge: 0, // 默认值: 0
-      enforce: false, // 默认值: false
-    },
-
+    // expectCt: {
+    //   maxAge: 0, // 默认值: 0
+    //   enforce: false, // 默认值: false
+    // },
     /**
      * X-Frame-Options 通过设置标题
      * clickjacking防范
@@ -75,20 +73,18 @@ export const HelmetConfig = {
      * sameorigin
      * 页面只能显示为与页面本身具有相同来源的框架.
      */
-    frameguard: {
-      action: 'sameorigin', // 默认值: sameorigin
-    },
-
+    // frameguard: {
+    //   action: 'sameorigin', // 默认值: sameorigin
+    // },
     /**
      * SSL/TLS通过以下方式应用HTTP连接
      * Strict-Transport-Security 设置标题。
      */
-    hsts: {
-      maxAge: 15552000, // 默认值: 15552000 (180)
-      includeSubDomains: true, // 默认值: true
-      preload: false, // 默认值: false
-    },
-
+    // hsts: {
+    //   maxAge: 15552000, // 默认值: 15552000 (180)
+    //   includeSubDomains: true, // 默认值: true
+    //   preload: false, // 默认值: false
+    // },
     /**
      * X-Permitted-Cross-Domain-Policies
      *
@@ -122,8 +118,8 @@ export const HelmetConfig = {
      * all
      * 接受该目标域中的所有策略文件.
      */
-    permittedCrossDomainPolicies: {
-      permittedPolicies: 'none', // * 基本的 none
-    },
+    // permittedCrossDomainPolicies: {
+    //   permittedPolicies: 'none', // * 基本的 none
+    // },
   },
 } as Config.Interface.IConfig;

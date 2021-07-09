@@ -184,7 +184,7 @@
   export default defineComponent({
     setup() {
       const state = reactive({
-        list: [{ title: '基础班' }, { title: '个人版' }, { title: '教育办' }],
+        list: [{ title: '基础班' }, { title: '个人版' }, { title: '教育版' }],
       });
       return {
         list: state.list,

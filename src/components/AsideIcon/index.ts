@@ -13,7 +13,7 @@ export const sideMenus: MenusType[] = [
   {
     name: 'Header',
     pathName: 'header',
-    components: ['header01', 'header03', 'header04'],
+    components: ['header01', 'header02'],
   },
   {
     name: 'Banner',

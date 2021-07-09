@@ -64,7 +64,8 @@ export const BuildConfig = {
     extend(config, { isClient, isDev }) {
       // 为 客户端打包 进行扩展配置
       if (isClient) {
-        config.devtool = 'eval-source-map';
+        // config.devtool = 'eval-source-map';
+        config.devtool = 'hidden-source-map';
       }
       // 此处容易出问题 需要使用相对路径
       //   config.resolve.alias['@ant-design/icons/lib/dist$'] = resolve(

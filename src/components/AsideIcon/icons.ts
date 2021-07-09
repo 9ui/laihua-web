@@ -26,8 +26,7 @@ export const getIcons = {
 
   // header
   Header01: () => import('./src/templates/header/IconHeader01.vue'),
-  Header03: () => import('./src/templates/header/IconHeader04.vue'),
-  Header04: () => import('./src/templates/header/IconHeader04.vue'),
+  Header02: () => import('./src/templates/header/IconHeader02.vue'),
 
   // form
   Form01: () => import('./src/templates/form/IconForm01.vue'),
