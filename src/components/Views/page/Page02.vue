@@ -10,7 +10,17 @@
         <img src="https://soom.us/_nuxt/img/logo.e1cd00a.png" class="w-auto h-7" />
       </nav>
       <div
-        class="container relative flex flex-col items-center w-full mx-auto text-center select-none pt-36"
+        class="
+          container
+          relative
+          flex flex-col
+          items-center
+          w-full
+          mx-auto
+          text-center
+          select-none
+          pt-36
+        "
       >
         <h1 class="text-6xl font-bold leading-snug text-gray-800"
           ><span class="text-purple-700">SOOM</span> is going to transform your<br />presentation
@@ -21,7 +31,18 @@
           inside the picture and communicate with your audience face-to-face.</p
         >
         <button
-          class="flex items-center px-12 py-4 mt-8 text-white bg-purple-700 rounded-full hover:bg-purple-800 focus:outline-none"
+          class="
+            flex
+            items-center
+            px-12
+            py-4
+            mt-8
+            text-white
+            bg-purple-700
+            rounded-full
+            hover:bg-purple-800
+            focus:outline-none
+          "
         >
           <svg
             class="mr-3 w-9"
@@ -193,7 +214,18 @@
           >SOOM is to change your way of presentation from now on.</div
         >
         <button
-          class="flex items-center px-12 py-4 mt-20 text-white bg-purple-700 rounded-full hover:bg-purple-800 focus:outline-none"
+          class="
+            flex
+            items-center
+            px-12
+            py-4
+            mt-20
+            text-white
+            bg-purple-700
+            rounded-full
+            hover:bg-purple-800
+            focus:outline-none
+          "
         >
           <svg
             class="mr-3 w-9"

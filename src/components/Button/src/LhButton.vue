@@ -1,19 +1,66 @@
 <template>
   <div class="container flex flex-wrap justify-around py-6 mx-auto">
     <button
-      class="px-4 py-2 text-yellow-200 duration-500 ease-in-out transform bg-blue-900 rounded-md hover:bg-opacity-75 hover:-translate-y-1 focus:outline-none"
+      class="
+        px-4
+        py-2
+        text-yellow-200
+        duration-500
+        ease-in-out
+        transform
+        bg-blue-900
+        rounded-md
+        hover:bg-opacity-75 hover:-translate-y-1
+        focus:outline-none
+      "
     >
       Hover me
     </button>
 
     <button
-      class="px-4 py-2 text-base font-semibold text-center text-white bg-indigo-600 rounded-lg shadow-md hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2"
+      class="
+        px-4
+        py-2
+        text-base
+        font-semibold
+        text-center text-white
+        bg-indigo-600
+        rounded-lg
+        shadow-md
+        hover:bg-indigo-700
+        focus:ring-indigo-500
+        focus:ring-offset-indigo-200
+        focus:outline-none
+        focus:ring-2
+        focus:ring-offset-2
+      "
     >
       Valider
     </button>
     <button
       type="button"
-      class="flex items-center justify-center px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-red-600 rounded-lg shadow-md hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 focus:outline-none focus:ring-2 focus:ring-offset-2"
+      class="
+        flex
+        items-center
+        justify-center
+        px-4
+        py-2
+        text-base
+        font-semibold
+        text-center text-white
+        transition
+        duration-200
+        ease-in
+        bg-red-600
+        rounded-lg
+        shadow-md
+        hover:bg-red-700
+        focus:ring-red-500
+        focus:ring-offset-red-200
+        focus:outline-none
+        focus:ring-2
+        focus:ring-offset-2
+      "
     >
       <svg
         width="20"
@@ -31,7 +78,30 @@
     </button>
     <button
       type="button"
-      class="flex items-center justify-center w-12 h-12 px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2"
+      class="
+        flex
+        items-center
+        justify-center
+        w-12
+        h-12
+        px-4
+        py-2
+        text-base
+        font-semibold
+        text-center text-white
+        transition
+        duration-200
+        ease-in
+        bg-blue-600
+        rounded-lg
+        shadow-md
+        hover:bg-blue-700
+        focus:ring-blue-500
+        focus:ring-offset-blue-200
+        focus:outline-none
+        focus:ring-2
+        focus:ring-offset-2
+      "
     >
       <svg
         width="20"
@@ -47,7 +117,28 @@
     </button>
     <button
       type="button"
-      class="flex items-center justify-center px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2"
+      class="
+        flex
+        items-center
+        justify-center
+        px-4
+        py-2
+        text-base
+        font-semibold
+        text-center text-white
+        transition
+        duration-200
+        ease-in
+        bg-blue-600
+        rounded-lg
+        shadow-md
+        hover:bg-blue-700
+        focus:ring-blue-500
+        focus:ring-offset-blue-200
+        focus:outline-none
+        focus:ring-2
+        focus:ring-offset-2
+      "
     >
       <svg
         width="20"
@@ -66,7 +157,28 @@
     <!-- Google button code -->
     <button
       type="button"
-      class="flex items-center justify-center px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-red-600 rounded-lg shadow-md hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 focus:outline-none focus:ring-2 focus:ring-offset-2"
+      class="
+        flex
+        items-center
+        justify-center
+        px-4
+        py-2
+        text-base
+        font-semibold
+        text-center text-white
+        transition
+        duration-200
+        ease-in
+        bg-red-600
+        rounded-lg
+        shadow-md
+        hover:bg-red-700
+        focus:ring-red-500
+        focus:ring-offset-red-200
+        focus:outline-none
+        focus:ring-2
+        focus:ring-offset-2
+      "
     >
       <svg
         width="20"

@@ -11,10 +11,10 @@
     "start": "nuxt-ts start",
     "start:modern": "nuxt-ts start --modern=server",
     "generate": "nuxt-ts generate",
-    "ls-lint": "npx ls-lint",
-    "lint:js": "eslint --fix --ext \"src/**/*.{vue,less,css}\"",
-    "lint:style": "stylelint --fix \"**/*.{vue,less,postcss,css,scss}\" --cache --cache-location node_modules/.cache/stylelint/",
-    "lint": "yarn lint:js && yarn lint:style",
+    "lint:js": "eslint --ext .js,.ts,.vue --ignore-path .gitignore .",
+    "lint:all": "eslint --ext .js,.ts,.vue",
+    "lint:fix": "eslint --fix --ext .js,.ts,.vue",
+    "lint": "yarn lint:js && yarn lint:fix",
     "clean": "rm -rf .nuxt && rm -rf node_modules && yarn",
     "log": "esno ./build/script/changelog.ts",
     "patch": "yarn version --patch",
@@ -110,5 +110,27 @@
   },
   "engines": {
     "node": ">=10.16.1"
+  },
+  "prettier": {
+    "stylelintIntegration": true,
+    "eslintIntegration": true,
+    "printWidth": 100,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "vueIndentScriptAndStyle": true,
+    "singleQuote": true,
+    "quoteProps": "as-needed",
+    "bracketSpacing": true,
+    "trailingComma": "es5",
+    "jsxBracketSameLine": false,
+    "jsxSingleQuote": false,
+    "arrowParens": "always",
+    "insertPragma": false,
+    "requirePragma": false,
+    "proseWrap": "never",
+    "htmlWhitespaceSensitivity": "strict",
+    "endOfLine": "auto",
+    "rangeStart": 0
   }
 }
