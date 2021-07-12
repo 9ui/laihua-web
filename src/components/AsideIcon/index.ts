@@ -36,6 +36,11 @@ export const sideMenus: MenusType[] = [
     components: ['price01'],
   },
   {
+    name: 'Swiper',
+    pathName: 'swiper',
+    components: ['swiper01'],
+  },
+  {
     name: 'Menu',
     pathName: 'menu',
     components: ['menu01'],

@@ -35,6 +35,9 @@ export const getIcons = {
   Sidebar01: () => import('./src/templates/sidebar/IconSidebar01.vue'),
   Sidebar02: () => import('./src/templates/sidebar/IconSidebar02.vue'),
 
+  // swiper
+  Swiper01: () => import('./src/templates/swiper/IconSwiper01.vue'),
+
   // components
   Modal: () => import('./src/components/IconSideOvers.vue'),
   LhButton: () => import('./src/components/IconSideOvers.vue'),

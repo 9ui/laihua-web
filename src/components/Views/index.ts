@@ -25,6 +25,9 @@ export { default as Card03 } from './templates/card/Card03.vue';
 export { default as Header01 } from './templates/header/Header01.vue';
 export { default as Header02 } from './templates/header/Header02.vue';
 
+// templates/swiper
+export { default as Swiper01 } from './templates/swiper/Swiper01.vue';
+
 // from
 export { default as Form01 } from './templates/form/Form01.vue';
 
