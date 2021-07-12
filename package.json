@@ -76,7 +76,7 @@
     "husky": "^4.3.8",
     "koa": "^2.13.0",
     "koa-static": "^5.0.0",
-    "lint-staged": "^10.4.0",
+    "lint-staged": "^11.0.0",
     "nuxt-compress": "^4.1.0",
     "portfinder": "^1.0.28",
     "postcss": "^7",
