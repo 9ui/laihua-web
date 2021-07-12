@@ -54,7 +54,7 @@
     "@nuxtjs/stylelint-module": "^4.0.0",
     "@nuxtjs/tailwindcss": "^3.4.2",
     "@tailwindcss/jit": "^0.1.18",
-    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "@tailwindcss/postcss7-compat": "^2.2.4",
     "@types/fs-extra": "^9.0.6",
     "@types/lodash": "^4.14.165",
     "autoprefixer": "^9",
