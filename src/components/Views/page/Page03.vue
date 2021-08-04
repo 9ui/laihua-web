@@ -5,11 +5,31 @@
       <div class="px-6 mx-auto max-w-7xl">
         <div class="flex items-center justify-between h-20">
           <div
-            class="relative z-10 flex items-center w-auto px-0 leading-10 md:px-2 lg:flex-grow-0 lg:flex-shrink-0 lg:text-left"
+            class="
+              relative
+              z-10
+              flex
+              items-center
+              w-auto
+              px-0
+              leading-10
+              md:px-2
+              lg:flex-grow-0 lg:flex-shrink-0 lg:text-left
+            "
           >
             <a
               href="#_"
-              class="inline-block font-sans text-2xl font-extrabold text-left text-black no-underline bg-transparent cursor-pointer focus:no-underline"
+              class="
+                inline-block
+                font-sans
+                text-2xl
+                font-extrabold
+                text-left text-black
+                no-underline
+                bg-transparent
+                cursor-pointer
+                focus:no-underline
+              "
             >
               <svg
                 class="w-8 h-8 text-black fill-current"
@@ -31,15 +51,50 @@
         </div>
 
         <div
-          class="flex flex-col flex-wrap w-full px-10 pt-24 pb-40 mx-auto leading-6 text-left text-black lg:flex-row"
+          class="
+            flex flex-col flex-wrap
+            w-full
+            px-10
+            pt-24
+            pb-40
+            mx-auto
+            leading-6
+            text-left text-black
+            lg:flex-row
+          "
         >
           <div class="box-border relative w-full px-4 text-black lg:w-6/12">
             <p
-              class="pt-4 mx-auto mb-4 text-3xl font-black leading-tight text-left text-gray-900 xl:pt-6 sm:text-4xl lg:text-4xl xl:text-4xl"
+              class="
+                pt-4
+                mx-auto
+                mb-4
+                text-3xl
+                font-black
+                leading-tight
+                text-left text-gray-900
+                xl:pt-6
+                sm:text-4xl
+                lg:text-4xl
+                xl:text-4xl
+              "
               >在来画，让视频拥有更多可能性<br />来画 持续精彩</p
             >
             <p
-              class="pt-3 mb-2 mr-12 text-xl font-normal leading-relaxed text-left text-gray-900 lg:mb-4 xl:pt-5 sm:text-2xl lg:text-xl xl:text-2xl"
+              class="
+                pt-3
+                mb-2
+                mr-12
+                text-xl
+                font-normal
+                leading-relaxed
+                text-left text-gray-900
+                lg:mb-4
+                xl:pt-5
+                sm:text-2xl
+                lg:text-xl
+                xl:text-2xl
+              "
             >
               通过<b class="box-border text-left">laihua.com</b
               >创建更好的设计，用户体验，并以风格展示您的应用程序。
@@ -50,7 +105,26 @@
                   class="w-full h-full bg-gray-900 ml-0.5 mt-0.5 rounded-lg absolute left-0 top-0"
                 ></div>
                 <a
-                  class="relative inline-block px-5 py-2 text-lg font-bold text-center text-gray-900 no-underline whitespace-no-wrap align-middle bg-white border-2 border-gray-900 border-solid rounded-md shadow-xs cursor-pointer select-none hover:bg-white hover:shadow-xs hover:text-gray-900 focus:shadow-xs"
+                  class="
+                    relative
+                    inline-block
+                    px-5
+                    py-2
+                    text-lg
+                    font-bold
+                    text-center text-gray-900
+                    no-underline
+                    whitespace-no-wrap
+                    align-middle
+                    bg-white
+                    border-2 border-gray-900 border-solid
+                    rounded-md
+                    shadow-xs
+                    cursor-pointer
+                    select-none
+                    hover:bg-white hover:shadow-xs hover:text-gray-900
+                    focus:shadow-xs
+                  "
                   >免费下载客户端</a
                 >
               </div>
@@ -71,11 +145,40 @@
     <!-- Section 2 -->
     <section class="w-full bg-white pt-7 pb-7 md:pt-20 md:pb-24">
       <div
-        class="box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16"
+        class="
+          box-border
+          flex flex-col
+          items-center
+          content-center
+          px-8
+          mx-auto
+          leading-6
+          text-black
+          border-0 border-gray-300 border-solid
+          md:flex-row
+          max-w-7xl
+          lg:px-16
+        "
       >
         <!-- Image -->
         <div
-          class="box-border relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10"
+          class="
+            box-border
+            relative
+            w-full
+            max-w-md
+            px-4
+            mt-5
+            mb-4
+            -ml-5
+            text-center
+            bg-no-repeat bg-contain
+            border-solid
+            md:ml-0 md:mt-0 md:max-w-none
+            lg:mb-0
+            md:w-1/2
+            xl:pl-10
+          "
         >
           <img
             src="https://cdn.devdojo.com/images/december2020/productivity.png"
@@ -85,36 +188,91 @@
 
         <!-- Content -->
         <div
-          class="box-border order-first w-full text-black border-solid md:w-1/2 md:pl-10 md:order-none"
+          class="
+            box-border
+            order-first
+            w-full
+            text-black
+            border-solid
+            md:w-1/2 md:pl-10 md:order-none
+          "
         >
           <h2
-            class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl"
+            class="
+              m-0
+              text-xl
+              font-semibold
+              leading-tight
+              border-0 border-gray-300
+              lg:text-3xl
+              md:text-2xl
+            "
           >
             来画动画
           </h2>
           <p
-            class="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg"
+            class="
+              pt-4
+              pb-8
+              m-0
+              leading-7
+              text-gray-700
+              border-0 border-gray-300
+              sm:pr-12
+              xl:pr-32
+              lg:text-lg
+            "
           >
             像做PPT一样做视频 何止是快 .
           </p>
           <ul class="p-0 m-0 leading-6 border-0 border-gray-300">
             <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
               <span
-                class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"
+                class="
+                  inline-flex
+                  items-center
+                  justify-center
+                  w-6
+                  h-6
+                  mr-2
+                  text-white
+                  bg-yellow-300
+                  rounded-full
+                "
                 ><span class="text-sm font-bold">✓</span></span
               >
               海量正版可商用素材
             </li>
             <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
               <span
-                class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"
+                class="
+                  inline-flex
+                  items-center
+                  justify-center
+                  w-6
+                  h-6
+                  mr-2
+                  text-white
+                  bg-yellow-300
+                  rounded-full
+                "
                 ><span class="text-sm font-bold">✓</span></span
               >
               AI智能配音，多角色音库，配音so easy
             </li>
             <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
               <span
-                class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"
+                class="
+                  inline-flex
+                  items-center
+                  justify-center
+                  w-6
+                  h-6
+                  mr-2
+                  text-white
+                  bg-yellow-300
+                  rounded-full
+                "
                 ><span class="text-sm font-bold">✓</span></span
               >
               AI智能绘图，不会画画也能做动画
@@ -124,38 +282,101 @@
         <!-- End  Content -->
       </div>
       <div
-        class="box-border flex flex-col items-center content-center px-8 mx-auto mt-2 leading-6 text-black border-0 border-gray-300 border-solid md:mt-20 xl:mt-0 md:flex-row max-w-7xl lg:px-16"
+        class="
+          box-border
+          flex flex-col
+          items-center
+          content-center
+          px-8
+          mx-auto
+          mt-2
+          leading-6
+          text-black
+          border-0 border-gray-300 border-solid
+          md:mt-20
+          xl:mt-0
+          md:flex-row
+          max-w-7xl
+          lg:px-16
+        "
       >
         <!-- Content -->
         <div class="box-border w-full text-black border-solid md:w-1/2 md:pl-6 xl:pl-32">
           <h2
-            class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl"
+            class="
+              m-0
+              text-xl
+              font-semibold
+              leading-tight
+              border-0 border-gray-300
+              lg:text-3xl
+              md:text-2xl
+            "
           >
             来画视频
           </h2>
           <p
-            class="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-10 lg:text-lg"
+            class="
+              pt-4
+              pb-8
+              m-0
+              leading-7
+              text-gray-700
+              border-0 border-gray-300
+              sm:pr-10
+              lg:text-lg
+            "
           >
             实时互动的视频演示
           </p>
           <ul class="p-0 m-0 leading-6 border-0 border-gray-300">
             <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
               <span
-                class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"
+                class="
+                  inline-flex
+                  items-center
+                  justify-center
+                  w-6
+                  h-6
+                  mr-2
+                  text-white
+                  bg-yellow-300
+                  rounded-full
+                "
                 ><span class="text-sm font-bold">✓</span></span
               >
               真人与演示内容实时互动，近距离打动观众
             </li>
             <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
               <span
-                class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"
+                class="
+                  inline-flex
+                  items-center
+                  justify-center
+                  w-6
+                  h-6
+                  mr-2
+                  text-white
+                  bg-yellow-300
+                  rounded-full
+                "
                 ><span class="text-sm font-bold">✓</span></span
               >
               自由调整人像的大小，支持一秒抠除背景
             </li>
             <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
               <span
-                class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-yellow-300 rounded-full"
+                class="
+                  inline-flex
+                  items-center
+                  justify-center
+                  w-6
+                  h-6
+                  mr-2
+                  text-white
+                  bg-yellow-300
+                  rounded-full
+                "
                 ><span class="text-sm font-bold">✓</span></span
               >
               画笔标注，观众的注意力由你掌控
@@ -166,7 +387,21 @@
 
         <!-- Image -->
         <div
-          class="box-border relative w-full max-w-md px-4 mt-10 mb-4 text-center bg-no-repeat bg-contain border-solid md:mt-0 md:max-w-none lg:mb-0 md:w-1/2"
+          class="
+            box-border
+            relative
+            w-full
+            max-w-md
+            px-4
+            mt-10
+            mb-4
+            text-center
+            bg-no-repeat bg-contain
+            border-solid
+            md:mt-0 md:max-w-none
+            lg:mb-0
+            md:w-1/2
+          "
         >
           <img
             src="https://cdn.devdojo.com/images/december2020/settings.png"
@@ -190,7 +425,17 @@
           </div>
         </div>
         <div
-          class="box-border grid flex-wrap justify-center gap-10 -mx-4 text-center md:grid-cols-2 lg:gap-16 lg:justify-start lg:text-left"
+          class="
+            box-border
+            grid
+            flex-wrap
+            justify-center
+            gap-10
+            -mx-4
+            text-center
+            md:grid-cols-2
+            lg:gap-16 lg:justify-start lg:text-left
+          "
         >
           <div class="flex col-span-1">
             <div class="relative flex-shrink-0 w-20 h-20 text-left">

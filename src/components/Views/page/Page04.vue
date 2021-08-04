@@ -6,10 +6,31 @@
         <p class="mt-12 text-3xl">视频创作为各行各业赋能，100W+ 企业和政府组织的共同选择</p>
         <ul class="flex justify-between w-full mt-24">
           <li
-            class="flex flex-col items-center justify-center w-48 h-48 bg-white rounded-sm shadow-md cursor-pointer hover:shadow-xl group"
+            class="
+              flex flex-col
+              items-center
+              justify-center
+              w-48
+              h-48
+              bg-white
+              rounded-sm
+              shadow-md
+              cursor-pointer
+              hover:shadow-xl
+              group
+            "
           >
             <div
-              class="flex justify-center items-center w-20 h-20 bg-gray-200 rounded-full group-hover:bg-blue-500"
+              class="
+                flex
+                justify-center
+                items-center
+                w-20
+                h-20
+                bg-gray-200
+                rounded-full
+                group-hover:bg-blue-500
+              "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -33,25 +54,73 @@
             <p class="mt-3 text-base text-gray-700 group-hover:text-blue-500">教育培训</p>
           </li>
           <li
-            class="flex flex-col items-center justify-center w-48 h-48 bg-white rounded-sm shadow-md cursor-pointer hover:shadow-xl group"
+            class="
+              flex flex-col
+              items-center
+              justify-center
+              w-48
+              h-48
+              bg-white
+              rounded-sm
+              shadow-md
+              cursor-pointer
+              hover:shadow-xl
+              group
+            "
           >
             <div class="w-20 h-20 bg-gray-200 rounded-full group-hover:bg-blue-500"></div>
             <p class="mt-3 text-base text-gray-700 group-hover:text-blue-500">媒体宣传</p>
           </li>
           <li
-            class="flex flex-col items-center justify-center w-48 h-48 bg-white rounded-sm shadow-md cursor-pointer hover:shadow-xl group"
+            class="
+              flex flex-col
+              items-center
+              justify-center
+              w-48
+              h-48
+              bg-white
+              rounded-sm
+              shadow-md
+              cursor-pointer
+              hover:shadow-xl
+              group
+            "
           >
             <div class="w-20 h-20 bg-gray-200 rounded-full group-hover:bg-blue-500"></div>
             <p class="mt-3 text-base text-gray-700 group-hover:text-blue-500">金融财经</p>
           </li>
           <li
-            class="flex flex-col items-center justify-center w-48 h-48 bg-white rounded-sm shadow-md cursor-pointer hover:shadow-xl group"
+            class="
+              flex flex-col
+              items-center
+              justify-center
+              w-48
+              h-48
+              bg-white
+              rounded-sm
+              shadow-md
+              cursor-pointer
+              hover:shadow-xl
+              group
+            "
           >
             <div class="w-20 h-20 bg-gray-200 rounded-full group-hover:bg-blue-500"></div>
             <p class="mt-3 text-base text-gray-700 group-hover:text-blue-500">健康医疗</p>
           </li>
           <li
-            class="flex flex-col items-center justify-center w-48 h-48 bg-white rounded-sm shadow-md cursor-pointer hover:shadow-xl group"
+            class="
+              flex flex-col
+              items-center
+              justify-center
+              w-48
+              h-48
+              bg-white
+              rounded-sm
+              shadow-md
+              cursor-pointer
+              hover:shadow-xl
+              group
+            "
           >
             <div class="w-20 h-20 bg-gray-200 rounded-full group-hover:bg-blue-500"></div>
             <p class="mt-3 text-base text-gray-700 group-hover:text-blue-500">互联网</p>
@@ -62,7 +131,15 @@
     <div class="flex flex-wrap justify-between w-full max-w-screen-xl mx-auto mt-48 -m-4 contanier">
       <div v-for="i in 6" :key="i" class="w-1/3 p-4 cursor-pointer">
         <div
-          class="flex flex-col items-center justify-between p-10 border border-gray-200 rounded-lg hover:shadow-lg"
+          class="
+            flex flex-col
+            items-center
+            justify-between
+            p-10
+            border border-gray-200
+            rounded-lg
+            hover:shadow-lg
+          "
         >
           <img
             class="w-auto h-16"
@@ -73,7 +150,17 @@
             >朵木，一个位资深国学爱好者的全职妈妈。为了更好普及《论语》、《中庸》、《大学》等经典古籍中的哲理，她创建了朵木工作室，旨在将更多优质内容传递给家长和孩子们听。</p
           >
           <button
-            class="px-6 py-2 mt-20 text-sm text-gray-500 bg-white border border-gray-300 border-solid rounded-full focus:outline-none hover:bg-blue-500 hover:text-white"
+            class="
+              px-6
+              py-2
+              mt-20
+              text-sm text-gray-500
+              bg-white
+              border border-gray-300 border-solid
+              rounded-full
+              focus:outline-none
+              hover:bg-blue-500 hover:text-white
+            "
           >
             查看案例
           </button>

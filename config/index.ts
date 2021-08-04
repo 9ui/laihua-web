@@ -5,7 +5,7 @@ export * from './devToolsConfig';
 export * from './headConfig';
 export * from './cssConfig';
 export * from './buildConfig';
-export * from './pwaConfig';
+// export * from './pwaConfig';
 export * from './externalModuleConfig';
 export * from './postConfig';
 export * from './helmetConfig';

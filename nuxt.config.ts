@@ -10,7 +10,7 @@ const NuxtConfig = Merge.all([
   Config.CssConfig, // * 样式
   Config.BuildConfig, // * 构建
   Config.DevtoolsConfig, // * vue-devtools
-  Config.PWAConfig, // * PWA
+  //   Config.PWAConfig, // * PWA
   Config.HelmetConfig, // * nuxt-helmet
   Config.ExternalModuleConfig, // * 其他模块配置
 ]);

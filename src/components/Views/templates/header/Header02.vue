@@ -1,156 +1,167 @@
 <template>
-  <header class="text-gray-600 bg-black body-font">
-    <div class="container flex flex-col flex-wrap items-center py-5 mx-auto md:flex-row">
+  <header class="text-blue-600 bg-black body-font">
+    <div class="container flex flex-col flex-wrap items-center mx-auto md:flex-row">
       <a class="flex items-center mb-4 font-medium text-gray-900 title-font md:mb-0">
-        <!-- <img
+        <img
           class="h-5 cursor-pointer w-30"
-          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAAAwCAM
-          AAAAYYwcUAAACo1BMVEUAAAD//////////////////////////////////////////////////////////////
-          ///////////////////////////////////////////////////////////////////////////////////////////////
-          //////////////////////////////////////////////////////////////////////////////////////////////////
-          ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+Hen5WAAAA4HRSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyEiIyQmJygpKistLi8wMTIzNDU3ODo7PD0+P0BBQkNERUZHSEpLTE1OT1BRUlNUVVZXWFlaW11fYWNkZmdoaWtsbXByc3R1dnd4eXp8fX5/gIGCg4WGh4mKi4yNjo+QkZKTlJWWmJmam5yen6Cio6Slpqeoqqusra6vsLGytLW3uLm6u72+v8DBwsPExcfIycrLzM3P0NHS1NXX2Nrb3N3e3+Dh4uPk5ebn6Onq6+zt7u/w8fP09fb3+Pn6+/z9/ns/otcAAAclSURBVGje7Zr5XxRlHMdnOZYrRcgUCE1CBTVTUSRFxURLLbVUwsIrT7xATc00s8MzjzSRDgvyqiRROczCYzMj80CUFENZ9vlTema+8xwz88zOqMOr7SXfX/Z5vvPsZ5737jzP8/1+dyUUiNZbUu2M49JSYAOvK3LaAhy4FawNOJCBw2Niwh8r4EUILXIS+HyeYtqtsRycecuo5wdw/IlKoVFOr6xQ+mtRab5ii1s4na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"
-          alt=""
-        /> -->
+          src="https://cdn2.laihua.com/dev-dist/static/img/logo-light.9244d18.png"
+        />
       </a>
+      <!-- nav start -->
       <nav
         class="
           flex flex-wrap
           items-center
           justify-center
           text-base
-          md:mr-auto md:ml-10 md:py-1 md:pl-4
+          md:mr-auto md:ml-10 md:pl-4
           dark:text-white
         "
       >
-        <a class="mr-10 text-sm text-gray-300 cursor-pointer hover:text-white">工作台</a>
-        <a
-          class="
-            relative
-            inline-block
-            mr-10
-            text-sm text-left text-gray-300
-            cursor-pointer
-            hover:text-white
-          "
+        <!-- menu-item product start -->
+        <PopoverButton
+          class="nav-item group"
+          :panel-height="243"
+          :panel-width="620"
+          :panel-center="true"
+          :offset-right="100"
         >
-          <span @click="visible = true" @blur="visible = false" @mouseenter="visible = true"
-            >产品</span
-          >
-          <transition
-            enter-active-class="transition duration-100 ease-out"
-            enter-to-class="scale-100 opacity-100"
-            enter-from-class="scale-95 opacity-0"
-            leave-active-class="transition duration-75 ease-in"
-            leave-to-class="scale-95 opacity-0"
-            leave-from-class="scale-100 opacity-100"
-          >
-            <div
-              v-show="visible"
-              class="
-                absolute
-                w-56
-                mt-6
-                origin-top-right
-                bg-white
-                divide-y divide-gray-100
-                rounded-md
-                shadow-lg
-                -right-24
-                ring-1 ring-black ring-opacity-5
-              "
-              role="menu"
-              aria-orientation="vertical"
-              aria-labelledby="options-menu"
-              @mouseleave="visible = false"
-            >
-              <div class="py-1">
-                <a
-                  href="#"
-                  class="
-                    block
-                    px-4
-                    py-2
-                    text-sm text-gray-700
-                    hover:bg-gray-100 hover:text-gray-900
-                  "
-                  role="menuitem"
-                  >Edit</a
-                >
-                <a
-                  href="#"
-                  class="
-                    block
-                    px-4
-                    py-2
-                    text-sm text-gray-700
-                    hover:bg-gray-100 hover:text-gray-900
-                  "
-                  role="menuitem"
-                  >Duplicate</a
-                >
+          <span class="nav-text">产品</span>
+          <div slot="panel" class="flex p-5">
+            <div class="w-1/3 p-2 mr-4 panel-item1">
+              <img
+                class="w-full h-70 rounded-md block"
+                src="~/assets/images/header/products-dropdown-video.jpg"
+                alt=""
+              />
+              <video
+                class="w-full h-70 rounded-md hidden"
+                autoplay
+                loop
+                muted
+                src="https://resources.laihua.com/2021-1-16/c2c2a6ca-351d-4476-9a5c-fce422943cf2.mp4"
+              ></video>
+              <h4 class="text-gray-900 my-2">来画视频</h4>
+              <p class="text-xs text-gray-600">实时互动的视频演示</p>
+              <!-- icon start -->
+              <div class="flex mt-2 space-x-2">
+                <div class="icon-wrapper icon-item1-hover">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0
+                      00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <span class="text-xs text-indigo-600 ml-1 icon-text hidden">桌面端下载</span>
+                </div>
+                <div class="icon-wrapper icon-item2-hover">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <span class="text-xs text-indigo-600 icon-text hidden">手机端下载</span>
+                </div>
               </div>
-              <div class="py-1">
-                <a
-                  href="#"
-                  class="
-                    block
-                    px-4
-                    py-2
-                    text-sm text-gray-700
-                    hover:bg-gray-100 hover:text-gray-900
-                  "
-                  role="menuitem"
-                  >Edit</a
-                >
-                <a
-                  href="#"
-                  class="
-                    block
-                    px-4
-                    py-2
-                    text-sm text-gray-700
-                    hover:bg-gray-100 hover:text-gray-900
-                  "
-                  role="menuitem"
-                  >Duplicate</a
-                >
-              </div>
-              <div class="py-1">
-                <a
-                  href="#"
-                  class="
-                    block
-                    px-4
-                    py-2
-                    text-sm text-gray-700
-                    hover:bg-gray-100 hover:text-gray-900
-                  "
-                  role="menuitem"
-                  >Edit</a
-                >
-                <a
-                  href="#"
-                  class="
-                    block
-                    px-4
-                    py-2
-                    text-sm text-gray-700
-                    hover:bg-gray-100 hover:text-gray-900
-                  "
-                  role="menuitem"
-                  >Duplicate</a
-                >
+              <!-- icon end -->
+            </div>
+            <div class="w-1/3 p-2 panel-item2">
+              <img
+                class="w-full h-70 rounded-md block"
+                src="https://resources.laihua.com/2021-1-30/acfc84ef-1177-42fc-862e-45496c0da6de.png"
+                alt=""
+              />
+              <video
+                class="w-full h-70 rounded-md hidden"
+                autoplay
+                loop
+                muted
+                src="https://resources.laihua.com/2021-1-30/f32766da-4c8a-42aa-af17-f5e955b39588.mp4"
+              ></video>
+              <h4 class="text-gray-900 my-2">来画动画</h4>
+              <p class="text-xs text-gray-600">零门槛创作动画视频</p>
+              <div class="flex mt-2 space-x-2">
+                <div class="icon-wrapper icon-item3-hover">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <span class="text-xs text-indigo-600 icon-text hidden">手机端下载</span>
+                </div>
               </div>
             </div>
-          </transition>
-        </a>
-        <a class="mr-10 text-sm text-gray-300 cursor-pointer hover:text-white">发现</a>
-        <a class="mr-10 text-sm text-gray-300 cursor-pointer hover:text-white">解决方案</a>
-        <a class="mr-10 text-sm text-gray-300 cursor-pointer hover:text-white">会员定价</a>
-        <a class="mr-10 text-sm text-gray-300 cursor-pointer hover:text-white">大赛</a>
-        <a class="mr-10 text-sm text-gray-300 cursor-pointer hover:text-white">视频学院</a>
+            <div class="flex flex-col justify-start space-y-3 ml-6 mt-4">
+              <div class="text-gray-900 font-bold text-md mt-3">更多产品</div>
+              <div class="link-text">视频编辑工具</div>
+              <div class="link-text">视频短信营销</div>
+            </div>
+          </div>
+        </PopoverButton>
+        <!-- menu-item product end -->
+
+        <!-- menu-item price start -->
+        <PopoverButton
+          class="nav-item group"
+          :panel-height="90"
+          :panel-width="90"
+          :offset-left="20"
+        >
+          <span class="nav-text">定价</span>
+          <div slot="panel">
+            <div class="py-1 mt-1">
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                role="menuitem"
+                >企业会员</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                role="menuitem"
+                >个人会员</a
+              >
+            </div>
+          </div>
+        </PopoverButton>
+        <!-- menu-item price end -->
+
+        <div class="nav-item">发现</div>
+        <div class="nav-item">解决方案</div>
+        <div class="nav-item">会员定价</div>
+        <div class="nav-item">大赛</div>
+        <div class="nav-item">视频学院</div>
       </nav>
-      <div class="inline-flex ml-5 lg:w-2/5 lg:justify-end lg:ml-0">
+      <!-- nav end -->
+      <div class="inline-flex ml-5 lg:justify-end lg:ml-0">
         <button
           class="
             inline-flex
@@ -172,18 +183,47 @@
     </div>
   </header>
 </template>
-<script>
+<script lang="ts">
   import { defineComponent } from '@vue/composition-api';
+  import { PopoverButton } from '@/components/PopoverPanel/index';
   export default defineComponent({
-    data() {
-      return {
-        visible: true,
-      };
+    components: {
+      PopoverButton,
     },
-    methods: {
-      blur() {
-        console.log('被执行了');
-      },
-    },
+    setup() {},
   });
 </script>
+
+<style lang="postcss" scoped>
+  .nav-item {
+    @apply flex flex-col items-center justify-center h-20 w-14 mx-4 text-sm text-gray-300 cursor-pointer;
+  }
+
+  .icon-wrapper {
+    @apply flex items-center group border bg-gray-100 rounded-full px-2 py-1 cursor-pointer hover:border-indigo-500;
+  }
+
+  .h-icon {
+    @apply h-5 w-5 text-gray-500 group-hover:text-indigo-500;
+  }
+
+  .link-text {
+    @apply text-sm text-gray-600 cursor-pointer hover:text-indigo-600 hover:underline;
+  }
+
+  .panel-item1:hover img,
+  .panel-item2:hover img {
+    @apply hidden;
+  }
+
+  .panel-item1:hover video,
+  .panel-item2:hover video {
+    @apply block;
+  }
+
+  .icon-item1-hover:hover > .icon-text,
+  .icon-item2-hover:hover > .icon-text,
+  .icon-item3-hover:hover > .icon-text {
+    @apply block;
+  }
+</style>

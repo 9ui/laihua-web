@@ -20,6 +20,8 @@ export const PostConfig = (nuxtConfig: Config.Interface.IConfig) => {
     if (config && config.pwa && config.pwa.runtimeCaching) delete config.pwa.runtimeCaching;
   }
 
+  console.log(nuxtConfig as NuxtConfig);
+
   // * 删除Vuex依赖项信息
   // config.build.plugins.push(new webpack.IgnorePlugin(new RegExp('/vuex/')));
 

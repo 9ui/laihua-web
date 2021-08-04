@@ -11,6 +11,10 @@ export const NuxtConfig = {
   router: {
     // middleware: ['auth', 'store'],
   },
+  sourceMap: false,
+  render: {
+    resourceHints: false,
+  },
   // 注册全局组件
   // 默认情况下，该路径查看〜/components
   components: true,

@@ -1,8 +1,12 @@
 <template>
   <section class="text-gray-600 body-font">
-    <div class="container py-14 mx-auto">
-      <div class="flex flex-wrap -m-4">
-        <div v-for="i in 12" :key="i" class="p-4 cursor-pointer md:w-1/4">
+    <div class="py-14 mx-auto">
+      <div class="flex flex-wrap mx-4">
+        <div
+          v-for="i in 12"
+          :key="i"
+          class="p-4 cursor-pointer sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 2xl:w-1/6 max-w-3xl"
+        >
           <div
             class="h-full overflow-hidden rounded-lg border-opacity-60 shadow-md hover:shadow-lg"
           >

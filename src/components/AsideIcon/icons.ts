@@ -26,8 +26,7 @@ export const getIcons = {
 
   // header
   Header01: () => import('./src/templates/header/IconHeader01.vue'),
-  Header03: () => import('./src/templates/header/IconHeader04.vue'),
-  Header04: () => import('./src/templates/header/IconHeader04.vue'),
+  Header02: () => import('./src/templates/header/IconHeader02.vue'),
 
   // form
   Form01: () => import('./src/templates/form/IconForm01.vue'),
@@ -35,6 +34,9 @@ export const getIcons = {
   // sidebar
   Sidebar01: () => import('./src/templates/sidebar/IconSidebar01.vue'),
   Sidebar02: () => import('./src/templates/sidebar/IconSidebar02.vue'),
+
+  // swiper
+  Swiper01: () => import('./src/templates/swiper/IconSwiper01.vue'),
 
   // components
   Modal: () => import('./src/components/IconSideOvers.vue'),
