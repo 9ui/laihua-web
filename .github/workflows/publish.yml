@@ -17,7 +17,7 @@ jobs:
       - name: Test for public javascript library vulnerabilities
         uses: lirantal/is-website-vulnerable@master
         with:
-          scan-url: 'https://web.90c.vip'
+          scan-url: 'https://ui.90c.vip'
 
       # 切换分支
       - name: Checkout
@@ -69,7 +69,7 @@ jobs:
         uses: foo-software/lighthouse-check-action@master
         id: lighthouseCheck
         with:
-          urls: 'https://web.90c.vip'
+          urls: 'https://ui.90c.vip'
 
       # 处理性能结果
       - name: Handle Lighthouse Check results
@@ -123,7 +123,7 @@ jobs:
           # 4. 安装生产环境依赖
           # 5. pm2运行配置文件
           script: |
-            cd /www/wwwroot/web.90c.vip
+            cd /www/wwwroot/ui.90c.vip
             tar zxvf release.tgz
             yarn install --production
             pm2 reload pm2.config.json
